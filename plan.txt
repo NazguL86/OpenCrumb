@@ -1,0 +1,23 @@
+### Plan for "Open Crumb" App Development
+
+Here are the next steps to move forward from our current progress:
+
+1.  **Create the Recipe Detail Screen:**
+    *   Create a new composable function, `RecipeDetailScreen`, in a new file under the `ui` package (e.g., in a `recipedetail` sub-package).
+    *   This screen will take a single `Recipe` object as a parameter.
+    *   It will display all the details of the recipe: its name, description, a placeholder for the image, a list of ingredients, and the step-by-step instructions.
+
+2.  **Set Up Navigation from List to Detail:**
+    *   Define a new route for the detail screen that accepts the `recipeId` as an argument (e.g., `"recipe_detail/{recipeId}"`).
+    *   In the `NavHost` builder, add a new `composable` for this route. Inside its lambda, we will:
+        *   Extract the `recipeId` from the navigation arguments.
+        *   Use that ID to find the correct `Recipe` from our `SampleData.recipes` list.
+        *   Call our new `RecipeDetailScreen`, passing it the `Recipe` we found.
+
+3.  **Update the Click Handler:**
+    *   Modify the `onRecipeClick` lambda in `RecipeListScreen`.
+    *   Instead of showing a `Toast`, it will use the `NavController` to navigate to the detail screen's route, passing the ID of the recipe that was clicked.
+
+When we're done with these steps, you will have a basic but functional app where you can tap on a recipe in the list and see its complete details on a new screen.
+
+    *   Update the `NavHost` in `MainActivity.kt`.

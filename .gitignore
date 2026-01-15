@@ -1,0 +1,18 @@
+# IDE files and local properties
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+
+# Build output
+/build
+/captures
+
+# Generated files
+.externalNativeBuild/
+.cxx/
+
+# Keystore files
+*.jks
+*.keystore
