@@ -7,7 +7,7 @@ object SampleData {
     val recipes =
         listOf(
             Recipe(
-                id = "1",
+                id = 1,
                 name = "Simple Focaccia",
                 description = "A delicious and easy-to-make focaccia, perfect for beginners.",
                 imageRes = 0,
@@ -27,7 +27,7 @@ object SampleData {
                     ),
             ),
             Recipe(
-                id = "2",
+                id = 2,
                 name = "Classic Margherita Pizza",
                 description = "The traditional Italian pizza with tomato, mozzarella, and basil.",
                 imageRes = 0,

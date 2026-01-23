@@ -1,12 +1,18 @@
 package com.opencrumb.app.data.model
 
-import androidx.annotation.DrawableRes
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import androidx.room.TypeConverters
+import com.opencrumb.app.data.local.Converters
 
+@Entity(tableName = "recipes")
+@TypeConverters(Converters::class)
 data class Recipe(
-    val id: String,
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
     val name: String,
     val description: String,
-    @DrawableRes val imageRes: Int,
+    val imageRes: Int,
     val ingredients: List<Ingredient>,
     val instructions: List<String>
 )
