@@ -19,6 +19,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.opencrumb.app.data.model.Recipe
+import com.opencrumb.app.data.model.RecipeCategory
 import com.opencrumb.app.ui.recipedetail.RecipeDetailScreen
 import com.opencrumb.app.ui.recipelist.RecipeListScreen
 import com.opencrumb.app.ui.recipelist.RecipeListViewModel
@@ -35,11 +36,18 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             OpenCrumbTheme {
-                val recipes by viewModel.recipes.collectAsState(initial = emptyList())
+                val allRecipes by viewModel.allRecipes.collectAsState()
+                val filteredRecipes by viewModel.filteredRecipes.collectAsState()
+                val selectedCategory by viewModel.selectedCategory.collectAsState()
+
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     OpenCrumbApp(
                         modifier = Modifier.padding(innerPadding),
-                        recipes = recipes,
+                        allRecipes = allRecipes,
+                        filteredRecipes = filteredRecipes,
+                        categories = viewModel.categories,
+                        selectedCategory = selectedCategory,
+                        onCategorySelected = viewModel::onCategorySelected,
                     )
                 }
             }
@@ -48,7 +56,14 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun OpenCrumbApp(modifier: Modifier = Modifier, recipes: List<Recipe>) {
+fun OpenCrumbApp(
+    modifier: Modifier = Modifier,
+    allRecipes: List<Recipe>,
+    filteredRecipes: List<Recipe>,
+    categories: List<RecipeCategory>,
+    selectedCategory: RecipeCategory,
+    onCategorySelected: (RecipeCategory) -> Unit,
+) {
     val navController = rememberNavController()
 
     NavHost(
@@ -58,7 +73,10 @@ fun OpenCrumbApp(modifier: Modifier = Modifier, recipes: List<Recipe>) {
     ) {
         composable("recipe_list") {
             RecipeListScreen(
-                recipes = recipes,
+                recipes = filteredRecipes,
+                categories = categories,
+                selectedCategory = selectedCategory,
+                onCategorySelected = onCategorySelected,
                 onRecipeClick = { recipeId ->
                     navController.navigate("recipe_detail/$recipeId")
                 },
@@ -66,10 +84,10 @@ fun OpenCrumbApp(modifier: Modifier = Modifier, recipes: List<Recipe>) {
         }
         composable(
             route = "recipe_detail/{recipeId}",
-            arguments = listOf(navArgument("recipeId") { type = NavType.IntType })
+            arguments = listOf(navArgument("recipeId") { type = NavType.IntType }),
         ) {
             val recipeId = it.arguments?.getInt("recipeId")
-            val recipe = recipes.find { it.id == recipeId }
+            val recipe = allRecipes.find { it.id == recipeId }
             if (recipe != null) {
                 RecipeDetailScreen(recipe = recipe)
             }
@@ -81,6 +99,12 @@ fun OpenCrumbApp(modifier: Modifier = Modifier, recipes: List<Recipe>) {
 @Composable
 fun OpenCrumbPreview() {
     OpenCrumbTheme {
-        OpenCrumbApp(recipes = emptyList())
+        OpenCrumbApp(
+            allRecipes = emptyList(),
+            filteredRecipes = emptyList(),
+            categories = listOf(RecipeCategory.PIZZA, RecipeCategory.FOCACCIA),
+            selectedCategory = RecipeCategory.PIZZA,
+            onCategorySelected = {},
+        )
     }
 }

@@ -2,6 +2,7 @@ package com.opencrumb.app.data
 
 import com.opencrumb.app.data.model.Ingredient
 import com.opencrumb.app.data.model.Recipe
+import com.opencrumb.app.data.model.RecipeCategory
 
 object SampleData {
     val recipes =
@@ -25,6 +26,7 @@ object SampleData {
                         "Let it rise for 12-18 hours.",
                         "Shape and bake at 220°C for 25 minutes.",
                     ),
+                category = RecipeCategory.FOCACCIA,
             ),
             Recipe(
                 id = 2,
@@ -46,6 +48,7 @@ object SampleData {
                         "Add sauce, mozzarella, and basil.",
                         "Bake for 12-15 minutes until golden.",
                     ),
+                category = RecipeCategory.PIZZA,
             ),
         )
 }
