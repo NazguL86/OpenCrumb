@@ -1,20 +1,27 @@
 package com.opencrumb.app.ui.recipelist
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.opencrumb.app.R
 import com.opencrumb.app.data.model.Ingredient
 import com.opencrumb.app.data.model.Recipe
 import com.opencrumb.app.data.model.RecipeCategory
@@ -62,6 +69,21 @@ fun RecipeListItem(
                 text = recipe.description,
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
+            )
+        },
+        leadingContent = {
+            Image(
+                painter = painterResource(
+                    id = when (recipe.category) {
+                        RecipeCategory.PIZZA -> R.drawable.pizza
+                        RecipeCategory.FOCACCIA -> R.drawable.focaccia
+                    }
+                ),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(56.dp)
+                    .clip(RoundedCornerShape(8.dp)),
+                contentScale = ContentScale.Crop
             )
         },
         modifier = Modifier.clickable(onClick = onClick),
