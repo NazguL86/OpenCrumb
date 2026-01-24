@@ -36,18 +36,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             OpenCrumbTheme {
-                val allRecipes by viewModel.allRecipes.collectAsState()
-                val filteredRecipes by viewModel.filteredRecipes.collectAsState()
-                val selectedCategory by viewModel.selectedCategory.collectAsState()
+                val recipesByCat by viewModel.recipesByCategory.collectAsState()
 
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     OpenCrumbApp(
                         modifier = Modifier.padding(innerPadding),
-                        allRecipes = allRecipes,
-                        filteredRecipes = filteredRecipes,
-                        categories = viewModel.categories,
-                        selectedCategory = selectedCategory,
-                        onCategorySelected = viewModel::onCategorySelected,
+                        recipesByCat = recipesByCat,
                     )
                 }
             }
@@ -58,13 +52,10 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun OpenCrumbApp(
     modifier: Modifier = Modifier,
-    allRecipes: List<Recipe>,
-    filteredRecipes: List<Recipe>,
-    categories: List<RecipeCategory>,
-    selectedCategory: RecipeCategory,
-    onCategorySelected: (RecipeCategory) -> Unit,
+    recipesByCat: Map<RecipeCategory, List<Recipe>>,
 ) {
     val navController = rememberNavController()
+    val allRecipes = recipesByCat.values.flatten()
 
     NavHost(
         navController = navController,
@@ -73,10 +64,7 @@ fun OpenCrumbApp(
     ) {
         composable("recipe_list") {
             RecipeListScreen(
-                recipes = filteredRecipes,
-                categories = categories,
-                selectedCategory = selectedCategory,
-                onCategorySelected = onCategorySelected,
+                recipesByCat = recipesByCat,
                 onRecipeClick = { recipeId ->
                     navController.navigate("recipe_detail/$recipeId")
                 },
@@ -100,11 +88,11 @@ fun OpenCrumbApp(
 fun OpenCrumbPreview() {
     OpenCrumbTheme {
         OpenCrumbApp(
-            allRecipes = emptyList(),
-            filteredRecipes = emptyList(),
-            categories = listOf(RecipeCategory.PIZZA, RecipeCategory.FOCACCIA),
-            selectedCategory = RecipeCategory.PIZZA,
-            onCategorySelected = {},
+            recipesByCat =
+                mapOf(
+                    RecipeCategory.PIZZA to emptyList(),
+                    RecipeCategory.FOCACCIA to emptyList(),
+                ),
         )
     }
 }

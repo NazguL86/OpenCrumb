@@ -6,42 +6,23 @@ import androidx.lifecycle.viewModelScope
 import com.opencrumb.app.data.RecipeRepository
 import com.opencrumb.app.data.model.Recipe
 import com.opencrumb.app.data.model.RecipeCategory
-import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
 class RecipeListViewModel(
     private val repository: RecipeRepository,
 ) : ViewModel() {
-    val allRecipes: StateFlow<List<Recipe>> =
+    val recipesByCategory: StateFlow<Map<RecipeCategory, List<Recipe>>> =
         repository.recipes
-            .stateIn(
-                scope = viewModelScope,
-                started = SharingStarted.WhileSubscribed(5000),
-                initialValue = emptyList(),
-            )
-
-    val categories = listOf(RecipeCategory.FOCACCIA, RecipeCategory.PIZZA)
-
-    private val _selectedCategory = MutableStateFlow(categories.first())
-    val selectedCategory: StateFlow<RecipeCategory> = _selectedCategory.asStateFlow()
-
-    val filteredRecipes: StateFlow<List<Recipe>> =
-        _selectedCategory
-            .flatMapLatest { category ->
-                repository.getRecipesByCategory(category)
+            .map { recipes ->
+                recipes.groupBy { it.category }
             }.stateIn(
                 scope = viewModelScope,
                 started = SharingStarted.WhileSubscribed(5000),
-                initialValue = emptyList(),
+                initialValue = emptyMap(),
             )
-
-    fun onCategorySelected(category: RecipeCategory) {
-        _selectedCategory.value = category
-    }
 }
 
 class RecipeListViewModelFactory(

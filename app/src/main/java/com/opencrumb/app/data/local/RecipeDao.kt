@@ -10,10 +10,10 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface RecipeDao {
-    @Query("SELECT * FROM recipes ORDER BY name ASC")
+    @Query("SELECT * FROM recipes ORDER BY id ASC")
     fun getRecipes(): Flow<List<Recipe>>
 
-    @Query("SELECT * FROM recipes WHERE category = :category ORDER BY name ASC")
+    @Query("SELECT * FROM recipes WHERE category = :category ORDER BY id ASC")
     fun getRecipesByCategory(category: RecipeCategory): Flow<List<Recipe>>
 
     @Query("SELECT COUNT(*) FROM recipes")

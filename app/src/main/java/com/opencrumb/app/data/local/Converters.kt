@@ -4,6 +4,7 @@ import androidx.room.TypeConverter
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.opencrumb.app.data.model.Ingredient
+import com.opencrumb.app.data.model.RecipeCategory
 
 class Converters {
     @TypeConverter
@@ -33,4 +34,10 @@ class Converters {
         val type = object : TypeToken<List<String>>() {}.type
         return gson.fromJson(value, type)
     }
+
+    @TypeConverter
+    fun toRecipeCategory(value: String) = enumValueOf<RecipeCategory>(value)
+
+    @TypeConverter
+    fun fromRecipeCategory(value: RecipeCategory) = value.name
 }

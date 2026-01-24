@@ -16,3 +16,6 @@
 # Keystore files
 *.jks
 *.keystore
+
+ # VS Code
+ .vscode/
