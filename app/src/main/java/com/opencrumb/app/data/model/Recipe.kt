@@ -5,6 +5,11 @@ import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
 import com.opencrumb.app.data.local.Converters
 
+enum class RecipeType {
+    DOUGH,
+    TOPPING
+}
+
 @Entity(tableName = "recipes")
 @TypeConverters(Converters::class)
 data class Recipe(
@@ -16,5 +21,6 @@ data class Recipe(
     val ingredients: List<Ingredient>,
     val instructions: List<String>,
     val category: RecipeCategory,
+    val type: RecipeType,
     val servings: Int = 1,
 )

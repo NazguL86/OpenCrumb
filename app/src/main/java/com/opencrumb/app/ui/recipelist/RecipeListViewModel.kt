@@ -6,22 +6,33 @@ import androidx.lifecycle.viewModelScope
 import com.opencrumb.app.data.RecipeRepository
 import com.opencrumb.app.data.model.Recipe
 import com.opencrumb.app.data.model.RecipeCategory
+import com.opencrumb.app.data.model.RecipeType
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
+data class RecipesUiState(
+    val recipesByCategory: Map<RecipeCategory, Map<RecipeType, List<Recipe>>> = emptyMap()
+)
+
 class RecipeListViewModel(
     private val repository: RecipeRepository,
 ) : ViewModel() {
-    val recipesByCategory: StateFlow<Map<RecipeCategory, List<Recipe>>> =
+
+    val uiState: StateFlow<RecipesUiState> =
         repository.recipes
             .map { recipes ->
-                recipes.groupBy { it.category }
+                val recipesByCategory = recipes
+                    .groupBy { it.category }
+                    .mapValues { (_, recipeList) ->
+                        recipeList.groupBy { it.type }
+                    }
+                RecipesUiState(recipesByCategory = recipesByCategory)
             }.stateIn(
                 scope = viewModelScope,
                 started = SharingStarted.WhileSubscribed(5000),
-                initialValue = emptyMap(),
+                initialValue = RecipesUiState(),
             )
 }
 

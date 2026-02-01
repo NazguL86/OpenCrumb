@@ -185,7 +185,7 @@ fun DecimalStepper(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CalculatorScreen() {
+fun CalculatorScreen(modifier: Modifier = Modifier) {
     // --- STATE VARIABLES ---
     var selectedDoughType by remember { mutableStateOf(DoughType.Neapolitan) }
 
@@ -280,6 +280,7 @@ fun CalculatorScreen() {
     // --- END CALCULATION LOGIC ---
 
     Scaffold(
+        modifier = modifier,
         topBar = {
             TopAppBar(
                 title = { Text("Dough Calculator") },
@@ -310,9 +311,9 @@ fun CalculatorScreen() {
             // Scrollable Content
             Column(
                 modifier =
-                    Modifier
-                        .padding(16.dp)
-                        .verticalScroll(rememberScrollState()),
+                Modifier
+                    .padding(16.dp)
+                    .verticalScroll(rememberScrollState()),
                 verticalArrangement = Arrangement.spacedBy(16.dp),
             ) {
                 Card(modifier = Modifier.fillMaxWidth()) {
@@ -387,9 +388,9 @@ fun CalculatorScreen() {
                         label = { Text("Yeast type") },
                         trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = yeastExpanded) },
                         modifier =
-                            Modifier
-                                .menuAnchor()
-                                .fillMaxWidth(),
+                        Modifier
+                            .menuAnchor()
+                            .fillMaxWidth(),
                         enabled = !isYeastManual,
                     )
                     ExposedDropdownMenu(
@@ -419,9 +420,9 @@ fun CalculatorScreen() {
                         label = { Text("Proofing time") },
                         trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = proofingTimeExpanded) },
                         modifier =
-                            Modifier
-                                .menuAnchor()
-                                .fillMaxWidth(),
+                        Modifier
+                            .menuAnchor()
+                            .fillMaxWidth(),
                         enabled = !isYeastManual,
                     )
                     ExposedDropdownMenu(

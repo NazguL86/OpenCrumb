@@ -14,7 +14,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.IOException
 
-@Database(entities = [Recipe::class], version = 3, exportSchema = false)
+@Database(entities = [Recipe::class], version = 4, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun recipeDao(): RecipeDao
