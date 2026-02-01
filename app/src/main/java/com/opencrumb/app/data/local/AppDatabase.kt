@@ -6,11 +6,13 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.opencrumb.app.data.SampleData
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.opencrumb.app.data.model.Recipe
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.io.IOException
 
 @Database(entities = [Recipe::class], version = 3, exportSchema = false)
 @TypeConverters(Converters::class)
@@ -30,7 +32,7 @@ abstract class AppDatabase : RoomDatabase() {
                             AppDatabase::class.java,
                             "recipe_database",
                         ).fallbackToDestructiveMigration()
-                        .addCallback(AppDatabaseCallback(context))
+                        .addCallback(AppDatabaseCallback(context.applicationContext))
                         .build()
                 INSTANCE = instance
                 instance
@@ -56,9 +58,26 @@ abstract class AppDatabase : RoomDatabase() {
         }
 
         private suspend fun populateDatabase(recipeDao: RecipeDao) {
-            // Wipe all data and repopulate from SampleData
+            // Wipe all data and repopulate from JSON
+            // TODO undo this before launch
             recipeDao.deleteAll()
-            recipeDao.insertAll(SampleData.recipes)
+
+            val jsonString: String
+            try {
+                jsonString =
+                    context.assets
+                        .open("recipes.json")
+                        .bufferedReader()
+                        .use { it.readText() }
+            } catch (ioException: IOException) {
+                ioException.printStackTrace()
+                return
+            }
+
+            val listRecipeType = object : TypeToken<List<Recipe>>() {}.type
+            val recipes: List<Recipe> = Gson().fromJson(jsonString, listRecipeType)
+
+            recipeDao.insertAll(recipes)
         }
     }
 }

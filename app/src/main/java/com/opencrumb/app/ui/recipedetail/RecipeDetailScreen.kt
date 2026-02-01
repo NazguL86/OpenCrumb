@@ -25,11 +25,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.opencrumb.app.R
-import com.opencrumb.app.data.SampleData
 import com.opencrumb.app.data.model.Ingredient
 import com.opencrumb.app.data.model.Recipe
 import com.opencrumb.app.data.model.RecipeCategory
@@ -43,8 +43,12 @@ fun RecipeDetailScreen(
     var portions by remember { mutableStateOf(recipe.servings) }
 
     Column(modifier = modifier.padding(16.dp)) {
+        val context = LocalContext.current
+        val imageResId = remember(recipe.imageRes) {
+            context.resources.getIdentifier(recipe.imageRes, "drawable", context.packageName)
+        }
         Image(
-            painter = painterResource(id = recipe.imageRes),
+            painter = painterResource(id = if (imageResId != 0) imageResId else R.drawable.open_crumb_logo),
             contentDescription = recipe.name,
             modifier =
                 Modifier
@@ -155,7 +159,30 @@ fun InstructionsList(
 @Preview(showBackground = true)
 @Composable
 fun RecipeDetailScreenPreview() {
+    val previewRecipe = Recipe(
+        id = 1,
+        name = "Focaccia Genovese",
+        description = "A classic Italian flatbread from Genoa, topped with olive oil and salt.",
+        imageRes = "focaccia_genovese",
+        servings = 4,
+        ingredients = listOf(
+            Ingredient("Flour", 500.0, "g"),
+            Ingredient("Water", 300.0, "ml"),
+            Ingredient("Yeast", 7.0, "g"),
+            Ingredient("Salt", 10.0, "g"),
+            Ingredient("Olive Oil", 50.0, "ml")
+        ),
+        instructions = listOf(
+            "Mix flour and yeast.",
+            "Add water and knead for 10 minutes.",
+            "Add salt and olive oil and knead for another 5 minutes.",
+            "Let it rise for 2 hours.",
+            "Shape it on a baking tray, poke holes, and drizzle with more olive oil and salt.",
+            "Bake at 220°C for 20 minutes."
+        ),
+        category = RecipeCategory.FOCACCIA
+    )
     OpenCrumbTheme {
-        RecipeDetailScreen(recipe = SampleData.recipes.first())
+        RecipeDetailScreen(recipe = previewRecipe)
     }
 }

@@ -26,11 +26,12 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.opencrumb.app.data.SampleData
+import com.opencrumb.app.data.model.Ingredient
 import com.opencrumb.app.data.model.Recipe
 import com.opencrumb.app.data.model.RecipeCategory
 import com.opencrumb.app.ui.theme.OpenCrumbTheme
@@ -103,8 +104,11 @@ fun RecipeListItem(
         shape = RoundedCornerShape(8.dp)
     ) {
         Column {
+            val context = LocalContext.current
+            val imageResId = context.resources.getIdentifier(recipe.imageRes, "drawable", context.packageName)
+
             Image(
-                painter = painterResource(id = recipe.imageRes),
+                painter = painterResource(id = imageResId),
                 contentDescription = recipe.name,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -134,7 +138,42 @@ fun RecipeListItem(
 @Composable
 fun RecipeListScreenPreview() {
     OpenCrumbTheme {
-        val sampleRecipesByCat = SampleData.recipes.groupBy { it.category }
+        val sampleRecipes =
+            listOf(
+                Recipe(
+                    id = 1,
+                    name = "Focaccia Genovese",
+                    description = "A delicious and easy-to-make focaccia, perfect for beginners.",
+                    imageRes = "focaccia_genovese",
+                    servings = 2,
+                    ingredients =
+                    listOf(
+                        Ingredient("Flour", 550.0, "g"),
+                    ),
+                    instructions =
+                    listOf(
+                        "Mix all ingredients in a bowl.",
+                    ),
+                    category = RecipeCategory.FOCACCIA,
+                ),
+                Recipe(
+                    id = 2,
+                    name = "24h Fermentation Pizza",
+                    description = "The traditional Italian pizza with tomato, mozzarella, and basil.",
+                    imageRes = "pizza",
+                    servings = 3,
+                    ingredients =
+                    listOf(
+                        Ingredient("Flour", 424.0, "g"),
+                    ),
+                    instructions =
+                    listOf(
+                        "24h fermentation",
+                    ),
+                    category = RecipeCategory.PIZZA,
+                ),
+            )
+        val sampleRecipesByCat = sampleRecipes.groupBy { it.category }
         RecipeListScreen(
             recipesByCat = sampleRecipesByCat,
             onRecipeClick = {}

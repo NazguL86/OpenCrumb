@@ -1,0 +1,166 @@
+
+[
+  {
+    "id": 1,
+    "name": "Focaccia Genovese",
+    "description": "A delicious and easy-to-make focaccia, perfect for beginners.",
+    "imageRes": "focaccia_genovese",
+    "servings": 2,
+    "ingredients": [
+      {
+        "name": "Flour",
+        "quantity": 550.0,
+        "unit": "g"
+      },
+      {
+        "name": "Malt",
+        "quantity": 15.0,
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "quantity": 330.0,
+        "unit": "g"
+      },
+      {
+        "name": "Instant Yeast",
+        "quantity": 6.0,
+        "unit": "g"
+      },
+      {
+        "name": "Salt",
+        "quantity": 12.0,
+        "unit": "g"
+      },
+      {
+        "name": "Olive Oil",
+        "quantity": 25.0,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Mix all ingredients in a bowl.",
+      "Let it rise for 12-18 hours.",
+      "Shape and bake at 220°C for 25 minutes."
+    ],
+    "category": "FOCACCIA"
+  },
+  {
+    "id": 2,
+    "name": "24h Fermentation Pizza",
+    "description": "The traditional Italian pizza with tomato, mozzarella, and basil.",
+    "imageRes": "pizza",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Flour",
+        "quantity": 424.0,
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "quantity": 295.0,
+        "unit": "g"
+      },
+      {
+        "name": "Salt",
+        "quantity": 11.0,
+        "unit": "g"
+      },
+      {
+        "name": "Instant yeast",
+        "quantity": 1.5,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "24h fermentation"
+    ],
+    "category": "PIZZA"
+  },
+  {
+    "id": 3,
+    "name": "Focaccia Papi",
+    "description": "Aromatic focaccia topped with fresh rosemary and sea salt.",
+    "imageRes": "focaccia",
+    "servings": 1,
+    "ingredients": [
+      {
+        "name": "Flour",
+        "quantity": 325.0,
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "quantity": 260.0,
+        "unit": "g"
+      },
+      {
+        "name": "Instant Yeast",
+        "quantity": 1.17,
+        "unit": "g"
+      },
+      {
+        "name": "Salt",
+        "quantity": 6.5,
+        "unit": "g"
+      },
+      {
+        "name": "Olive Oil",
+        "quantity": 8.45,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Mix flour, water, yeast, and salt.",
+      "Let rise for 12 hours.",
+      "Dimple dough, add rosemary and oil.",
+      "Bake at 220°C for 25 minutes."
+    ],
+    "category": "FOCACCIA"
+  },
+  {
+    "id": 4,
+    "name": "Focaccia Pizza Piatto",
+    "description": "Soft focaccia pizza style.",
+    "imageRes": "focaccia_pizza",
+    "servings": 2,
+    "ingredients": [
+      {
+        "name": "Flour",
+        "quantity": 700.0,
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "quantity": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "Instant Yeast",
+        "quantity": 2.0,
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": 18.0,
+        "unit": "g"
+      },
+      {
+        "name": "Instant Yeast",
+        "quantity": 2.5,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "* Open up the dough and fold it inside",
+      "* 2 piega and wait 10m",
+      "* 2 piega and wait 2 hours",
+      "* cut in 2 pieces (600gr) and close them up wait 3 hours",
+      "* put them on the tray and wait 1 hour",
+      "* oven 300 for 10 static or 250 for 15m",
+      "* add mozzarella and 3m more ventilato"
+    ],
+    "category": "FOCACCIA"
+  }
+]
