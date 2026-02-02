@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Open Crumb</string>
+    
+    <!-- Navigation -->
+    <string name="nav_recipes">Rezepte</string>
+    <string name="nav_calculator">Rechner</string>
+    <string name="nav_guides">Anleitungen</string>
+    
+    <!-- Recipe Categories -->
+    <string name="category_pizza">Pizza</string>
+    <string name="category_focaccia">Focaccia</string>
+    <string name="category_bread">Brot</string>
+    
+    <!-- Recipe Types -->
+    <string name="type_doughs">Teige</string>
+    <string name="type_toppings">Beläge</string>
+    
+    <!-- Recipe Detail -->
+    <string name="ingredients">Zutaten</string>
+    <string name="instructions">Anleitung</string>
+    <string name="topping_suggestions">Belag-Vorschläge</string>
+    <string name="portions">%1$d Portion(en)</string>
+    
+    <!-- Guides -->
+    <string name="guides_title">Anleitungen</string>
+    <string name="buy_the_book">Buch kaufen</string>
+    <string name="buy_the_book_description">Kaufen Sie \'The Elusive Open Crumb\' bei Amazon</string>
+    
+    <!-- Common -->
+    <string name="back">Zurück</string>
+</resources>

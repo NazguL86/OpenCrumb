@@ -21,7 +21,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavType
@@ -46,14 +50,14 @@ import com.opencrumb.app.ui.theme.OpenCrumbTheme
 // 1. Define Navigation Routes
 sealed class Screen(
     val route: String,
-    val label: String,
+    val labelResId: Int,
     val icon: ImageVector,
 ) {
-    object Recipes : Screen("recipes", "Recipes", Icons.AutoMirrored.Filled.MenuBook)
+    object Recipes : Screen("recipes", R.string.nav_recipes, Icons.AutoMirrored.Filled.MenuBook)
 
-    object Calculator : Screen("calculator", "Calculator", Icons.Default.Calculate)
+    object Calculator : Screen("calculator", R.string.nav_calculator, Icons.Default.Calculate)
 
-    object Guides : Screen("guides", "Guides", Icons.Default.MenuBook)
+    object Guides : Screen("guides", R.string.nav_guides, Icons.Default.MenuBook)
 }
 
 val items =
@@ -199,9 +203,30 @@ fun AppBottomBar(
         items.forEach { screen ->
             NavigationBarItem(
                 icon = { Icon(screen.icon, contentDescription = null) },
-                label = { Text(screen.label) },
+                label = { Text(stringResource(screen.labelResId)) },
                 selected = currentDestination?.hierarchy?.any { it.route == screen.route } == true,
                 onClick = { onNavigate(screen) },
+            )
+        }
+    }
+}
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun MainActivityPreview() {
+    OpenCrumbTheme {
+        val navController = rememberNavController()
+        Scaffold(
+            bottomBar = {
+                AppBottomBar(
+                    navController = navController,
+                    onNavigate = { }
+                )
+            }
+        ) { innerPadding ->
+            Text(
+                text = "Recipe List Screen",
+                modifier = Modifier.padding(innerPadding)
             )
         }
     }
