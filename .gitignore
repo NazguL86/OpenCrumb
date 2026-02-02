@@ -8,6 +8,8 @@
 # Build output
 /build
 /captures
+shared/build
+.kotlin
 
 # Generated files
 .externalNativeBuild/
