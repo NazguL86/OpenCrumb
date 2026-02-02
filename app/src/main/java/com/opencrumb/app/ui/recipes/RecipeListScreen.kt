@@ -1,19 +1,21 @@
 package com.opencrumb.app.ui.recipes
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.pager.HorizontalPager
-import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -21,15 +23,13 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SegmentedButton
 import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
-import androidx.compose.material3.Tab
-import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
@@ -43,7 +43,6 @@ import com.opencrumb.app.data.model.Recipe
 import com.opencrumb.app.data.model.RecipeCategory
 import com.opencrumb.app.data.model.RecipeType
 import com.opencrumb.app.ui.theme.OpenCrumbTheme
-import kotlinx.coroutines.launch
 import java.util.Locale
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -54,34 +53,82 @@ fun RecipeListScreen(
     modifier: Modifier = Modifier,
 ) {
     val categories = uiState.recipesByCategory.keys.sortedBy { it.ordinal }
-    val pagerState = rememberPagerState(pageCount = { categories.size })
-    val coroutineScope = rememberCoroutineScope()
+    var selectedCategory by remember(categories) { 
+        mutableStateOf(categories.firstOrNull()) 
+    }
 
     Column(modifier = modifier.fillMaxSize()) {
-        if (categories.isNotEmpty()) {
-            TabRow(selectedTabIndex = pagerState.currentPage) {
-                categories.forEachIndexed { index, category ->
-                    Tab(
-                        selected = pagerState.currentPage == index,
-                        onClick = {
-                            coroutineScope.launch {
-                                pagerState.animateScrollToPage(index)
-                            }
-                        },
-                        text = { Text(category.name.lowercase().replaceFirstChar { it.titlecase(Locale.getDefault()) }) }
+        // Horizontal scrollable filter
+        LazyRow(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 4.dp),
+            horizontalArrangement = Arrangement.spacedBy(16.dp),
+            contentPadding = PaddingValues(horizontal = 16.dp)
+        ) {
+            items(categories) { category ->
+                val context = LocalContext.current
+                val iconRes = remember(category) {
+                    val iconName = when (category) {
+                        RecipeCategory.PIZZA -> "pizza_icon_top_bar"
+                        RecipeCategory.FOCACCIA -> "focaccia_icon_top_bar"
+                        RecipeCategory.BREAD -> "bread_icon_top_bar"
+                    }
+                    context.resources.getIdentifier(iconName, "drawable", context.packageName)
+                }
+                
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier.clickable { selectedCategory = category }
+                ) {
+                    Card(
+                        modifier = Modifier.size(64.dp),
+                        shape = RoundedCornerShape(32.dp),
+                        border = if (selectedCategory == category) {
+                            BorderStroke(2.dp, MaterialTheme.colorScheme.primary)
+                        } else null
+                    ) {
+                        if (iconRes != 0) {
+                            Image(
+                                painter = painterResource(id = iconRes),
+                                contentDescription = category.name,
+                                modifier = Modifier.fillMaxSize(),
+                                contentScale = ContentScale.Crop
+                            )
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(
+                        text = category.name.lowercase().replaceFirstChar { it.titlecase(Locale.getDefault()) },
+                        style = MaterialTheme.typography.bodySmall,
+                        color = if (selectedCategory == category) {
+                            MaterialTheme.colorScheme.primary
+                        } else {
+                            MaterialTheme.colorScheme.onSurface
+                        }
                     )
                 }
             }
+        }
 
-            HorizontalPager(
-                state = pagerState,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .weight(1f),
-            ) { page ->
-                val category = categories[page]
-                val recipesByType = uiState.recipesByCategory[category] ?: emptyMap()
+        // Show recipes for selected category
+        selectedCategory?.let { category ->
+            val recipesByType = uiState.recipesByCategory[category] ?: emptyMap()
+            
+            if (category == RecipeCategory.PIZZA || category == RecipeCategory.FOCACCIA) {
                 RecipeCategoryPage(recipesByType = recipesByType, onRecipeClick = onRecipeClick)
+            } else {
+                // For BREAD, just show all recipes in a list
+                val allRecipes = recipesByType.values.flatten()
+                LazyColumn(
+                    modifier = Modifier.fillMaxSize(),
+                    contentPadding = PaddingValues(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(16.dp)
+                ) {
+                    items(allRecipes) { recipe ->
+                        RecipeCard(recipe = recipe, onClick = { onRecipeClick(recipe.id) })
+                    }
+                }
             }
         }
     }
@@ -106,11 +153,11 @@ fun RecipeCategoryPage(
 
     Column(modifier = modifier.fillMaxSize()) {
         if (recipeTypes.size > 1) {
-            SegmentedButton(
+            TypeSelector(
                 options = recipeTypes,
                 selectedOption = selectedType,
                 onOptionSelected = { selectedType = it },
-                modifier = Modifier.padding(16.dp)
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp)
             )
         }
         
@@ -121,7 +168,7 @@ fun RecipeCategoryPage(
         ) {
             items(recipes) { recipe ->
                 if (selectedType == RecipeType.DOUGH) {
-                    RecipeListItem(
+                    RecipeCard(
                         recipe = recipe,
                         onClick = { onRecipeClick(recipe.id) },
                         modifier = Modifier.padding(horizontal = 16.dp)
@@ -140,7 +187,7 @@ fun RecipeCategoryPage(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun SegmentedButton(
+fun TypeSelector(
     options: List<RecipeType>,
     selectedOption: RecipeType,
     onOptionSelected: (RecipeType) -> Unit,
@@ -159,9 +206,8 @@ fun SegmentedButton(
     }
 }
 
-
 @Composable
-fun RecipeListItem(
+fun RecipeCard(
     recipe: Recipe,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
