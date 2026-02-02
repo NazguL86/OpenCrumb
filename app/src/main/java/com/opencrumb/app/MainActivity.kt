@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.Calculate
+import androidx.compose.material.icons.filled.MenuBook
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -32,26 +33,43 @@ import androidx.navigation.navArgument
 import com.opencrumb.app.data.model.Recipe
 import com.opencrumb.app.data.model.RecipeType
 import com.opencrumb.app.ui.calculator.CalculatorScreen
-import com.opencrumb.app.ui.recipedetail.RecipeDetailScreen
-import com.opencrumb.app.ui.recipelist.RecipeListScreen
-import com.opencrumb.app.ui.recipelist.RecipeListViewModel
-import com.opencrumb.app.ui.recipelist.RecipeListViewModelFactory
+import com.opencrumb.app.ui.guides.GuideDetailScreen
+import com.opencrumb.app.ui.guides.GuideListScreen
+import com.opencrumb.app.ui.guides.GuideListViewModel
+import com.opencrumb.app.ui.guides.GuideListViewModelFactory
+import com.opencrumb.app.ui.recipes.RecipeDetailScreen
+import com.opencrumb.app.ui.recipes.RecipeListScreen
+import com.opencrumb.app.ui.recipes.RecipeListViewModel
+import com.opencrumb.app.ui.recipes.RecipeListViewModelFactory
 import com.opencrumb.app.ui.theme.OpenCrumbTheme
 
 // 1. Define Navigation Routes
-sealed class Screen(val route: String, val label: String, val icon: ImageVector) {
+sealed class Screen(
+    val route: String,
+    val label: String,
+    val icon: ImageVector,
+) {
     object Recipes : Screen("recipes", "Recipes", Icons.AutoMirrored.Filled.MenuBook)
+
     object Calculator : Screen("calculator", "Calculator", Icons.Default.Calculate)
+
+    object Guides : Screen("guides", "Guides", Icons.Default.MenuBook)
 }
 
-val items = listOf(
-    Screen.Recipes,
-    Screen.Calculator,
-)
+val items =
+    listOf(
+        Screen.Recipes,
+        Screen.Calculator,
+        Screen.Guides,
+    )
 
 class MainActivity : ComponentActivity() {
-    private val viewModel: RecipeListViewModel by viewModels {
+    private val recipeViewModel: RecipeListViewModel by viewModels {
         RecipeListViewModelFactory((application as OpenCrumbApplication).repository)
+    }
+    
+    private val guideViewModel: GuideListViewModel by viewModels {
+        GuideListViewModelFactory(applicationContext)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -80,31 +98,34 @@ class MainActivity : ComponentActivity() {
                                     // Restore state when reselecting a previously selected item
                                     restoreState = true
                                 }
-                            })
-                    }
+                            },
+                        )
+                    },
                 ) { innerPadding ->
-                    val uiState by viewModel.uiState.collectAsState()
+                    val recipeUiState by recipeViewModel.uiState.collectAsState()
+                    val guideUiState by guideViewModel.uiState.collectAsState()
 
                     // Memoize the flattened list of recipes to avoid recalculating on every recomposition
-                    val allRecipes: List<Recipe> = remember(uiState) {
-                        uiState.recipesByCategory.values
-                            .flatMap { it.values }
-                            .flatten()
-                    }
+                    val allRecipes: List<Recipe> =
+                        remember(recipeUiState) {
+                            recipeUiState.recipesByCategory.values
+                                .flatMap { it.values }
+                                .flatten()
+                        }
 
                     NavHost(
                         navController = navController,
                         startDestination = Screen.Recipes.route, // Start at the recipes screen
-                        modifier = Modifier.padding(bottom = innerPadding.calculateBottomPadding())
+                        modifier = Modifier.padding(bottom = innerPadding.calculateBottomPadding()),
                     ) {
                         // Recipes List Screen
                         composable(Screen.Recipes.route) {
                             RecipeListScreen(
-                                uiState = uiState,
+                                uiState = recipeUiState,
                                 onRecipeClick = { recipeId ->
                                     navController.navigate("recipe_detail/$recipeId")
                                 },
-                                modifier = Modifier.padding(top = innerPadding.calculateTopPadding())
+                                modifier = Modifier.padding(top = innerPadding.calculateTopPadding()),
                             )
                         }
 
@@ -117,14 +138,15 @@ class MainActivity : ComponentActivity() {
                             // Find the recipe from the memoized list
                             val recipe = allRecipes.find { it.id == recipeId }
                             if (recipe != null) {
-                                val toppingSuggestions = remember(uiState, recipe) {
-                                    uiState.recipesByCategory[recipe.category]?.get(RecipeType.TOPPING) ?: emptyList()
-                                }
+                                val toppingSuggestions =
+                                    remember(recipeUiState, recipe) {
+                                        recipeUiState.recipesByCategory[recipe.category]?.get(RecipeType.TOPPING) ?: emptyList()
+                                    }
                                 RecipeDetailScreen(
                                     recipe = recipe,
                                     onBack = { navController.popBackStack() },
                                     toppingSuggestions = toppingSuggestions,
-                                    bottomContentPadding = innerPadding.calculateBottomPadding()
+                                    bottomContentPadding = innerPadding.calculateBottomPadding(),
                                 )
                             }
                         }
@@ -132,6 +154,31 @@ class MainActivity : ComponentActivity() {
                         // Calculator Screen
                         composable(Screen.Calculator.route) {
                             CalculatorScreen(modifier = Modifier.padding(top = innerPadding.calculateTopPadding()))
+                        }
+
+                        // Guides Screen
+                        composable(Screen.Guides.route) {
+                            GuideListScreen(
+                                uiState = guideUiState,
+                                onNavigateToGuide = { guideId ->
+                                    navController.navigate("guide_detail/$guideId")
+                                },
+                                modifier = Modifier.padding(top = innerPadding.calculateTopPadding())
+                            )
+                        }
+
+                        // Guide Detail Screen
+                        composable(
+                            route = "guide_detail/{guideId}",
+                            arguments = listOf(navArgument("guideId") { type = NavType.IntType })
+                        ) { backStackEntry ->
+                            val guideId = backStackEntry.arguments?.getInt("guideId")
+                            if (guideId != null) {
+                                GuideDetailScreen(
+                                    guideId = guideId,
+                                    onBack = { navController.popBackStack() }
+                                )
+                            }
                         }
                     }
                 }
@@ -143,7 +190,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun AppBottomBar(
     navController: NavController,
-    onNavigate: (Screen) -> Unit
+    onNavigate: (Screen) -> Unit,
 ) {
     NavigationBar {
         val navBackStackEntry by navController.currentBackStackEntryAsState()

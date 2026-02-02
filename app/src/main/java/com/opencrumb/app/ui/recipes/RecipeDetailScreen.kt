@@ -1,4 +1,4 @@
-package com.opencrumb.app.ui.recipedetail
+package com.opencrumb.app.ui.recipes
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
