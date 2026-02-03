@@ -20,4 +20,6 @@ shared/build
 *.keystore
 
  # VS Code
- .vscode/
+ .vscode/iosApp/Resources/
+iosApp/OpenCrumb/compose-resources/
+*.xcuserstate

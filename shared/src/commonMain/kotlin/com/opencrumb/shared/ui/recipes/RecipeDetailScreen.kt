@@ -105,9 +105,13 @@ fun RecipeDetailScreen(
                         adjustedAmount.toInt().toString()
                     } else {
                         val rounded = (adjustedAmount * 10).toInt() / 10.0
-                        val int = rounded.toInt()
-                        val dec = ((rounded - int) * 10).toInt()
-                        "$int.$dec"
+                        if (rounded % 1.0 == 0.0) {
+                            rounded.toInt().toString()
+                        } else {
+                            val int = rounded.toInt()
+                            val dec = ((rounded - int) * 10).toInt()
+                            "$int.$dec"
+                        }
                     }
                     Text(
                         text = "• $formattedAmount ${ingredient.unit} ${ingredient.name}",

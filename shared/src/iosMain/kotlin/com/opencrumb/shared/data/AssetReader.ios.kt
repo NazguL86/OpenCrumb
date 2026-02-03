@@ -8,8 +8,12 @@ import platform.Foundation.stringWithContentsOfFile
 
 @OptIn(ExperimentalForeignApi::class)
 actual fun readAssetFile(fileName: String): String {
-    val filePath = NSBundle.mainBundle.pathForResource(fileName.substringBeforeLast("."), fileName.substringAfterLast("."))
-    return filePath?.let {
-        NSString.stringWithContentsOfFile(it, NSUTF8StringEncoding, null) as String
-    } ?: ""
+    val bundlePath = NSBundle.mainBundle.bundlePath
+    val filePath = "$bundlePath/$fileName"
+    
+    return try {
+        NSString.stringWithContentsOfFile(filePath, NSUTF8StringEncoding, null) as String
+    } catch (e: Exception) {
+        ""
+    }
 }

@@ -1,68 +1,58 @@
-# iOS App Setup Instructions
+# iOS App
 
-## Framework Location
-The iOS framework has been built and is located at:
-```
-../shared/build/bin/iosSimulatorArm64/debugFramework/shared.framework
-```
+Xcode project for OpenCrumb iOS app using Kotlin Multiplatform shared code.
 
-## Manual Setup in Xcode
+## Running the App
 
-### 1. Create New iOS App Project
-1. Open Xcode
-2. File → New → Project
-3. Choose "iOS" → "App"
-4. Product Name: `iosApp`
-5. Interface: SwiftUI
-6. Language: Swift
-7. Save in: `/Users/ceratia/AndroidStudioProjects/OpenCrumb/iosApp`
+1. **Open the project:**
+   ```bash
+   open iosApp/OpenCrumb/OpenCrumb.xcodeproj
+   ```
 
-### 2. Add Framework
-1. In Xcode, select the project in the navigator
-2. Select the `iosApp` target
-3. Go to "General" tab
-4. Scroll to "Frameworks, Libraries, and Embedded Content"
-5. Click "+" button
-6. Click "Add Other..." → "Add Files..."
-7. Navigate to: `../shared/build/bin/iosSimulatorArm64/debugFramework/`
-8. Select `shared.framework`
-9. Make sure "Embed & Sign" is selected
+2. **Run in Xcode:**
+   - Select iPhone simulator
+   - Product → Run (⌘R)
 
-### 3. Add Framework Search Path
-1. Go to "Build Settings" tab
-2. Search for "Framework Search Paths"
-3. Add: `$(PROJECT_DIR)/../shared/build/bin/iosSimulatorArm64/debugFramework`
+## After Clean Builds
 
-### 4. Replace App Files
-Replace the generated files with the ones in `iosApp/iosApp/`:
-- `iOSApp.swift` - App entry point
-- `ContentView.swift` - Main view with Compose integration
-
-### 5. Run
-1. Select iPhone simulator (must be arm64, like iPhone 15)
-2. Click Run (⌘R)
-
-## Rebuild Framework
-If you make changes to the shared module:
+If you do a clean build (⇧⌘K) or the resources are missing, run:
 ```bash
-cd /Users/ceratia/AndroidStudioProjects/OpenCrumb
+./iosApp/copy-resources.sh
+```
+
+This copies Compose Resources (images) and JSON files to the app bundle.
+
+## Rebuilding the Framework
+
+After changing shared Kotlin code:
+```bash
 ./gradlew :shared:linkDebugFrameworkIosSimulatorArm64
 ```
 
-## What Works
-✅ All recipes with images
-✅ Recipe details with portions control
-✅ All guides with inline images
-✅ Guide details with step-by-step photos
-✅ Calculator (Neapolitan & Focaccia)
-✅ Bottom navigation
-✅ External URL handling (Amazon link)
-✅ All 68 images via Compose Resources
-✅ 6 language translations
+Then clean and rebuild in Xcode (⇧⌘K, ⌘R).
 
-## Architecture
-- **shared module**: 100% Kotlin Multiplatform with Compose Multiplatform UI
-- **Android app**: Thin wrapper using Navigation Compose
-- **iOS app**: Thin wrapper using SwiftUI + ComposeUIViewController
-- **Business logic**: Fully shared (RecipeRepository, ViewModels)
-- **UI**: Fully shared (all screens in commonMain)
+## Project Structure
+
+```
+iosApp/
+├── OpenCrumb/
+│   ├── OpenCrumb.xcodeproj/     ← Xcode project
+│   └── OpenCrumb/               ← Swift source files
+│       ├── iOSApp.swift         ← App entry point
+│       ├── ContentView.swift    ← Compose wrapper
+│       ├── Info.plist
+│       └── Assets.xcassets/
+├── iOSApp.swift                 ← Template (not used)
+├── ContentView.swift            ← Template (not used)
+├── build-ios.sh                 ← Framework build script
+└── copy-resources.sh            ← Resource copy script
+```
+
+## Troubleshooting
+
+**App crashes with MissingResourceException:**
+Run `./iosApp/copy-resources.sh` and relaunch the app without rebuilding.
+
+**Framework not found:**
+Check Build Settings → Framework Search Paths should be:
+`$(PROJECT_DIR)/../../shared/build/bin/iosSimulatorArm64/debugFramework`

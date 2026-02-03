@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "2600"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "bash&#10;FRAMEWORK_DIR=&quot;${PROJECT_DIR}/../../shared/build/bin/iosSimulatorArm64/debugFramework&quot;&#10;APP_BUNDLE=&quot;${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app&quot;&#10;&#10;# Copy compose-resources&#10;if [ -d &quot;${FRAMEWORK_DIR}/compose-resources&quot; ]; then&#10;    rm -rf &quot;${APP_BUNDLE}/compose-resources&quot;&#10;    mkdir -p &quot;${APP_BUNDLE}/compose-resources/composeResources&quot;&#10;    cp -R &quot;${FRAMEWORK_DIR}/compose-resources/&quot;* &quot;${APP_BUNDLE}/compose-resources/composeResources/&quot;&#10;    echo &quot;&#x2713; Copied compose-resources&quot;&#10;fi&#10;&#10;# Copy JSON files&#10;cp &quot;${PROJECT_DIR}/../../shared/src/commonMain/resources/&quot;*.json &quot;${APP_BUNDLE}/&quot;&#10;echo &quot;&#x2713; Copied JSON files&quot;&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E720CFAC2F31B1FD0068FD9D"
+               BuildableName = "OpenCrumb.app"
+               BlueprintName = "OpenCrumb"
+               ReferencedContainer = "container:OpenCrumb.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E720CFAC2F31B1FD0068FD9D"
+            BuildableName = "OpenCrumb.app"
+            BlueprintName = "OpenCrumb"
+            ReferencedContainer = "container:OpenCrumb.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E720CFAC2F31B1FD0068FD9D"
+            BuildableName = "OpenCrumb.app"
+            BlueprintName = "OpenCrumb"
+            ReferencedContainer = "container:OpenCrumb.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E720D0122F31B2630068FD9D /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E720D0102F31B2420068FD9D /* shared.framework */; };
+		E720D0132F31B2630068FD9D /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E720D0102F31B2420068FD9D /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E720D0142F31B2630068FD9D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E720D0132F31B2630068FD9D /* shared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E720CFAD2F31B1FD0068FD9D /* OpenCrumb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCrumb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E720CFBC2F31B2420068FD9D /* baguette_direct.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = baguette_direct.webp; sourceTree = "<group>"; };
+		E720CFBD2F31B2420068FD9D /* baguette_poolish.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = baguette_poolish.webp; sourceTree = "<group>"; };
+		E720CFBE2F31B2420068FD9D /* baguette_shaping1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = baguette_shaping1.webp; sourceTree = "<group>"; };
+		E720CFBF2F31B2420068FD9D /* baguette_shaping2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = baguette_shaping2.webp; sourceTree = "<group>"; };
+		E720CFC02F31B2420068FD9D /* baguette_shaping3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = baguette_shaping3.webp; sourceTree = "<group>"; };
+		E720CFC12F31B2420068FD9D /* baguette_shaping4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = baguette_shaping4.webp; sourceTree = "<group>"; };
+		E720CFC22F31B2420068FD9D /* baguette_shaping5.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = baguette_shaping5.webp; sourceTree = "<group>"; };
+		E720CFC32F31B2420068FD9D /* baguette_shaping6.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = baguette_shaping6.webp; sourceTree = "<group>"; };
+		E720CFC42F31B2420068FD9D /* bread_icon_top_bar.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = bread_icon_top_bar.webp; sourceTree = "<group>"; };
+		E720CFC52F31B2420068FD9D /* ciabatta_biga.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = ciabatta_biga.webp; sourceTree = "<group>"; };
+		E720CFC62F31B2420068FD9D /* ciabatta_poolish.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = ciabatta_poolish.webp; sourceTree = "<group>"; };
+		E720CFC72F31B2420068FD9D /* focaccia_cherry_tomatoes.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = focaccia_cherry_tomatoes.webp; sourceTree = "<group>"; };
+		E720CFC82F31B2420068FD9D /* focaccia_direct.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = focaccia_direct.webp; sourceTree = "<group>"; };
+		E720CFC92F31B2420068FD9D /* focaccia_genovese.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = focaccia_genovese.webp; sourceTree = "<group>"; };
+		E720CFCA2F31B2420068FD9D /* focaccia_green_olives.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = focaccia_green_olives.webp; sourceTree = "<group>"; };
+		E720CFCB2F31B2420068FD9D /* focaccia_icon_top_bar.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = focaccia_icon_top_bar.webp; sourceTree = "<group>"; };
+		E720CFCC2F31B2420068FD9D /* focaccia_pizza.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = focaccia_pizza.webp; sourceTree = "<group>"; };
+		E720CFCD2F31B2420068FD9D /* focaccia_poolish1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = focaccia_poolish1.webp; sourceTree = "<group>"; };
+		E720CFCE2F31B2420068FD9D /* focaccia_poolish2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = focaccia_poolish2.webp; sourceTree = "<group>"; };
+		E720CFCF2F31B2420068FD9D /* focaccia_rosemary_olives.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = focaccia_rosemary_olives.webp; sourceTree = "<group>"; };
+		E720CFD02F31B2420068FD9D /* guide_biga.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide_biga.webp; sourceTree = "<group>"; };
+		E720CFD12F31B2420068FD9D /* guide_fermentation.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide_fermentation.webp; sourceTree = "<group>"; };
+		E720CFD22F31B2420068FD9D /* guide_kneading.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide_kneading.webp; sourceTree = "<group>"; };
+		E720CFD32F31B2420068FD9D /* guide_open_crumb.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide_open_crumb.webp; sourceTree = "<group>"; };
+		E720CFD42F31B2420068FD9D /* guide_poolish.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide_poolish.webp; sourceTree = "<group>"; };
+		E720CFD52F31B2420068FD9D /* guide_shaping.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide_shaping.webp; sourceTree = "<group>"; };
+		E720CFD62F31B2420068FD9D /* guide_stretch_fold.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide_stretch_fold.webp; sourceTree = "<group>"; };
+		E720CFD72F31B2420068FD9D /* mix_ingredients1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = mix_ingredients1.webp; sourceTree = "<group>"; };
+		E720CFD82F31B2420068FD9D /* mix_ingredients2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = mix_ingredients2.webp; sourceTree = "<group>"; };
+		E720CFD92F31B2420068FD9D /* mix_ingredients3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = mix_ingredients3.webp; sourceTree = "<group>"; };
+		E720CFDA2F31B2420068FD9D /* mix_ingredients4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = mix_ingredients4.webp; sourceTree = "<group>"; };
+		E720CFDB2F31B2420068FD9D /* open_crumb_book.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = open_crumb_book.webp; sourceTree = "<group>"; };
+		E720CFDC2F31B2420068FD9D /* open_crumb_logo.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = open_crumb_logo.webp; sourceTree = "<group>"; };
+		E720CFDD2F31B2420068FD9D /* pizza_8_hours.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_8_hours.webp; sourceTree = "<group>"; };
+		E720CFDE2F31B2420068FD9D /* pizza_broccoli_mushrooms.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_broccoli_mushrooms.webp; sourceTree = "<group>"; };
+		E720CFDF2F31B2420068FD9D /* pizza_extended_fermentation.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_extended_fermentation.webp; sourceTree = "<group>"; };
+		E720CFE02F31B2420068FD9D /* pizza_icon_top_bar.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_icon_top_bar.webp; sourceTree = "<group>"; };
+		E720CFE12F31B2420068FD9D /* pizza_margherita.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_margherita.webp; sourceTree = "<group>"; };
+		E720CFE22F31B2420068FD9D /* pizza_margherita_buffalo.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_margherita_buffalo.webp; sourceTree = "<group>"; };
+		E720CFE32F31B2420068FD9D /* pizza_marinara.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_marinara.webp; sourceTree = "<group>"; };
+		E720CFE42F31B2420068FD9D /* pizza_mortadella_pistacchio.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_mortadella_pistacchio.webp; sourceTree = "<group>"; };
+		E720CFE52F31B2420068FD9D /* pizza_prosciutto_cotto.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_prosciutto_cotto.webp; sourceTree = "<group>"; };
+		E720CFE62F31B2420068FD9D /* pizza_prosciutto_crudo.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_prosciutto_crudo.webp; sourceTree = "<group>"; };
+		E720CFE72F31B2420068FD9D /* pizza_prosciutto_crudo_mushrooms.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_prosciutto_crudo_mushrooms.webp; sourceTree = "<group>"; };
+		E720CFE82F31B2420068FD9D /* pizza_same_day.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_same_day.webp; sourceTree = "<group>"; };
+		E720CFE92F31B2420068FD9D /* pizza_with_poolish.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_with_poolish.webp; sourceTree = "<group>"; };
+		E720CFEA2F31B2420068FD9D /* pizza_zucchini_speck.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza_zucchini_speck.webp; sourceTree = "<group>"; };
+		E720CFEB2F31B2420068FD9D /* quick_kneading1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = quick_kneading1.webp; sourceTree = "<group>"; };
+		E720CFEC2F31B2420068FD9D /* quick_kneading2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = quick_kneading2.webp; sourceTree = "<group>"; };
+		E720CFED2F31B2420068FD9D /* quick_kneading3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = quick_kneading3.webp; sourceTree = "<group>"; };
+		E720CFEE2F31B2420068FD9D /* quick_kneading4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = quick_kneading4.webp; sourceTree = "<group>"; };
+		E720CFEF2F31B2420068FD9D /* round_loaf_shaping1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = round_loaf_shaping1.webp; sourceTree = "<group>"; };
+		E720CFF02F31B2420068FD9D /* round_loaf_shaping2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = round_loaf_shaping2.webp; sourceTree = "<group>"; };
+		E720CFF12F31B2420068FD9D /* round_loaf_shaping3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = round_loaf_shaping3.webp; sourceTree = "<group>"; };
+		E720CFF22F31B2420068FD9D /* round_loaf_shaping4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = round_loaf_shaping4.webp; sourceTree = "<group>"; };
+		E720CFF32F31B2420068FD9D /* round_loaf_shaping5.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = round_loaf_shaping5.webp; sourceTree = "<group>"; };
+		E720CFF42F31B2420068FD9D /* round_loaf_shaping6.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = round_loaf_shaping6.webp; sourceTree = "<group>"; };
+		E720CFF52F31B2420068FD9D /* stretch_fold1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = stretch_fold1.webp; sourceTree = "<group>"; };
+		E720CFF62F31B2420068FD9D /* stretch_fold2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = stretch_fold2.webp; sourceTree = "<group>"; };
+		E720CFF72F31B2420068FD9D /* stretch_fold3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = stretch_fold3.webp; sourceTree = "<group>"; };
+		E720CFF82F31B2420068FD9D /* stretch_fold4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = stretch_fold4.webp; sourceTree = "<group>"; };
+		E720CFF92F31B2420068FD9D /* stretch_fold5.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = stretch_fold5.webp; sourceTree = "<group>"; };
+		E720CFFA2F31B2420068FD9D /* stretch_fold6.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = stretch_fold6.webp; sourceTree = "<group>"; };
+		E720CFFB2F31B2420068FD9D /* stretch_fold7.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = stretch_fold7.webp; sourceTree = "<group>"; };
+		E720CFFC2F31B2420068FD9D /* stretch_fold8.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = stretch_fold8.webp; sourceTree = "<group>"; };
+		E720CFFD2F31B2420068FD9D /* stretch_fold9.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = stretch_fold9.webp; sourceTree = "<group>"; };
+		E720CFFE2F31B2420068FD9D /* tomato_sauce.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = tomato_sauce.webp; sourceTree = "<group>"; };
+		E720CFFF2F31B2420068FD9D /* white_bread.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = white_bread.webp; sourceTree = "<group>"; };
+		E720D0022F31B2420068FD9D /* strings.commonMain.cvr */ = {isa = PBXFileReference; lastKnownFileType = text; path = strings.commonMain.cvr; sourceTree = "<group>"; };
+		E720D0042F31B2420068FD9D /* strings.commonMain.cvr */ = {isa = PBXFileReference; lastKnownFileType = text; path = strings.commonMain.cvr; sourceTree = "<group>"; };
+		E720D0062F31B2420068FD9D /* strings.commonMain.cvr */ = {isa = PBXFileReference; lastKnownFileType = text; path = strings.commonMain.cvr; sourceTree = "<group>"; };
+		E720D0082F31B2420068FD9D /* strings.commonMain.cvr */ = {isa = PBXFileReference; lastKnownFileType = text; path = strings.commonMain.cvr; sourceTree = "<group>"; };
+		E720D00A2F31B2420068FD9D /* strings.commonMain.cvr */ = {isa = PBXFileReference; lastKnownFileType = text; path = strings.commonMain.cvr; sourceTree = "<group>"; };
+		E720D00C2F31B2420068FD9D /* strings.commonMain.cvr */ = {isa = PBXFileReference; lastKnownFileType = text; path = strings.commonMain.cvr; sourceTree = "<group>"; };
+		E720D0102F31B2420068FD9D /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shared.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E720D01C2F31B4790068FD9D /* Exceptions for "OpenCrumb" folder in "OpenCrumb" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E720CFAC2F31B1FD0068FD9D /* OpenCrumb */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E720CFAF2F31B1FD0068FD9D /* OpenCrumb */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E720D01C2F31B4790068FD9D /* Exceptions for "OpenCrumb" folder in "OpenCrumb" target */,
+			);
+			path = OpenCrumb;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E720CFAA2F31B1FD0068FD9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E720D0122F31B2630068FD9D /* shared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E720CFA42F31B1FC0068FD9D = {
+			isa = PBXGroup;
+			children = (
+				E720CFAF2F31B1FD0068FD9D /* OpenCrumb */,
+				E720CFBB2F31B2420068FD9D /* Frameworks */,
+				E720CFAE2F31B1FD0068FD9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E720CFAE2F31B1FD0068FD9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E720CFAD2F31B1FD0068FD9D /* OpenCrumb.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E720CFBB2F31B2420068FD9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E720D0112F31B2420068FD9D /* debugFramework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E720D0002F31B2420068FD9D /* drawable */ = {
+			isa = PBXGroup;
+			children = (
+				E720CFBC2F31B2420068FD9D /* baguette_direct.webp */,
+				E720CFBD2F31B2420068FD9D /* baguette_poolish.webp */,
+				E720CFBE2F31B2420068FD9D /* baguette_shaping1.webp */,
+				E720CFBF2F31B2420068FD9D /* baguette_shaping2.webp */,
+				E720CFC02F31B2420068FD9D /* baguette_shaping3.webp */,
+				E720CFC12F31B2420068FD9D /* baguette_shaping4.webp */,
+				E720CFC22F31B2420068FD9D /* baguette_shaping5.webp */,
+				E720CFC32F31B2420068FD9D /* baguette_shaping6.webp */,
+				E720CFC42F31B2420068FD9D /* bread_icon_top_bar.webp */,
+				E720CFC52F31B2420068FD9D /* ciabatta_biga.webp */,
+				E720CFC62F31B2420068FD9D /* ciabatta_poolish.webp */,
+				E720CFC72F31B2420068FD9D /* focaccia_cherry_tomatoes.webp */,
+				E720CFC82F31B2420068FD9D /* focaccia_direct.webp */,
+				E720CFC92F31B2420068FD9D /* focaccia_genovese.webp */,
+				E720CFCA2F31B2420068FD9D /* focaccia_green_olives.webp */,
+				E720CFCB2F31B2420068FD9D /* focaccia_icon_top_bar.webp */,
+				E720CFCC2F31B2420068FD9D /* focaccia_pizza.webp */,
+				E720CFCD2F31B2420068FD9D /* focaccia_poolish1.webp */,
+				E720CFCE2F31B2420068FD9D /* focaccia_poolish2.webp */,
+				E720CFCF2F31B2420068FD9D /* focaccia_rosemary_olives.webp */,
+				E720CFD02F31B2420068FD9D /* guide_biga.webp */,
+				E720CFD12F31B2420068FD9D /* guide_fermentation.webp */,
+				E720CFD22F31B2420068FD9D /* guide_kneading.webp */,
+				E720CFD32F31B2420068FD9D /* guide_open_crumb.webp */,
+				E720CFD42F31B2420068FD9D /* guide_poolish.webp */,
+				E720CFD52F31B2420068FD9D /* guide_shaping.webp */,
+				E720CFD62F31B2420068FD9D /* guide_stretch_fold.webp */,
+				E720CFD72F31B2420068FD9D /* mix_ingredients1.webp */,
+				E720CFD82F31B2420068FD9D /* mix_ingredients2.webp */,
+				E720CFD92F31B2420068FD9D /* mix_ingredients3.webp */,
+				E720CFDA2F31B2420068FD9D /* mix_ingredients4.webp */,
+				E720CFDB2F31B2420068FD9D /* open_crumb_book.webp */,
+				E720CFDC2F31B2420068FD9D /* open_crumb_logo.webp */,
+				E720CFDD2F31B2420068FD9D /* pizza_8_hours.webp */,
+				E720CFDE2F31B2420068FD9D /* pizza_broccoli_mushrooms.webp */,
+				E720CFDF2F31B2420068FD9D /* pizza_extended_fermentation.webp */,
+				E720CFE02F31B2420068FD9D /* pizza_icon_top_bar.webp */,
+				E720CFE12F31B2420068FD9D /* pizza_margherita.webp */,
+				E720CFE22F31B2420068FD9D /* pizza_margherita_buffalo.webp */,
+				E720CFE32F31B2420068FD9D /* pizza_marinara.webp */,
+				E720CFE42F31B2420068FD9D /* pizza_mortadella_pistacchio.webp */,
+				E720CFE52F31B2420068FD9D /* pizza_prosciutto_cotto.webp */,
+				E720CFE62F31B2420068FD9D /* pizza_prosciutto_crudo.webp */,
+				E720CFE72F31B2420068FD9D /* pizza_prosciutto_crudo_mushrooms.webp */,
+				E720CFE82F31B2420068FD9D /* pizza_same_day.webp */,
+				E720CFE92F31B2420068FD9D /* pizza_with_poolish.webp */,
+				E720CFEA2F31B2420068FD9D /* pizza_zucchini_speck.webp */,
+				E720CFEB2F31B2420068FD9D /* quick_kneading1.webp */,
+				E720CFEC2F31B2420068FD9D /* quick_kneading2.webp */,
+				E720CFED2F31B2420068FD9D /* quick_kneading3.webp */,
+				E720CFEE2F31B2420068FD9D /* quick_kneading4.webp */,
+				E720CFEF2F31B2420068FD9D /* round_loaf_shaping1.webp */,
+				E720CFF02F31B2420068FD9D /* round_loaf_shaping2.webp */,
+				E720CFF12F31B2420068FD9D /* round_loaf_shaping3.webp */,
+				E720CFF22F31B2420068FD9D /* round_loaf_shaping4.webp */,
+				E720CFF32F31B2420068FD9D /* round_loaf_shaping5.webp */,
+				E720CFF42F31B2420068FD9D /* round_loaf_shaping6.webp */,
+				E720CFF52F31B2420068FD9D /* stretch_fold1.webp */,
+				E720CFF62F31B2420068FD9D /* stretch_fold2.webp */,
+				E720CFF72F31B2420068FD9D /* stretch_fold3.webp */,
+				E720CFF82F31B2420068FD9D /* stretch_fold4.webp */,
+				E720CFF92F31B2420068FD9D /* stretch_fold5.webp */,
+				E720CFFA2F31B2420068FD9D /* stretch_fold6.webp */,
+				E720CFFB2F31B2420068FD9D /* stretch_fold7.webp */,
+				E720CFFC2F31B2420068FD9D /* stretch_fold8.webp */,
+				E720CFFD2F31B2420068FD9D /* stretch_fold9.webp */,
+				E720CFFE2F31B2420068FD9D /* tomato_sauce.webp */,
+				E720CFFF2F31B2420068FD9D /* white_bread.webp */,
+			);
+			path = drawable;
+			sourceTree = "<group>";
+		};
+		E720D0012F31B2420068FD9D /* files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
+		E720D0032F31B2420068FD9D /* values */ = {
+			isa = PBXGroup;
+			children = (
+				E720D0022F31B2420068FD9D /* strings.commonMain.cvr */,
+			);
+			path = values;
+			sourceTree = "<group>";
+		};
+		E720D0052F31B2420068FD9D /* values-de */ = {
+			isa = PBXGroup;
+			children = (
+				E720D0042F31B2420068FD9D /* strings.commonMain.cvr */,
+			);
+			path = "values-de";
+			sourceTree = "<group>";
+		};
+		E720D0072F31B2420068FD9D /* values-es */ = {
+			isa = PBXGroup;
+			children = (
+				E720D0062F31B2420068FD9D /* strings.commonMain.cvr */,
+			);
+			path = "values-es";
+			sourceTree = "<group>";
+		};
+		E720D0092F31B2420068FD9D /* values-fr */ = {
+			isa = PBXGroup;
+			children = (
+				E720D0082F31B2420068FD9D /* strings.commonMain.cvr */,
+			);
+			path = "values-fr";
+			sourceTree = "<group>";
+		};
+		E720D00B2F31B2420068FD9D /* values-it */ = {
+			isa = PBXGroup;
+			children = (
+				E720D00A2F31B2420068FD9D /* strings.commonMain.cvr */,
+			);
+			path = "values-it";
+			sourceTree = "<group>";
+		};
+		E720D00D2F31B2420068FD9D /* values-pt */ = {
+			isa = PBXGroup;
+			children = (
+				E720D00C2F31B2420068FD9D /* strings.commonMain.cvr */,
+			);
+			path = "values-pt";
+			sourceTree = "<group>";
+		};
+		E720D00E2F31B2420068FD9D /* opencrumb.shared.generated.resources */ = {
+			isa = PBXGroup;
+			children = (
+				E720D0002F31B2420068FD9D /* drawable */,
+				E720D0012F31B2420068FD9D /* files */,
+				E720D0032F31B2420068FD9D /* values */,
+				E720D0052F31B2420068FD9D /* values-de */,
+				E720D0072F31B2420068FD9D /* values-es */,
+				E720D0092F31B2420068FD9D /* values-fr */,
+				E720D00B2F31B2420068FD9D /* values-it */,
+				E720D00D2F31B2420068FD9D /* values-pt */,
+			);
+			path = opencrumb.shared.generated.resources;
+			sourceTree = "<group>";
+		};
+		E720D00F2F31B2420068FD9D /* compose-resources */ = {
+			isa = PBXGroup;
+			children = (
+				E720D00E2F31B2420068FD9D /* opencrumb.shared.generated.resources */,
+			);
+			path = "compose-resources";
+			sourceTree = "<group>";
+		};
+		E720D0112F31B2420068FD9D /* debugFramework */ = {
+			isa = PBXGroup;
+			children = (
+				E720D00F2F31B2420068FD9D /* compose-resources */,
+				E720D0102F31B2420068FD9D /* shared.framework */,
+			);
+			name = debugFramework;
+			path = ../../shared/build/bin/iosSimulatorArm64/debugFramework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E720CFAC2F31B1FD0068FD9D /* OpenCrumb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E720CFB82F31B1FD0068FD9D /* Build configuration list for PBXNativeTarget "OpenCrumb" */;
+			buildPhases = (
+				E720CFA92F31B1FD0068FD9D /* Sources */,
+				E720CFAA2F31B1FD0068FD9D /* Frameworks */,
+				E720CFAB2F31B1FD0068FD9D /* Resources */,
+				E720D0142F31B2630068FD9D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E720CFAF2F31B1FD0068FD9D /* OpenCrumb */,
+			);
+			name = OpenCrumb;
+			packageProductDependencies = (
+			);
+			productName = OpenCrumb;
+			productReference = E720CFAD2F31B1FD0068FD9D /* OpenCrumb.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E720CFA52F31B1FC0068FD9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					E720CFAC2F31B1FD0068FD9D = {
+						CreatedOnToolsVersion = 26.0.1;
+						LastSwiftMigration = 2600;
+					};
+				};
+			};
+			buildConfigurationList = E720CFA82F31B1FC0068FD9D /* Build configuration list for PBXProject "OpenCrumb" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E720CFA42F31B1FC0068FD9D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E720CFAE2F31B1FD0068FD9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E720CFAC2F31B1FD0068FD9D /* OpenCrumb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E720CFAB2F31B1FD0068FD9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E720CFA92F31B1FD0068FD9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E720CFB62F31B1FD0068FD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Z4TDQ846JL;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E720CFB72F31B1FD0068FD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Z4TDQ846JL;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E720CFB92F31B1FD0068FD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4TDQ846JL;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../shared/build/bin/iosSimulatorArm64/debugFramework";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenCrumb/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opencrumb.OpenCrumb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E720CFBA2F31B1FD0068FD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4TDQ846JL;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../shared/build/bin/iosSimulatorArm64/debugFramework";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenCrumb/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opencrumb.OpenCrumb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E720CFA82F31B1FC0068FD9D /* Build configuration list for PBXProject "OpenCrumb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E720CFB62F31B1FD0068FD9D /* Debug */,
+				E720CFB72F31B1FD0068FD9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E720CFB82F31B1FD0068FD9D /* Build configuration list for PBXNativeTarget "OpenCrumb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E720CFB92F31B1FD0068FD9D /* Debug */,
+				E720CFBA2F31B1FD0068FD9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E720CFA52F31B1FC0068FD9D /* Project object */;
+}

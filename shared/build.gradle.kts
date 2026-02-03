@@ -25,6 +25,27 @@ kotlin {
         iosTarget.binaries.framework {
             baseName = "shared"
             isStatic = true
+            
+            // Export Compose Resources to framework
+            export(compose.components.resources)
+        }
+        
+        // Copy Compose Resources to framework after linking
+        val linkTaskName = "linkDebugFramework${iosTarget.name.capitalize()}"
+        tasks.named(linkTaskName).configure {
+            doLast {
+                val frameworkDir = outputs.files.singleFile
+                val resourcesDir = file("build/generated/compose/resourceGenerator/assembledResources/${iosTarget.name}Main/composeResources")
+                val targetDir = file("${frameworkDir}/compose-resources")
+                
+                if (resourcesDir.exists()) {
+                    copy {
+                        from(resourcesDir)
+                        into(targetDir)
+                    }
+                    println("Copied Compose Resources to ${targetDir}")
+                }
+            }
         }
     }
 
@@ -34,7 +55,7 @@ kotlin {
             implementation(compose.foundation)
             implementation(compose.material3)
             implementation(compose.ui)
-            implementation(compose.components.resources)
+            api(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
             implementation(libs.kotlinx.serialization.json)
         }

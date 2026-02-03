@@ -1,6 +1,6 @@
 # Open Crumb
 
-"Open Crumb" is a modern, open-source recipe-keeping application for Android, built entirely with Kotlin and Jetpack Compose. The project aims to provide a clean, simple, and delightful user experience for browsing and managing personal recipes.
+"Open Crumb" is a modern, open-source recipe-keeping application for Android and iOS, built with Kotlin Multiplatform and Compose Multiplatform. The project aims to provide a clean, simple, and delightful user experience for browsing and managing personal recipes.
 
 ## Project Scope & Vision
 
@@ -15,13 +15,18 @@ The development is planned in phases:
 
 ## Technology Stack
 
-This project is a practical example of a modern Android application and utilizes the following technologies:
+This project uses Kotlin Multiplatform to share code between Android and iOS:
 
-*   **UI:** 100% Jetpack Compose for a declarative and reactive user interface.
-*   **Architecture:** A single-activity architecture driven by the Navigation Compose library.
-*   **Language:** Kotlin, including features like coroutines for asynchronous operations.
+*   **UI:** 100% Compose Multiplatform for a declarative and reactive user interface.
+*   **Architecture:** Single-activity (Android) / single-window (iOS) architecture with Navigation Compose.
+*   **Language:** Kotlin, including coroutines for asynchronous operations.
 *   **Design:** Following Material Design guidelines to ensure a consistent and intuitive UI.
+*   **Platforms:** Android (native) and iOS (via Kotlin/Native framework).
 
 ## Getting Started
 
-To build and run the app, simply open the project in a recent version of Android Studio and click the "Run" button. The app should compile and run on an emulator or a connected Android device.
+### Android
+Open the project in Android Studio and click "Run". The app will compile and run on an emulator or connected device.
+
+### iOS
+See [iosApp/README.md](iosApp/README.md) for iOS setup instructions.
