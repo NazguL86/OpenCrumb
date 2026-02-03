@@ -84,6 +84,15 @@ fun getDrawableResourceByName(name: String): DrawableResource =
         "round_loaf_shaping4" -> Res.drawable.round_loaf_shaping4
         "round_loaf_shaping5" -> Res.drawable.round_loaf_shaping5
         "round_loaf_shaping6" -> Res.drawable.round_loaf_shaping6
+        "ciabatta_shaping1" -> Res.drawable.ciabatta_shaping1
+        "ciabatta_shaping2" -> Res.drawable.ciabatta_shaping2
+        "ciabatta_shaping3" -> Res.drawable.ciabatta_shaping3
+        "ciabatta_shaping4" -> Res.drawable.ciabatta_shaping4
+        "ciabatta_shaping5" -> Res.drawable.ciabatta_shaping5
+        "ciabatta_shaping6" -> Res.drawable.ciabatta_shaping6
+        "ciabatta_shaping7" -> Res.drawable.ciabatta_shaping7
+        "ciabatta_shaping8" -> Res.drawable.ciabatta_shaping8
+        "ciabatta_shaping9" -> Res.drawable.ciabatta_shaping9
 
         // Category icons
         "pizza_icon_top_bar" -> Res.drawable.pizza_icon_top_bar
