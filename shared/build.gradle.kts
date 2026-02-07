@@ -41,9 +41,8 @@ kotlin {
         tasks.named(linkTaskName).configure {
             doLast {
                 val frameworkDir = outputs.files.singleFile
-                val resourcesDir =
-                    file("build/generated/compose/resourceGenerator/assembledResources/${iosTarget.name}Main/composeResources")
-                val targetDir = file("$frameworkDir/compose-resources")
+                val resourcesDir = file("build/generated/compose/resourceGenerator/preparedResources/commonMain/composeResources")
+                val targetDir = file("${frameworkDir.parent}/compose-resources")
 
                 if (resourcesDir.exists()) {
                     copy {

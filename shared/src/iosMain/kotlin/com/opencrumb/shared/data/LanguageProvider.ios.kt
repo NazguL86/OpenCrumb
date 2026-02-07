@@ -1,12 +1,11 @@
 package com.opencrumb.shared.data
 
 import platform.Foundation.NSLocale
-import platform.Foundation.currentLocale
-import platform.Foundation.languageCode
+import platform.Foundation.preferredLanguages
 
 actual fun getDeviceLanguage(): String {
-    val locale = NSLocale.currentLocale
-    val language = locale.languageCode
+    val preferredLanguage = NSLocale.preferredLanguages.firstOrNull() as? String ?: "en"
+    val language = preferredLanguage.substringBefore("-").substringBefore("_")
     return when (language) {
         "es", "fr", "de", "it", "pt" -> language
         else -> "en"

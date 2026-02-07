@@ -1,6 +1,9 @@
 package com.opencrumb.shared
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.MenuBook
+import androidx.compose.material.icons.filled.Calculate
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -13,6 +16,11 @@ import com.opencrumb.shared.ui.recipes.RecipeDetailScreen
 import com.opencrumb.shared.ui.recipes.RecipeListScreen
 import com.opencrumb.shared.ui.recipes.RecipeListViewModel
 import com.opencrumb.shared.ui.theme.OpenCrumbTheme
+import opencrumb.shared.generated.resources.Res
+import opencrumb.shared.generated.resources.nav_calculator
+import opencrumb.shared.generated.resources.nav_guides
+import opencrumb.shared.generated.resources.nav_recipes
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun App(onExternalUrl: (String) -> Unit = {}) {
@@ -29,20 +37,20 @@ fun App(onExternalUrl: (String) -> Unit = {}) {
             bottomBar = {
                 NavigationBar {
                     NavigationBarItem(
-                        icon = { Text("📖") },
-                        label = { Text("Recipes") },
+                        icon = { Icon(Icons.AutoMirrored.Filled.MenuBook, contentDescription = null) },
+                        label = { Text(stringResource(Res.string.nav_recipes)) },
                         selected = currentScreen is Screen.Recipes || currentScreen is Screen.RecipeDetail,
                         onClick = { currentScreen = Screen.Recipes }
                     )
                     NavigationBarItem(
-                        icon = { Text("🧮") },
-                        label = { Text("Calculator") },
+                        icon = { Icon(Icons.Default.Calculate, contentDescription = null) },
+                        label = { Text(stringResource(Res.string.nav_calculator)) },
                         selected = currentScreen is Screen.Calculator,
                         onClick = { currentScreen = Screen.Calculator }
                     )
                     NavigationBarItem(
-                        icon = { Text("📚") },
-                        label = { Text("Guides") },
+                        icon = { Icon(Icons.AutoMirrored.Filled.MenuBook, contentDescription = null) },
+                        label = { Text(stringResource(Res.string.nav_guides)) },
                         selected = currentScreen is Screen.Guides || currentScreen is Screen.GuideDetail,
                         onClick = { currentScreen = Screen.Guides }
                     )
