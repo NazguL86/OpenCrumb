@@ -19,6 +19,7 @@ import com.opencrumb.shared.data.model.RecipeCategory
 import com.opencrumb.shared.data.model.RecipeType
 import opencrumb.shared.generated.resources.*
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -67,9 +68,9 @@ fun RecipeListScreen(
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
                         text = when (category) {
-                            RecipeCategory.PIZZA -> "Pizza"
-                            RecipeCategory.FOCACCIA -> "Focaccia"
-                            RecipeCategory.BREAD -> "Bread"
+                            RecipeCategory.PIZZA -> stringResource(Res.string.category_pizza)
+                            RecipeCategory.FOCACCIA -> stringResource(Res.string.category_focaccia)
+                            RecipeCategory.BREAD -> stringResource(Res.string.category_bread)
                         },
                         style = MaterialTheme.typography.bodySmall,
                         color = if (selectedCategory == category) {
@@ -98,14 +99,14 @@ fun RecipeListScreen(
                         onClick = { selectedType = RecipeType.DOUGH },
                         shape = SegmentedButtonDefaults.itemShape(0, 2)
                     ) {
-                        Text("Doughs")
+                        Text(stringResource(Res.string.type_doughs))
                     }
                     SegmentedButton(
                         selected = selectedType == RecipeType.TOPPING,
                         onClick = { selectedType = RecipeType.TOPPING },
                         shape = SegmentedButtonDefaults.itemShape(1, 2)
                     ) {
-                        Text("Toppings")
+                        Text(stringResource(Res.string.type_toppings))
                     }
                 }
                 

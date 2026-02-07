@@ -1,0 +1,773 @@
+[
+  {
+    "id": 27,
+    "name": "Focaccia Genovesa",
+    "description": "Focaccia tradicional ligur con superficie característica con hoyuelos, aceite de oliva generoso y sal gruesa. Interior suave y aireado con corteza dorada y crujiente.",
+    "imageRes": "focaccia_genovese",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Harina de Pan y Harina Común", "amount": 550.0, "unit": "g"},
+      {"name": "Malta", "amount": 15.0, "unit": "g"},
+      {"name": "Agua (temperatura ambiente)", "amount": 330.0, "unit": "g"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 25.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (o 15g Levadura Fresca)", "amount": 6.0, "unit": "g"},
+      {"name": "Sal Marina", "amount": 12.0, "unit": "g"},
+      {"name": "Agua (para salamoia)", "amount": 120.0, "unit": "g"},
+      {"name": "Aceite de Oliva Virgen Extra (para salamoia)", "amount": 60.0, "unit": "g"},
+      {"name": "Sal Marina (para salamoia)", "amount": 6.0, "unit": "g"}
+    ],
+    "instructions": [
+      "Disolver la levadura en agua (18-20°C).",
+      "Agregar una pequeña porción de harina y mezclar bien.",
+      "Añadir malta y harina restante, mezclar hasta hidratar toda la harina.",
+      "Agregar sal y aceite, mezclar bien.",
+      "Cubrir y reposar 10 minutos.",
+      "Plegar la masa para dar más estructura y formar una bola.",
+      "Cubrir y reposar 30 minutos.",
+      "Dividir la masa en 2 porciones.",
+      "Hacer algunos pliegues en cada porción para fortalecer.",
+      "Cubrir y reposar otros 30 minutos.",
+      "Usar un rodillo para aplanar ambas porciones, usando harina para evitar que se pegue.",
+      "Engrasar dos bandejas de horno y colocar la masa aplanada en las bandejas.",
+      "Reposar 1 hora 30 minutos. Durante este tiempo, ajustar la masa para que se adapte a las bandejas.",
+      "Preparar salamoia: mezclar 120g de agua con 60g de aceite de oliva y 6g de sal.",
+      "Hacer hoyuelos profundos en la superficie con las yemas de los dedos.",
+      "Rociar salamoia uniformemente sobre ambas bandejas, asegurándose de que el aceite y agua entren en todos los hoyuelos.",
+      "Hornear a 260°C por 20-25 minutos hasta dorar."
+    ],
+    "category": "FOCACCIA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 1,
+    "name": "Pizza del Mismo Día - 8 Horas",
+    "description": "Pizza del mismo día con 8 horas de fermentación. 70% de hidratación para una masa agradable y extensible.",
+    "imageRes": "pizza_8_hours",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Harina de Pan y Harina Común", "amount": 495.0, "unit": "g"},
+      {"name": "Agua (18-20°C)", "amount": 345.0, "unit": "g"},
+      {"name": "Sal Marina", "amount": 12.8, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (o 0.7g Levadura Fresca)", "amount": 0.3, "unit": "g"}
+    ],
+    "instructions": [
+      "Disolver la sal en agua (18-20°C).",
+      "Agregar una pequeña porción de harina, luego la levadura. Mezclar bien.",
+      "Añadir la harina restante y mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Hacer 3 amasados rápidos con 2 reposos de 10 minutos entre cada uno.",
+      "Dejar reposar la masa 75-90 minutos a temperatura ambiente (20-23°C).",
+      "Cortar en bolas de pizza (280-320g cada una) y formar.",
+      "Dejar reposar las bolas unas 6 horas a temperatura ambiente.",
+      "Formar la pizza y hornear a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 2,
+    "name": "Pizza Rápida del Mismo Día",
+    "description": "Pizza rápida del mismo día con 6-7 horas de fermentación. 70% de hidratación con agua tibia para fermentación más rápida.",
+    "imageRes": "pizza_same_day",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Harina de Pan y Harina Común", "amount": 495.0, "unit": "g"},
+      {"name": "Agua Tibia (38°C)", "amount": 345.0, "unit": "g"},
+      {"name": "Sal Marina", "amount": 12.8, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (o 1.2g Levadura Fresca)", "amount": 0.49, "unit": "g"}
+    ],
+    "instructions": [
+      "Disolver la sal en agua tibia (38°C).",
+      "Agregar una pequeña porción de harina, luego la levadura. Mezclar bien.",
+      "Añadir la harina restante y mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Hacer 3 amasados rápidos con 2 reposos de 10 minutos entre cada uno.",
+      "Dejar reposar la masa unos 90 minutos a temperatura ambiente (20-23°C).",
+      "Cortar en bolas de pizza (280g cada una) y formar.",
+      "Dejar reposar las bolas unas 5 horas a temperatura ambiente.",
+      "Formar la pizza y hornear a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 3,
+    "name": "Pizza de Fermentación Extendida",
+    "description": "Pizza de fermentación extendida (24-48 horas). 70% de hidratación con fermentación en frío para máximo sabor y digestibilidad.",
+    "imageRes": "pizza_extended_fermentation",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Harina de Pan y Harina Común", "amount": 495.0, "unit": "g"},
+      {"name": "Agua (18-20°C)", "amount": 345.0, "unit": "g"},
+      {"name": "Sal Marina", "amount": 12.8, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (o 4.5g Levadura Fresca)", "amount": 1.8, "unit": "g"}
+    ],
+    "instructions": [
+      "Disolver la sal en agua (18-20°C).",
+      "Agregar una pequeña porción de harina, luego la levadura. Mezclar bien.",
+      "Añadir la harina restante y mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Hacer 4 amasados rápidos con 3 reposos de 10 minutos entre cada uno.",
+      "Dejar reposar la masa unos 60 minutos a temperatura ambiente (20-23°C).",
+      "Cortar en bolas de pizza (280g cada una) y formar.",
+      "Colocar las bolas en el refrigerador (5°C) por al menos 20-24 horas, hasta 48 horas.",
+      "Sacar del refrigerador 1 hora antes de hornear.",
+      "Formar la pizza y hornear a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 4,
+    "name": "Pizza con Poolish",
+    "description": "Pizza con pre-fermento poolish (12-14 horas). 75% de hidratación con levadura mínima para sabor excepcional y miga abierta.",
+    "imageRes": "pizza_with_poolish",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Harina de Pan (para poolish)", "amount": 247.0, "unit": "g"},
+      {"name": "Agua Tibia 27°C (para poolish)", "amount": 247.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (para poolish, o 0.49g Levadura Fresca)", "amount": 0.20, "unit": "g"},
+      {"name": "Harina de Pan (masa final)", "amount": 247.0, "unit": "g"},
+      {"name": "Agua Tibia 41°C (masa final)", "amount": 99.0, "unit": "g"},
+      {"name": "Sal Marina (masa final)", "amount": 9.9, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (noche anterior): Mezclar agua tibia (27°C) con levadura, agregar harina. Cubrir y reposar 12-14 horas a temperatura ambiente (18-21°C).",
+      "MASA FINAL (día siguiente): Verificar que el poolish esté bien fermentado y triplicado en volumen.",
+      "Mezclar sal con harina. Agregar agua tibia (41°C) al poolish y mezclar para disolver parcialmente el gluten.",
+      "Añadir la mezcla de harina/sal al poolish y mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Hacer 3 amasados rápidos con 2 reposos de 10 minutos. Usar aceite como lubricante (la masa es muy suave y pegajosa).",
+      "Después del último amasado, reposar 20 minutos, luego hacer 2 estiramientos y pliegues con 20 minutos de reposo entre cada uno.",
+      "Dejar reposar la masa a temperatura ambiente unas 6 horas (debe expandirse 2-2.5 veces).",
+      "Cortar en bolas de pizza (280g cada una) y formar.",
+      "Reposar las bolas 30 minutos, luego refrigerar 30 minutos antes de hornear.",
+      "Formar la pizza y hornear a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 5,
+    "name": "Focaccia - Método Directo",
+    "description": "Focaccia clásica con fermentación en frío. 78% de hidratación para una textura suave y aireada con aceite de oliva.",
+    "imageRes": "focaccia_direct",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Harina de Pan y Harina Común", "amount": 450.0, "unit": "g"},
+      {"name": "Agua Fría (13°C)", "amount": 350.0, "unit": "g"},
+      {"name": "Sal Marina", "amount": 9.0, "unit": "g"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 11.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (o 4.0g Levadura Fresca)", "amount": 1.6, "unit": "g"}
+    ],
+    "instructions": [
+      "Mezclar agua fría (13°C) con levadura hasta disolver.",
+      "Agregar harina y mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Añadir sal y aceite de oliva, mezclar bien.",
+      "Hacer 3-4 amasados rápidos con reposos de 10 minutos entre cada uno.",
+      "Dejar reposar la masa 1 hora a temperatura ambiente.",
+      "Transferir a bandeja engrasada y refrigerar 12-24 horas.",
+      "Sacar del refrigerador 2 horas antes de hornear.",
+      "Hacer hoyuelos en la masa, agregar ingredientes y aceite de oliva.",
+      "Hornear a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 6,
+    "name": "Focaccia con Poolish - 1er Método",
+    "description": "Focaccia con pre-fermento poolish (12-14 horas). 70% de hidratación con levadura mínima para sabor mejorado.",
+    "imageRes": "focaccia_poolish1",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Harina de Pan y Harina Común (para poolish)", "amount": 235.0, "unit": "g"},
+      {"name": "Agua Tibia 27°C (para poolish)", "amount": 235.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (para poolish, o 0.5g Levadura Fresca)", "amount": 0.19, "unit": "g"},
+      {"name": "Harina de Pan y Harina Común (masa final)", "amount": 235.0, "unit": "g"},
+      {"name": "Agua Tibia 39-41°C (masa final)", "amount": 95.0, "unit": "g"},
+      {"name": "Sal Marina (masa final)", "amount": 9.4, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (noche anterior): Mezclar agua tibia (27°C) con levadura, agregar harina. Cubrir y reposar 12-14 horas a temperatura ambiente (18-21°C).",
+      "MASA FINAL (día siguiente): Verificar que el poolish esté bien fermentado y triplicado en volumen.",
+      "Agregar agua tibia (39-41°C) al poolish y mezclar para disolver parcialmente el gluten.",
+      "Mezclar sal con harina, luego agregar a la mezcla de poolish. Mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Hacer 3-4 amasados rápidos con reposos de 10 minutos entre cada uno.",
+      "Dejar reposar la masa a temperatura ambiente 4-6 horas (debe expandirse 2-2.5 veces).",
+      "Transferir a bandeja engrasada, hacer hoyuelos en la masa.",
+      "Opcional: refrigerar para mejor sabor, sacar 2 horas antes de hornear.",
+      "Agregar ingredientes y aceite de oliva.",
+      "Hornear a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 7,
+    "name": "Focaccia con Poolish - 2do Método",
+    "description": "Focaccia con poolish fermentado en frío. 74% de hidratación con aceite de oliva en la masa final para sabor rico.",
+    "imageRes": "focaccia_poolish2",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Harina de Pan y Harina Común (para poolish)", "amount": 222.0, "unit": "g"},
+      {"name": "Agua 18-20°C (para poolish)", "amount": 222.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (para poolish, o 3.2g Levadura Fresca)", "amount": 1.3, "unit": "g"},
+      {"name": "Harina de Pan y Harina Común (masa final)", "amount": 222.0, "unit": "g"},
+      {"name": "Agua Tibia 27-30°C (masa final)", "amount": 133.0, "unit": "g"},
+      {"name": "Sal Marina (masa final)", "amount": 7.0, "unit": "g"},
+      {"name": "Aceite de Oliva Virgen Extra (masa final)", "amount": 17.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (masa final, o 3.3g Levadura Fresca)", "amount": 1.3, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (día anterior): Mezclar agua (18-20°C) con levadura, agregar harina. Cubrir y refrigerar 12-24 horas.",
+      "MASA FINAL (día siguiente): Sacar poolish del refrigerador 1 hora antes de usar.",
+      "Agregar agua tibia (27-30°C) al poolish y mezclar para disolver parcialmente el gluten.",
+      "Mezclar sal con harina, luego agregar a la mezcla de poolish con aceite de oliva y levadura. Mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Hacer 3-4 amasados rápidos con reposos de 10 minutos entre cada uno.",
+      "Dejar reposar la masa a temperatura ambiente 3-4 horas.",
+      "Transferir a bandeja engrasada, hacer hoyuelos en la masa.",
+      "Agregar ingredientes y aceite de oliva.",
+      "Hornear a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 8,
+    "name": "Salsa de Tomate Básica",
+    "description": "Salsa de tomate simple para pizza. Licuar brevemente - la salsa debe quedar rugosa, no muy líquida.",
+    "imageRes": "tomato_sauce",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Tomates Pelados Enteros", "amount": 400.0, "unit": "g"},
+      {"name": "Hojas de Orégano Seco", "amount": 1.0, "unit": "pizca"},
+      {"name": "Albahaca Fresca", "amount": 3.0, "unit": "hojas"},
+      {"name": "Sal Marina", "amount": 1.0, "unit": "pizca"},
+      {"name": "Chile en Polvo (opcional)", "amount": 1.0, "unit": "pizca pequeña"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Poner los tomates pelados enlatados en el recipiente de la licuadora.",
+      "Licuar muy brevemente - la salsa debe quedar rugosa y no muy mezclada (podría volverse muy líquida).",
+      "Agregar aceite de oliva virgen extra, una pizca de sal, y orégano seco y/o hojas de albahaca fresca.",
+      "Si te gusta picante, agregar algunas hojuelas de chile.",
+      "No cocinar la salsa por adelantado - se cocinará junto con la pizza cuando se hornee.",
+      "Método tradicional alternativo: aplastar los tomates con las manos en lugar de usar licuadora."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 9,
+    "name": "Pizza Margarita",
+    "description": "Pizza napolitana clásica con salsa de tomate, mozzarella fiordilatte y albahaca fresca.",
+    "imageRes": "pizza_margherita",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Salsa de Tomate Básica", "amount": 70.0, "unit": "g"},
+      {"name": "Mozzarella Fiordilatte", "amount": 90.0, "unit": "g"},
+      {"name": "Albahaca Fresca", "amount": 3.0, "unit": "hojas"},
+      {"name": "Parmesano Rallado", "amount": 5.0, "unit": "g"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Preparar Salsa de Tomate Básica (ver receta).",
+      "Cortar mozzarella fiordilatte en cubos pequeños o tiras en un recipiente y dejar escurrir.",
+      "Tener hojas de albahaca fresca listas para el acabado final.",
+      "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
+      "Extender 60-80g de salsa de tomate desde el centro en movimiento espiral hacia el borde exterior (dejar cornicione).",
+      "Espolvorear un poco de queso parmesano rallado sobre la salsa.",
+      "Agregar trozos de mozzarella fiordilatte (80-100g).",
+      "Rociar pequeña cantidad de aceite de oliva virgen extra sobre la superficie de la pizza y alrededor del borde.",
+      "Transferir a pala de pizza y hornear a 240-250°C por 6-7 minutos.",
+      "Agregar hojas de albahaca fresca después de hornear y servir inmediatamente."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 10,
+    "name": "Pizza Margarita con Mozzarella de Búfala",
+    "description": "Margarita clásica con mozzarella de búfala agregada después del horneado para realzar el sabor.",
+    "imageRes": "pizza_margherita_buffalo",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Salsa de Tomate Básica", "amount": 70.0, "unit": "g"},
+      {"name": "Mozzarella di Bufala", "amount": 90.0, "unit": "g"},
+      {"name": "Albahaca Fresca", "amount": 3.0, "unit": "hojas"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Preparar Salsa de Tomate Básica (ver receta).",
+      "Cortar mozzarella de búfala en cubos pequeños o tiras y dejar escurrir.",
+      "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
+      "Extender 60-80g de salsa de tomate desde el centro en movimiento espiral hacia el borde exterior.",
+      "Rociar aceite de oliva y hornear a 240-250°C por 6-7 minutos.",
+      "Tan pronto como se saque la pizza del horno, extender trozos de mozzarella de búfala (80-100g) encima.",
+      "Agregar hojas de albahaca fresca y servir inmediatamente."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 11,
+    "name": "Pizza Marinera",
+    "description": "Pizza tradicional sin queso - salsa de tomate, anchoas, aceitunas y alcaparras opcionales.",
+    "imageRes": "pizza_marinara",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Salsa de Tomate Básica", "amount": 90.0, "unit": "g"},
+      {"name": "Anchoas en Lata", "amount": 5.5, "unit": "filetes"},
+      {"name": "Aceitunas Negras Pequeñas", "amount": 9.0, "unit": "aceitunas"},
+      {"name": "Alcaparras Pequeñas (opcional)", "amount": 7.0, "unit": "alcaparras"},
+      {"name": "Orégano Seco", "amount": 1.0, "unit": "pizca"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Preparar Salsa de Tomate Básica (ver receta).",
+      "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
+      "Extender 80-100g de salsa de tomate desde el centro en movimiento espiral hacia el borde exterior.",
+      "Agregar 5-6 filetes de anchoa distribuidos por la pizza.",
+      "Añadir 8-10 aceitunas negras pequeñas en patrón regular.",
+      "Si se desea, agregar 6-8 alcaparras pequeñas saladas o en conserva.",
+      "Agregar hojas de orégano seco.",
+      "Rociar aceite de oliva virgen extra alrededor.",
+      "Hornear a 240-250°C por 6-7 minutos."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 12,
+    "name": "Pizza con Jamón Crudo",
+    "description": "Pizza con base de queso y jamón crudo agregado después del horneado para preservar su sabor delicado.",
+    "imageRes": "pizza_prosciutto_crudo",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Stracchino o Mozzarella", "amount": 140.0, "unit": "g"},
+      {"name": "Jamón Crudo", "amount": 4.0, "unit": "lonchas"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Usar queso Stracchino italiano (también llamado Crescenza) si es posible, de lo contrario usar mozzarella fiordilatte.",
+      "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
+      "Extender 130-150g de Stracchino o mozzarella sobre la pizza.",
+      "Rociar aceite de oliva y hornear a 240-250°C por 6-7 minutos.",
+      "Cuando esté horneada, cubrir la pizza con 3-5 lonchas finas de jamón crudo.",
+      "El jamón solo se calentará pero no se cocinará.",
+      "Servir inmediatamente."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 13,
+    "name": "Pizza con Jamón Crudo y Champiñones",
+    "description": "Pizza con queso, champiñones salteados y jamón crudo agregado después del horneado.",
+    "imageRes": "pizza_prosciutto_crudo_mushrooms",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Stracchino o Mozzarella", "amount": 140.0, "unit": "g"},
+      {"name": "Jamón Crudo", "amount": 4.0, "unit": "lonchas"},
+      {"name": "Champiñones", "amount": 110.0, "unit": "g"},
+      {"name": "Ajo", "amount": 1.0, "unit": "diente"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 15.0, "unit": "ml"},
+      {"name": "Hojuelas de Chile (opcional)", "amount": 1.0, "unit": "pizca"},
+      {"name": "Sal", "amount": 1.0, "unit": "pizca"}
+    ],
+    "instructions": [
+      "Limpiar y saltear 100-120g de champiñones en sartén con aceite de oliva, diente de ajo, sal y hojuelas de chile opcionales.",
+      "Cocinar los champiñones hasta que estén listos (o casi listos), luego dejar enfriar.",
+      "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
+      "Extender 130-150g de Stracchino o mozzarella sobre la pizza.",
+      "Agregar champiñones cocidos encima.",
+      "Rociar aceite de oliva y hornear a 240-250°C por 6-7 minutos.",
+      "Cuando esté lista, colocar 3-5 lonchas de jamón crudo encima.",
+      "Servir inmediatamente."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 14,
+    "name": "Pizza con Jamón Cocido y Mozzarella",
+    "description": "Pizza con jamón cocido, mozzarella y aceitunas negras.",
+    "imageRes": "pizza_prosciutto_cotto",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Jamón Cocido", "amount": 4.0, "unit": "lonchas"},
+      {"name": "Mozzarella Fiordilatte", "amount": 110.0, "unit": "g"},
+      {"name": "Aceitunas Negras Pequeñas", "amount": 11.0, "unit": "aceitunas"},
+      {"name": "Orégano Seco", "amount": 1.0, "unit": "pizca"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
+      "Cubrir la pizza con 3-5 lonchas de jamón cocido.",
+      "Colocar 100-120g de trozos de mozzarella encima.",
+      "Agregar 10-12 aceitunas negras pequeñas.",
+      "Espolvorear con hojas de orégano seco.",
+      "Rociar aceite de oliva virgen extra por toda la superficie.",
+      "Hornear a 240-250°C por 6-7 minutos."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 15,
+    "name": "Pizza con Calabacín y Speck",
+    "description": "Pizza con calabacín salteado, tiras de speck y queso parmesano.",
+    "imageRes": "pizza_zucchini_speck",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Calabacín Tierno (cocido)", "amount": 4.0, "unit": "piezas"},
+      {"name": "Speck (tiras pequeñas)", "amount": 70.0, "unit": "g"},
+      {"name": "Queso Parmesano (rallado)", "amount": 35.0, "unit": "g"},
+      {"name": "Ajo", "amount": 1.0, "unit": "diente"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 15.0, "unit": "ml"},
+      {"name": "Hojuelas de Chile (opcional)", "amount": 1.0, "unit": "pizca"}
+    ],
+    "instructions": [
+      "Cortar 3-5 calabacines verdes tiernos (15-20cm de largo) en rodajas pequeñas (3-4mm de grosor) o tiras pequeñas.",
+      "Saltear en sartén antiadherente con aceite de oliva, diente de ajo y hojuelas de chile opcionales hasta dorar ligeramente.",
+      "Dejar enfriar.",
+      "Cortar loncha de speck (1.5cm de grosor) en tiras pequeñas (2-3mm de ancho).",
+      "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
+      "Poner calabacín sobre la pizza.",
+      "Espolvorear con 30-40g de queso parmesano rallado.",
+      "Distribuir 60-80g de tiras de speck por toda la superficie.",
+      "Rociar con aceite de oliva y hornear a 240-250°C por 6-7 minutos."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 16,
+    "name": "Pizza con Brócoli y Champiñones",
+    "description": "Pizza con brócoli salteado, champiñones y queso mozzarella o stracchino.",
+    "imageRes": "pizza_broccoli_mushrooms",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Brócoli (salteado)", "amount": 225.0, "unit": "g"},
+      {"name": "Mozzarella o Stracchino", "amount": 110.0, "unit": "g"},
+      {"name": "Champiñones", "amount": 110.0, "unit": "g"},
+      {"name": "Ajo", "amount": 1.0, "unit": "diente"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 15.0, "unit": "ml"},
+      {"name": "Sal", "amount": 1.0, "unit": "pizca"},
+      {"name": "Hojuelas de Chile (opcional)", "amount": 1.0, "unit": "pizca"}
+    ],
+    "instructions": [
+      "Limpiar el brócoli y saltear en sartén honda con aceite de oliva, cubriendo con tapa cuando no se esté revolviendo.",
+      "Espolvorear sal y hojuelas de chile opcionales. Dejar enfriar.",
+      "Limpiar y saltear 100-120g de champiñones en la misma sartén hasta cocinar. Dejar enfriar.",
+      "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
+      "Colocar 100-120g de mozzarella o stracchino cortado en trozos pequeños sobre la pizza.",
+      "Agregar 200-250g de brócoli y champiñones.",
+      "Rociar con aceite de oliva y hornear a 240-250°C por 6-7 minutos."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 17,
+    "name": "Pizza con Mortadela y Pistachos",
+    "description": "Pizza con mozzarella o stracchino, lonchas de mortadela y pistachos triturados agregados después del horneado.",
+    "imageRes": "pizza_mortadella_pistacchio",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Mortadela", "amount": 110.0, "unit": "g"},
+      {"name": "Mozzarella o Stracchino", "amount": 110.0, "unit": "g"},
+      {"name": "Pistachos (triturados)", "amount": 17.5, "unit": "g"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
+      "Extender 100-120g de mozzarella o queso stracchino cortado en cubos pequeños o tiras finas.",
+      "Rociar aceite de oliva y hornear a 240-250°C por 6-7 minutos.",
+      "Cuando esté horneada, colocar 100-120g de lonchas de mortadela encima.",
+      "Espolvorear 15-20g de pistachos triturados encima.",
+      "Servir inmediatamente."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 18,
+    "name": "Focaccia con Aceitunas Verdes",
+    "description": "Focaccia simple cubierta con aceitunas verdes, sal marina gruesa y aceite de oliva.",
+    "imageRes": "focaccia_green_olives",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Masa de Focaccia", "amount": 800.0, "unit": "g"},
+      {"name": "Aceitunas Verdes", "amount": 15.0, "unit": "aceitunas"},
+      {"name": "Sal Marina Gruesa", "amount": 2.0, "unit": "pizca"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 20.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Cuando esté casi lista para hornear, colocar varias aceitunas verdes en la masa a intervalos aproximadamente regulares.",
+      "Presionar las aceitunas ligeramente en la masa para que se mantengan en su lugar.",
+      "Espolvorear sal marina gruesa sobre la focaccia.",
+      "Rociar aceite de oliva virgen extra por encima.",
+      "Hornear a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 19,
+    "name": "Focaccia con Tomates Cherry y Aceitunas Negras",
+    "description": "Focaccia cubierta con tomates cherry, aceitunas negras, orégano y aceite de oliva.",
+    "imageRes": "focaccia_cherry_tomatoes",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Masa de Focaccia", "amount": 800.0, "unit": "g"},
+      {"name": "Tomates Cherry", "amount": 7.0, "unit": "tomates"},
+      {"name": "Aceitunas Negras Pequeñas", "amount": 12.0, "unit": "aceitunas"},
+      {"name": "Orégano Seco", "amount": 1.0, "unit": "pizca"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 20.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Cortar 6-8 tomates cherry por la mitad.",
+      "Colocar las mitades de tomate sobre la focaccia, presionando ligeramente para que se mantengan en su lugar al hornear.",
+      "Agregar varias aceitunas negras.",
+      "Espolvorear hojas de orégano seco.",
+      "Rociar aceite de oliva virgen extra por encima.",
+      "Hornear a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 20,
+    "name": "Focaccia con Romero y Aceitunas Negras",
+    "description": "Focaccia clásica con romero fresco, aceitunas negras y aceite de oliva.",
+    "imageRes": "focaccia_rosemary_olives",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Masa de Focaccia", "amount": 800.0, "unit": "g"},
+      {"name": "Romero Fresco", "amount": 1.0, "unit": "ramita"},
+      {"name": "Aceitunas Negras Pequeñas", "amount": 12.0, "unit": "aceitunas"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 20.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Tomar una ramita de romero fresco y arrancar las hojas pequeñas.",
+      "Espolvorear hojas de romero sobre la focaccia.",
+      "Colocar varias aceitunas negras sobre la focaccia.",
+      "Rociar aceite de oliva virgen extra por encima.",
+      "Hornear a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 21,
+    "name": "Focaccia Pizza",
+    "description": "Focaccia con cobertura estilo pizza - salsa de tomate, mozzarella y albahaca (como Pizza Margarita).",
+    "imageRes": "focaccia_pizza",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Masa de Focaccia", "amount": 800.0, "unit": "g"},
+      {"name": "Salsa de Tomate Básica", "amount": 100.0, "unit": "g"},
+      {"name": "Mozzarella Fiordilatte", "amount": 120.0, "unit": "g"},
+      {"name": "Albahaca Fresca", "amount": 5.0, "unit": "hojas"},
+      {"name": "Aceite de Oliva Virgen Extra", "amount": 20.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Extender salsa de tomate sobre la masa de focaccia.",
+      "Agregar mozzarella cortada en rodajas finas o tiras finas.",
+      "Añadir hojas de albahaca fresca.",
+      "Rociar con aceite de oliva virgen extra.",
+      "Hornear a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 22,
+    "name": "Baguette - Método Directo",
+    "description": "Baguette francesa clásica con método directo y fermentación fría extendida. 75% de hidratación para corteza crujiente y miga abierta.",
+    "imageRes": "baguette_direct",
+    "servings": 4,
+    "ingredients": [
+      {"name": "Harina de Pan (o Harina de Pan y Común)", "amount": 1000.0, "unit": "g"},
+      {"name": "Agua (18-20°C)", "amount": 750.0, "unit": "g"},
+      {"name": "Sal Marina", "amount": 20.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (o 6.0g Levadura Fresca)", "amount": 2.4, "unit": "g"}
+    ],
+    "instructions": [
+      "DÍA ANTERIOR: Disolver levadura en agua, agregar la mitad de la harina y mezclar.",
+      "Añadir harina restante y mezclar hasta hidratar toda la harina.",
+      "Espolvorear sal encima, verter 50g de agua reservada sobre ella. Reposar 10 minutos.",
+      "Con mano húmeda, levantar y estirar la masa varias veces. Reposar 10 minutos.",
+      "Repetir amasado rápido 2-3 veces hasta que esté suave. Reposar 20 minutos.",
+      "Hacer 3 estiramientos y pliegues con reposos de 20 minutos entre cada uno.",
+      "Poner el recipiente en el refrigerador por 18-24 horas.",
+      "DÍA DE HORNEADO: Verificar fermentación - la masa debe casi duplicarse.",
+      "Cortar masa en piezas de 250-300g para cada baguette.",
+      "Reposar piezas 10 minutos cubiertas.",
+      "Formar en baguettes (ver instrucciones de formado).",
+      "Fermentación final 45-60 minutos hasta casi duplicar.",
+      "Hacer cortes y hornear a 215-220°C estático o 200-205°C con ventilador."
+    ],
+    "category": "BREAD",
+    "type": "DOUGH"
+  },
+  {
+    "id": 23,
+    "name": "Baguette con Poolish",
+    "description": "Baguette ligera y atractiva usando pre-fermento poolish. 70% de hidratación con fermentación fría nocturna para sabor excepcional.",
+    "imageRes": "baguette_poolish",
+    "servings": 4,
+    "ingredients": [
+      {"name": "Harina de Pan y Común (para poolish)", "amount": 180.0, "unit": "g"},
+      {"name": "Harina de Centeno (para poolish)", "amount": 30.0, "unit": "g"},
+      {"name": "Agua 18-20°C (para poolish)", "amount": 210.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (para poolish, o 3.0g Levadura Fresca)", "amount": 1.2, "unit": "g"},
+      {"name": "Harina de Pan y Común (masa final)", "amount": 790.0, "unit": "g"},
+      {"name": "Agua 18-20°C (masa final)", "amount": 490.0, "unit": "g"},
+      {"name": "Sal Marina (masa final)", "amount": 20.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (masa final, o 13.0g Levadura Fresca)", "amount": 5.1, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (noche anterior): Mezclar agua con levadura, agregar harinas. Cubrir y refrigerar 12-18 horas.",
+      "MASA FINAL: Verter agua en poolish, mezclar para romper hebras de gluten.",
+      "Agregar levadura y harina, revolver hasta hidratar la harina.",
+      "Espolvorear sal encima, verter 50g de agua restante. Reposar 10 minutos.",
+      "Con mano húmeda, levantar y estirar masa varias veces. Reposar 10 minutos.",
+      "Repetir amasado rápido 2-3 veces hasta que esté suave. Último reposo 20 minutos.",
+      "Hacer 3 estiramientos y pliegues con reposos de 20 minutos entre cada uno.",
+      "Después del último pliegue, reposar 1 hora hasta duplicar.",
+      "Cortar masa en piezas de 250-300g para cada baguette.",
+      "Reposar piezas 10 minutos cubiertas.",
+      "Formar en baguettes.",
+      "Fermentación final 45-60 minutos hasta casi duplicar.",
+      "Precalentar horno a 230°C estático o 210°C con ventilador.",
+      "Hacer 4-5 cortes diagonales por baguette.",
+      "Rociar agua para vapor, hornear 25-30 minutos."
+    ],
+    "category": "BREAD",
+    "type": "DOUGH"
+  },
+  {
+    "id": 24,
+    "name": "Pan Blanco con Poolish",
+    "description": "Pan blanco versátil con pre-fermento poolish. 75% de hidratación para textura suave y sabor interesante.",
+    "imageRes": "white_bread",
+    "servings": 4,
+    "ingredients": [
+      {"name": "Harina de Pan y Común (para poolish)", "amount": 500.0, "unit": "g"},
+      {"name": "Agua Tibia 27°C (para poolish)", "amount": 500.0, "unit": "g"},
+      {"name": "Levadura Fresca (para poolish)", "amount": 1.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (para poolish, alternativa)", "amount": 0.4, "unit": "g"},
+      {"name": "Harina de Pan y Común (masa final)", "amount": 500.0, "unit": "g"},
+      {"name": "Agua Tibia 41°C (masa final)", "amount": 250.0, "unit": "g"},
+      {"name": "Sal Marina (masa final)", "amount": 21.0, "unit": "g"},
+      {"name": "Levadura Fresca (masa final)", "amount": 8.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (masa final, alternativa)", "amount": 3.0, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (12-16h antes): Mezclar agua tibia con levadura, agregar harina. Cubrir y reposar a temperatura ambiente 12-16 horas.",
+      "Verificar poolish - debe estar duplicado con pequeñas burbujas visibles.",
+      "MASA FINAL: Verter agua en poolish, mezclar para romper hebras de gluten.",
+      "Agregar levadura y harina, revolver hasta hidratar la harina.",
+      "Espolvorear sal encima, verter 50g de agua restante. Cubrir.",
+      "Hacer 4 amasados rápidos con 3 reposos de 10 minutos, luego reposo de 20 minutos.",
+      "Hacer 3 estiramientos y pliegues con 2 reposos de 20 minutos entre cada uno.",
+      "Reposar 60-90 minutos hasta duplicar.",
+      "Cortar en 4 piezas de 440g cada una (o 2×880g o 6×290g).",
+      "Reposar piezas 10 minutos cubiertas.",
+      "Formar en panes redondos (boule) o batard.",
+      "Fermentación final 45-60 minutos hasta casi duplicar.",
+      "Precalentar horno a 230°C estático o 210°C con ventilador.",
+      "Hacer cortes en los panes antes de hornear.",
+      "Hornear: 30 min (290g), 40-45 min (440g), o 60-70 min (880g).",
+      "Rociar agua para vapor al introducir en el horno."
+    ],
+    "category": "BREAD",
+    "type": "DOUGH"
+  },
+  {
+    "id": 25,
+    "name": "Ciabatta con Biga",
+    "description": "Ciabatta italiana clásica con pre-fermento biga. 67% de hidratación con aceite de oliva para miga abierta característica y corteza crujiente.",
+    "imageRes": "ciabatta_biga",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Harina de Pan y Común (para biga)", "amount": 440.0, "unit": "g"},
+      {"name": "Agua 18-20°C (para biga)", "amount": 225.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (para biga, o 2.5g Levadura Fresca)", "amount": 1.0, "unit": "g"},
+      {"name": "Harina de Pan y Común (masa final)", "amount": 560.0, "unit": "g"},
+      {"name": "Agua 18-20°C (masa final)", "amount": 450.0, "unit": "g"},
+      {"name": "Aceite de Oliva Virgen Extra (masa final)", "amount": 64.0, "unit": "g"},
+      {"name": "Sal Marina (masa final)", "amount": 20.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (masa final, o 12.0g Levadura Fresca)", "amount": 5.0, "unit": "g"}
+    ],
+    "instructions": [
+      "BIGA (día anterior): Mezclar agua con levadura, agregar harina. Cubrir y refrigerar 12-18 horas.",
+      "MASA FINAL: Verter agua en biga, mezclar para romper hebras de gluten.",
+      "Agregar levadura y harina, revolver hasta hidratar la harina.",
+      "Espolvorear sal encima, agregar aceite de oliva. Reposar 10 minutos.",
+      "Hacer 3-4 amasados rápidos con reposos de 10 minutos hasta que esté suave.",
+      "Hacer 3 estiramientos y pliegues con reposos de 20 minutos entre cada uno.",
+      "Reposar 60-90 minutos hasta duplicar.",
+      "Volcar sobre superficie enharinada, formar en panes ciabatta.",
+      "Cortar en 3 piezas de aproximadamente 580g cada una.",
+      "Fermentación final 45-60 minutos hasta casi duplicar.",
+      "Precalentar horno a 220°C estático o 205°C con ventilador.",
+      "Hornear 30-35 minutos hasta dorar y que esté crujiente.",
+      "Rociar agua para vapor al introducir en el horno."
+    ],
+    "category": "BREAD",
+    "type": "DOUGH"
+  },
+  {
+    "id": 26,
+    "name": "Ciabatta con Poolish",
+    "description": "Ciabatta italiana con pre-fermento poolish. 74% de hidratación con aceite de oliva para textura ligera y aireada con agujeros característicos.",
+    "imageRes": "ciabatta_poolish",
+    "servings": 6,
+    "ingredients": [
+      {"name": "Harina de Pan y Común (para poolish)", "amount": 350.0, "unit": "g"},
+      {"name": "Agua 18-20°C (para poolish)", "amount": 350.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (para poolish, o 5.0g Levadura Fresca)", "amount": 2.0, "unit": "g"},
+      {"name": "Harina de Pan y Común (masa final)", "amount": 650.0, "unit": "g"},
+      {"name": "Agua Tibia 27-30°C (masa final)", "amount": 390.0, "unit": "g"},
+      {"name": "Sal Marina (masa final)", "amount": 20.0, "unit": "g"},
+      {"name": "Aceite de Oliva Virgen Extra (masa final)", "amount": 50.0, "unit": "g"},
+      {"name": "Levadura Seca Instantánea (masa final, o 10.0g Levadura Fresca)", "amount": 3.9, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (día anterior): Mezclar agua con levadura, agregar harina. Cubrir y refrigerar 17-24 horas.",
+      "Verificar poolish - debe estar burbujeante y bien fermentado.",
+      "MASA FINAL: Verter agua tibia en poolish, espolvorear levadura, mezclar para romper hebras de gluten.",
+      "Agregar harina, revolver hasta hidratar la harina.",
+      "Espolvorear sal y verter aceite encima, agregar 50g de agua restante. Reposar 10 minutos.",
+      "Hacer 3 amasados rápidos con 2 reposos de 10 minutos entre cada uno.",
+      "Hacer 3 estiramientos y pliegues con 2 reposos de 20 minutos entre cada uno.",
+      "Reposar 60-90 minutos hasta duplicar.",
+      "Volcar sobre superficie enharinada, extender en rectángulo.",
+      "Cortar en 6 piezas de 280-300g cada una.",
+      "Reposar piezas 10 minutos cubiertas.",
+      "Formar cada pieza: extender en rectángulo, plegar en tercios.",
+      "Fermentación final 45-60 minutos hasta casi duplicar.",
+      "Precalentar horno a 220°C estático o 205°C con ventilador.",
+      "Hornear 25-30 minutos hasta dorar.",
+      "Rociar agua para vapor al introducir en el horno."
+    ],
+    "category": "BREAD",
+    "type": "DOUGH"
+  }
+]

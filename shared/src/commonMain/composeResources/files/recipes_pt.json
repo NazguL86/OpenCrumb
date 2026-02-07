@@ -1,0 +1,773 @@
+[
+  {
+    "id": 27,
+    "name": "Focaccia Genovesa",
+    "description": "Focaccia tradicional da Ligúria com superfície característica com covinhas, azeite generoso e sal grosso. Interior macio e aerado com crosta dourada e crocante.",
+    "imageRes": "focaccia_genovese",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão", "amount": 550.0, "unit": "g"},
+      {"name": "Malte", "amount": 15.0, "unit": "g"},
+      {"name": "Água (temperatura ambiente)", "amount": 330.0, "unit": "g"},
+      {"name": "Azeite Extra Virgem", "amount": 25.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (ou 15g Fermento Fresco)", "amount": 6.0, "unit": "g"},
+      {"name": "Sal Marinho", "amount": 12.0, "unit": "g"},
+      {"name": "Água (para salamoia)", "amount": 120.0, "unit": "g"},
+      {"name": "Azeite Extra Virgem (para salamoia)", "amount": 60.0, "unit": "g"},
+      {"name": "Sal Marinho (para salamoia)", "amount": 6.0, "unit": "g"}
+    ],
+    "instructions": [
+      "Dissolva o fermento na água (18-20°C).",
+      "Adicione uma pequena porção de farinha e misture bem.",
+      "Adicione o malte e a farinha restante, misture até toda a farinha estar hidratada.",
+      "Adicione sal e azeite, misture bem.",
+      "Cubra e deixe descansar por 10 minutos.",
+      "Dobre a massa para dar mais estrutura e forme uma bola.",
+      "Cubra e deixe descansar por 30 minutos.",
+      "Divida a massa em 2 porções.",
+      "Faça algumas dobras em cada porção para fortalecer.",
+      "Cubra e deixe descansar mais 30 minutos.",
+      "Use um rolo para achatar ambas as porções, usando farinha para evitar grudar.",
+      "Unte duas formas e coloque a massa achatada nas bandejas.",
+      "Deixe descansar por 1 hora e 30 minutos. Durante este tempo, ajuste a massa para caber nas formas.",
+      "Prepare a salamoia: misture 120g de água com 60g de azeite e 6g de sal.",
+      "Faça covinhas profundas na superfície com as pontas dos dedos.",
+      "Borrife a salamoia uniformemente sobre ambas as bandejas, garantindo que o azeite e a água entrem em todos os buracos.",
+      "Asse a 260°C por 20-25 minutos até dourar."
+    ],
+    "category": "FOCACCIA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 1,
+    "name": "Pizza do Mesmo Dia - 8 Horas",
+    "description": "Pizza do mesmo dia com 8 horas de fermentação. 70% de hidratação para uma massa agradável e extensível.",
+    "imageRes": "pizza_8_hours",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão", "amount": 495.0, "unit": "g"},
+      {"name": "Água (18-20°C)", "amount": 345.0, "unit": "g"},
+      {"name": "Sal Marinho", "amount": 12.8, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (ou 0,7g Fermento Fresco)", "amount": 0.3, "unit": "g"}
+    ],
+    "instructions": [
+      "Dissolva o sal na água (18-20°C).",
+      "Adicione uma pequena porção de farinha, depois o fermento. Misture bem.",
+      "Adicione a farinha restante e misture até toda a farinha estar hidratada.",
+      "Cubra e deixe descansar por 10 minutos.",
+      "Faça 3 sovas rápidas com 2 descansos de 10 minutos entre elas.",
+      "Deixe a massa descansar por 75-90 minutos em temperatura ambiente (20-23°C).",
+      "Corte em bolas de pizza (280-320g cada) e modele.",
+      "Deixe as bolas descansarem por cerca de 6 horas em temperatura ambiente.",
+      "Abra a pizza e asse a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 2,
+    "name": "Pizza Rápida do Mesmo Dia",
+    "description": "Pizza rápida do mesmo dia com 6-7 horas de fermentação. 70% de hidratação com água morna para fermentação mais rápida.",
+    "imageRes": "pizza_same_day",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão", "amount": 495.0, "unit": "g"},
+      {"name": "Água Morna (38°C)", "amount": 345.0, "unit": "g"},
+      {"name": "Sal Marinho", "amount": 12.8, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (ou 1,2g Fermento Fresco)", "amount": 0.49, "unit": "g"}
+    ],
+    "instructions": [
+      "Dissolva o sal na água morna (38°C).",
+      "Adicione uma pequena porção de farinha, depois o fermento. Misture bem.",
+      "Adicione a farinha restante e misture até toda a farinha estar hidratada.",
+      "Cubra e deixe descansar por 10 minutos.",
+      "Faça 3 sovas rápidas com 2 descansos de 10 minutos entre elas.",
+      "Deixe a massa descansar por cerca de 90 minutos em temperatura ambiente (20-23°C).",
+      "Corte em bolas de pizza (280g cada) e modele.",
+      "Deixe as bolas descansarem por cerca de 5 horas em temperatura ambiente.",
+      "Abra a pizza e asse a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 3,
+    "name": "Pizza de Fermentação Prolongada",
+    "description": "Pizza de fermentação prolongada (24-48 horas). 70% de hidratação com fermentação fria para máximo sabor e digestibilidade.",
+    "imageRes": "pizza_extended_fermentation",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão", "amount": 495.0, "unit": "g"},
+      {"name": "Água (18-20°C)", "amount": 345.0, "unit": "g"},
+      {"name": "Sal Marinho", "amount": 12.8, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (ou 4,5g Fermento Fresco)", "amount": 1.8, "unit": "g"}
+    ],
+    "instructions": [
+      "Dissolva o sal na água (18-20°C).",
+      "Adicione uma pequena porção de farinha, depois o fermento. Misture bem.",
+      "Adicione a farinha restante e misture até toda a farinha estar hidratada.",
+      "Cubra e deixe descansar por 10 minutos.",
+      "Faça 4 sovas rápidas com 3 descansos de 10 minutos entre elas.",
+      "Deixe a massa descansar por cerca de 60 minutos em temperatura ambiente (20-23°C).",
+      "Corte em bolas de pizza (280g cada) e modele.",
+      "Coloque as bolas na geladeira (5°C) por pelo menos 20-24 horas, até 48 horas.",
+      "Retire da geladeira 1 hora antes de assar.",
+      "Abra a pizza e asse a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 4,
+    "name": "Pizza com Poolish",
+    "description": "Pizza com pré-fermento poolish (12-14 horas). 75% de hidratação com fermento mínimo para sabor excepcional e miolo aberto.",
+    "imageRes": "pizza_with_poolish",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão (para poolish)", "amount": 247.0, "unit": "g"},
+      {"name": "Água Morna 27°C (para poolish)", "amount": 247.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (para poolish, ou 0,49g Fermento Fresco)", "amount": 0.20, "unit": "g"},
+      {"name": "Farinha de Trigo para Pão (massa final)", "amount": 247.0, "unit": "g"},
+      {"name": "Água Morna 41°C (massa final)", "amount": 99.0, "unit": "g"},
+      {"name": "Sal Marinho (massa final)", "amount": 9.9, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (noite anterior): Misture água morna (27°C) com fermento, adicione farinha. Cubra e deixe descansar 12-14 horas em temperatura ambiente (18-21°C).",
+      "MASSA FINAL (dia seguinte): Verifique se o poolish está bem fermentado e triplicou de volume.",
+      "Misture sal na farinha. Adicione água morna (41°C) ao poolish e misture para dissolver parcialmente o glúten.",
+      "Adicione a mistura farinha/sal ao poolish e misture até toda a farinha estar hidratada.",
+      "Cubra e deixe descansar por 10 minutos.",
+      "Faça 3 sovas rápidas com 2 descansos de 10 minutos. Use azeite como lubrificante (a massa é muito macia e pegajosa).",
+      "Após a última sova, descanse 20 minutos, depois faça 2 dobras com descanso de 20 minutos entre elas.",
+      "Deixe a massa descansar em temperatura ambiente por cerca de 6 horas (deve expandir 2-2,5x).",
+      "Corte em bolas de pizza (280g cada) e modele.",
+      "Descanse as bolas 30 minutos, depois refrigere 30 minutos antes de assar.",
+      "Abra a pizza e asse a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 5,
+    "name": "Focaccia - Método Direto",
+    "description": "Focaccia clássica com fermentação fria. 78% de hidratação para textura macia e aerada com azeite.",
+    "imageRes": "focaccia_direct",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão", "amount": 450.0, "unit": "g"},
+      {"name": "Água Fria (13°C)", "amount": 350.0, "unit": "g"},
+      {"name": "Sal Marinho", "amount": 9.0, "unit": "g"},
+      {"name": "Azeite Extra Virgem", "amount": 11.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (ou 4,0g Fermento Fresco)", "amount": 1.6, "unit": "g"}
+    ],
+    "instructions": [
+      "Misture água fria (13°C) com fermento até dissolver.",
+      "Adicione farinha e misture até toda a farinha estar hidratada.",
+      "Cubra e deixe descansar por 10 minutos.",
+      "Adicione sal e azeite, misture bem.",
+      "Faça 3-4 sovas rápidas com descansos de 10 minutos entre elas.",
+      "Deixe a massa descansar por 1 hora em temperatura ambiente.",
+      "Transfira para forma untada e refrigere por 12-24 horas.",
+      "Retire da geladeira 2 horas antes de assar.",
+      "Faça covinhas na massa, adicione coberturas e azeite.",
+      "Asse a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 6,
+    "name": "Focaccia com Poolish - 1º Método",
+    "description": "Focaccia com pré-fermento poolish (12-14 horas). 70% de hidratação com fermento mínimo para sabor aprimorado.",
+    "imageRes": "focaccia_poolish1",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão (para poolish)", "amount": 235.0, "unit": "g"},
+      {"name": "Água Morna 27°C (para poolish)", "amount": 235.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (para poolish, ou 0,5g Fermento Fresco)", "amount": 0.19, "unit": "g"},
+      {"name": "Farinha de Trigo para Pão (massa final)", "amount": 235.0, "unit": "g"},
+      {"name": "Água Morna 39-41°C (massa final)", "amount": 95.0, "unit": "g"},
+      {"name": "Sal Marinho (massa final)", "amount": 9.4, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (noite anterior): Misture água morna (27°C) com fermento, adicione farinha. Cubra e deixe descansar 12-14 horas em temperatura ambiente (18-21°C).",
+      "MASSA FINAL (dia seguinte): Verifique se o poolish está bem fermentado e triplicou de volume.",
+      "Adicione água morna (39-41°C) ao poolish e misture para dissolver parcialmente o glúten.",
+      "Misture sal na farinha, depois adicione à mistura do poolish. Misture até toda a farinha estar hidratada.",
+      "Cubra e deixe descansar por 10 minutos.",
+      "Faça 3-4 sovas rápidas com descansos de 10 minutos entre elas.",
+      "Deixe a massa descansar em temperatura ambiente por 4-6 horas (deve expandir 2-2,5x).",
+      "Transfira para forma untada, faça covinhas na massa.",
+      "Opcional: refrigere para melhor sabor, retire 2 horas antes de assar.",
+      "Adicione coberturas e azeite.",
+      "Asse a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 7,
+    "name": "Focaccia com Poolish - 2º Método",
+    "description": "Focaccia com poolish fermentado a frio. 74% de hidratação com azeite na massa final para sabor rico.",
+    "imageRes": "focaccia_poolish2",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão (para poolish)", "amount": 222.0, "unit": "g"},
+      {"name": "Água 18-20°C (para poolish)", "amount": 222.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (para poolish, ou 3,2g Fermento Fresco)", "amount": 1.3, "unit": "g"},
+      {"name": "Farinha de Trigo para Pão (massa final)", "amount": 222.0, "unit": "g"},
+      {"name": "Água Morna 27-30°C (massa final)", "amount": 133.0, "unit": "g"},
+      {"name": "Sal Marinho (massa final)", "amount": 7.0, "unit": "g"},
+      {"name": "Azeite Extra Virgem (massa final)", "amount": 17.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (massa final, ou 3,3g Fermento Fresco)", "amount": 1.3, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (dia anterior): Misture água (18-20°C) com fermento, adicione farinha. Cubra e refrigere por 12-24 horas.",
+      "MASSA FINAL (dia seguinte): Retire o poolish da geladeira 1 hora antes de usar.",
+      "Adicione água morna (27-30°C) ao poolish e misture para dissolver parcialmente o glúten.",
+      "Misture sal na farinha, depois adicione à mistura do poolish com azeite e fermento. Misture até toda a farinha estar hidratada.",
+      "Cubra e deixe descansar por 10 minutos.",
+      "Faça 3-4 sovas rápidas com descansos de 10 minutos entre elas.",
+      "Deixe a massa descansar em temperatura ambiente por 3-4 horas.",
+      "Transfira para forma untada, faça covinhas na massa.",
+      "Adicione coberturas e azeite.",
+      "Asse a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 8,
+    "name": "Molho de Tomate Básico",
+    "description": "Molho de tomate simples para pizza. Bata brevemente - o molho deve ficar grosso, não muito líquido.",
+    "imageRes": "tomato_sauce",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Tomates Pelados Inteiros", "amount": 400.0, "unit": "g"},
+      {"name": "Folhas de Orégano Seco", "amount": 1.0, "unit": "pitada"},
+      {"name": "Manjericão Fresco", "amount": 3.0, "unit": "folhas"},
+      {"name": "Sal Marinho", "amount": 1.0, "unit": "pitada"},
+      {"name": "Pimenta Dedo-de-moça (opcional)", "amount": 1.0, "unit": "pitada pequena"},
+      {"name": "Azeite Extra Virgem", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Coloque os tomates pelados enlatados no liquidificador.",
+      "Bata muito brevemente - o molho deve ficar grosso e não muito misturado (pode ficar muito líquido).",
+      "Adicione azeite extra virgem, uma pitada de sal e orégano seco e/ou folhas de manjericão fresco.",
+      "Se gostar de picante, adicione flocos de pimenta dedo-de-moça.",
+      "Não cozinhe o molho antecipadamente - ele cozinhará junto com a pizza quando assar.",
+      "Método tradicional alternativo: amasse os tomates com as mãos em vez de usar liquidificador."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 9,
+    "name": "Pizza Margherita",
+    "description": "Pizza napolitana clássica com molho de tomate, mussarela fiordilatte e manjericão fresco.",
+    "imageRes": "pizza_margherita",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Massa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Molho de Tomate Básico", "amount": 70.0, "unit": "g"},
+      {"name": "Mussarela Fiordilatte", "amount": 90.0, "unit": "g"},
+      {"name": "Manjericão Fresco", "amount": 3.0, "unit": "folhas"},
+      {"name": "Queijo Parmesão Ralado", "amount": 5.0, "unit": "g"},
+      {"name": "Azeite Extra Virgem", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Prepare o Molho de Tomate Básico (veja receita).",
+      "Corte a mussarela fiordilatte em cubos pequenos ou tiras numa tigela e deixe escorrer.",
+      "Tenha folhas de manjericão fresco prontas para finalizar.",
+      "Coloque a massa de pizza esticada numa superfície bem enfarinhada.",
+      "Espalhe 60-80g de molho de tomate do centro em movimento espiral até a borda externa (deixe a borda).",
+      "Polvilhe um pouco de queijo parmesão ralado sobre o molho.",
+      "Adicione pedaços de mussarela fiordilatte (80-100g).",
+      "Regue com pequena quantidade de azeite extra virgem na superfície da pizza e ao redor da borda.",
+      "Transfira para pá de pizza e asse a 240-250°C por 6-7 minutos.",
+      "Adicione folhas de manjericão fresco após assar e sirva imediatamente."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 10,
+    "name": "Pizza Margherita com Mussarela de Búfala",
+    "description": "Margherita clássica com mussarela de búfala adicionada após assar para sabor aprimorado.",
+    "imageRes": "pizza_margherita_buffalo",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Massa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Molho de Tomate Básico", "amount": 70.0, "unit": "g"},
+      {"name": "Mussarela de Búfala", "amount": 90.0, "unit": "g"},
+      {"name": "Manjericão Fresco", "amount": 3.0, "unit": "folhas"},
+      {"name": "Azeite Extra Virgem", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Prepare o Molho de Tomate Básico (veja receita).",
+      "Corte a mussarela de búfala em cubos pequenos ou tiras e deixe escorrer.",
+      "Coloque a massa de pizza esticada numa superfície bem enfarinhada.",
+      "Espalhe 60-80g de molho de tomate do centro em movimento espiral até a borda externa.",
+      "Regue com azeite e asse a 240-250°C por 6-7 minutos.",
+      "Assim que a pizza sair do forno, espalhe pedaços de mussarela de búfala (80-100g) por cima.",
+      "Adicione folhas de manjericão fresco e sirva imediatamente."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 11,
+    "name": "Pizza Marinara",
+    "description": "Pizza tradicional sem queijo - molho de tomate, anchovas, azeitonas e alcaparras opcionais.",
+    "imageRes": "pizza_marinara",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Massa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Molho de Tomate Básico", "amount": 90.0, "unit": "g"},
+      {"name": "Anchovas em Conserva", "amount": 5.5, "unit": "filés"},
+      {"name": "Azeitonas Pretas Pequenas", "amount": 9.0, "unit": "azeitonas"},
+      {"name": "Alcaparras Pequenas (opcional)", "amount": 7.0, "unit": "alcaparras"},
+      {"name": "Orégano Seco", "amount": 1.0, "unit": "pitada"},
+      {"name": "Azeite Extra Virgem", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Prepare o Molho de Tomate Básico (veja receita).",
+      "Coloque a massa de pizza esticada numa superfície bem enfarinhada.",
+      "Espalhe 80-100g de molho de tomate do centro em movimento espiral até a borda externa.",
+      "Adicione 5-6 filés de anchova espalhados pela pizza.",
+      "Adicione 8-10 azeitonas pretas pequenas em padrão regular.",
+      "Se desejar, adicione 6-8 alcaparras pequenas salgadas ou em conserva.",
+      "Adicione folhas de orégano seco.",
+      "Regue com azeite extra virgem ao redor.",
+      "Asse a 240-250°C por 6-7 minutos."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 12,
+    "name": "Pizza com Presunto Cru",
+    "description": "Pizza com base de queijo e presunto cru adicionado após assar para preservar seu sabor delicado.",
+    "imageRes": "pizza_prosciutto_crudo",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Massa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Stracchino ou Mussarela", "amount": 140.0, "unit": "g"},
+      {"name": "Presunto Cru", "amount": 4.0, "unit": "fatias"},
+      {"name": "Azeite Extra Virgem", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Use queijo Stracchino italiano (também chamado Crescenza) se possível, caso contrário use mussarela fiordilatte.",
+      "Coloque a massa de pizza esticada numa superfície bem enfarinhada.",
+      "Espalhe 130-150g de Stracchino ou mussarela na pizza.",
+      "Regue com azeite e asse a 240-250°C por 6-7 minutos.",
+      "Quando assada, cubra a pizza com 3-5 fatias finas de Presunto Cru.",
+      "O presunto apenas esquentará mas não cozinhará.",
+      "Sirva imediatamente."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 13,
+    "name": "Pizza com Presunto Cru e Cogumelos",
+    "description": "Pizza com queijo, cogumelos refogados e presunto cru adicionado após assar.",
+    "imageRes": "pizza_prosciutto_crudo_mushrooms",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Massa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Stracchino ou Mussarela", "amount": 140.0, "unit": "g"},
+      {"name": "Presunto Cru", "amount": 4.0, "unit": "fatias"},
+      {"name": "Cogumelos Champignon", "amount": 110.0, "unit": "g"},
+      {"name": "Alho", "amount": 1.0, "unit": "dente"},
+      {"name": "Azeite Extra Virgem", "amount": 15.0, "unit": "ml"},
+      {"name": "Pimenta em Flocos (opcional)", "amount": 1.0, "unit": "pitada"},
+      {"name": "Sal", "amount": 1.0, "unit": "pitada"}
+    ],
+    "instructions": [
+      "Limpe e refogue 100-120g de cogumelos champignon na frigideira com azeite, dente de alho, sal e pimenta em flocos opcional.",
+      "Cozinhe os cogumelos até ficarem prontos (ou quase prontos), depois deixe esfriar.",
+      "Coloque a massa de pizza esticada numa superfície bem enfarinhada.",
+      "Espalhe 130-150g de Stracchino ou mussarela na pizza.",
+      "Adicione os cogumelos cozidos por cima.",
+      "Regue com azeite e asse a 240-250°C por 6-7 minutos.",
+      "Quando pronta, coloque 3-5 fatias de Presunto Cru por cima.",
+      "Sirva imediatamente."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 14,
+    "name": "Pizza com Presunto Cozido e Mussarela",
+    "description": "Pizza com presunto cozido, mussarela e azeitonas pretas.",
+    "imageRes": "pizza_prosciutto_cotto",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Massa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Presunto Cozido", "amount": 4.0, "unit": "fatias"},
+      {"name": "Mussarela Fiordilatte", "amount": 110.0, "unit": "g"},
+      {"name": "Azeitonas Pretas Pequenas", "amount": 11.0, "unit": "azeitonas"},
+      {"name": "Orégano Seco", "amount": 1.0, "unit": "pitada"},
+      {"name": "Azeite Extra Virgem", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Coloque a massa de pizza esticada numa superfície bem enfarinhada.",
+      "Cubra a pizza com 3-5 fatias de Presunto Cozido.",
+      "Coloque 100-120g de pedaços de mussarela por cima.",
+      "Adicione 10-12 azeitonas pretas pequenas.",
+      "Polvilhe com folhas de orégano seco.",
+      "Regue com azeite extra virgem ao redor.",
+      "Asse a 240-250°C por 6-7 minutos."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 15,
+    "name": "Pizza com Abobrinha e Speck",
+    "description": "Pizza com abobrinha refogada, tiras de speck e queijo parmesão.",
+    "imageRes": "pizza_zucchini_speck",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Massa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Abobrinha Jovem (cozida)", "amount": 4.0, "unit": "unidades"},
+      {"name": "Speck (tiras pequenas)", "amount": 70.0, "unit": "g"},
+      {"name": "Queijo Parmesão (ralado)", "amount": 35.0, "unit": "g"},
+      {"name": "Alho", "amount": 1.0, "unit": "dente"},
+      {"name": "Azeite Extra Virgem", "amount": 15.0, "unit": "ml"},
+      {"name": "Pimenta em Flocos (opcional)", "amount": 1.0, "unit": "pitada"}
+    ],
+    "instructions": [
+      "Corte 3-5 abobrinhas verdes jovens (15-20cm de comprimento) em fatias redondas pequenas (3-4mm de espessura) ou tiras pequenas.",
+      "Refogue em frigideira antiaderente com azeite, dente de alho e pimenta em flocos opcional até dourar levemente.",
+      "Deixe esfriar.",
+      "Corte fatia de speck (1,5cm de espessura) em tiras pequenas (2-3mm de largura).",
+      "Coloque a massa de pizza esticada numa superfície bem enfarinhada.",
+      "Coloque a abobrinha na pizza.",
+      "Polvilhe com 30-40g de queijo parmesão ralado.",
+      "Espalhe 60-80g de tiras de speck ao redor.",
+      "Regue com azeite e asse a 240-250°C por 6-7 minutos."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 16,
+    "name": "Pizza com Brócolis e Cogumelos",
+    "description": "Pizza com brócolis refogado, cogumelos e queijo mussarela ou stracchino.",
+    "imageRes": "pizza_broccoli_mushrooms",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Massa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Brócolis (refogado)", "amount": 225.0, "unit": "g"},
+      {"name": "Mussarela ou Stracchino", "amount": 110.0, "unit": "g"},
+      {"name": "Cogumelos Champignon", "amount": 110.0, "unit": "g"},
+      {"name": "Alho", "amount": 1.0, "unit": "dente"},
+      {"name": "Azeite Extra Virgem", "amount": 15.0, "unit": "ml"},
+      {"name": "Sal", "amount": 1.0, "unit": "pitada"},
+      {"name": "Pimenta em Flocos (opcional)", "amount": 1.0, "unit": "pitada"}
+    ],
+    "instructions": [
+      "Limpe o brócolis e refogue em frigideira funda com azeite, cobrindo com tampa quando não estiver mexendo.",
+      "Polvilhe sal e pimenta em flocos opcional. Deixe esfriar.",
+      "Limpe e refogue 100-120g de cogumelos na mesma frigideira até cozinharem. Deixe esfriar.",
+      "Coloque a massa de pizza esticada numa superfície bem enfarinhada.",
+      "Coloque 100-120g de mussarela ou stracchino cortado em pedaços pequenos na pizza.",
+      "Adicione 200-250g de brócolis e cogumelos.",
+      "Regue com azeite e asse a 240-250°C por 6-7 minutos."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 17,
+    "name": "Pizza com Mortadela e Pistache",
+    "description": "Pizza com mussarela ou stracchino, fatias de mortadela e pistache triturado adicionado após assar.",
+    "imageRes": "pizza_mortadella_pistacchio",
+    "servings": 1,
+    "ingredients": [
+      {"name": "Bola de Massa de Pizza", "amount": 280.0, "unit": "g"},
+      {"name": "Mortadela", "amount": 110.0, "unit": "g"},
+      {"name": "Mussarela ou Stracchino", "amount": 110.0, "unit": "g"},
+      {"name": "Pistache (triturado)", "amount": 17.5, "unit": "g"},
+      {"name": "Azeite Extra Virgem", "amount": 10.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Coloque a massa de pizza esticada numa superfície bem enfarinhada.",
+      "Espalhe 100-120g de mussarela ou queijo stracchino cortado em cubos pequenos ou tiras finas.",
+      "Regue com azeite e asse a 240-250°C por 6-7 minutos.",
+      "Quando assada, coloque 100-120g de fatias de mortadela por cima.",
+      "Polvilhe 15-20g de pistache triturado por cima.",
+      "Sirva imediatamente."
+    ],
+    "category": "PIZZA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 18,
+    "name": "Focaccia com Azeitonas Verdes",
+    "description": "Focaccia simples coberta com azeitonas verdes, sal marinho grosso e azeite.",
+    "imageRes": "focaccia_green_olives",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Massa de Focaccia", "amount": 800.0, "unit": "g"},
+      {"name": "Azeitonas Verdes", "amount": 15.0, "unit": "azeitonas"},
+      {"name": "Sal Marinho Grosso", "amount": 2.0, "unit": "pitadas"},
+      {"name": "Azeite Extra Virgem", "amount": 20.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Quando quase pronta para assar, coloque várias azeitonas verdes na massa em intervalos aproximadamente regulares.",
+      "Pressione as azeitonas levemente na massa para que fiquem no lugar.",
+      "Polvilhe sal marinho grosso na focaccia.",
+      "Regue com azeite extra virgem por cima.",
+      "Asse a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 19,
+    "name": "Focaccia com Tomates Cereja e Azeitonas Pretas",
+    "description": "Focaccia coberta com tomates cereja, azeitonas pretas, orégano e azeite.",
+    "imageRes": "focaccia_cherry_tomatoes",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Massa de Focaccia", "amount": 800.0, "unit": "g"},
+      {"name": "Tomates Cereja", "amount": 7.0, "unit": "tomates"},
+      {"name": "Azeitonas Pretas Pequenas", "amount": 12.0, "unit": "azeitonas"},
+      {"name": "Orégano Seco", "amount": 1.0, "unit": "pitada"},
+      {"name": "Azeite Extra Virgem", "amount": 20.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Corte 6-8 tomates cereja pela metade.",
+      "Coloque as metades de tomate na superfície da focaccia, pressionando levemente para que fiquem no lugar ao assar.",
+      "Adicione várias azeitonas pretas.",
+      "Polvilhe folhas de orégano seco.",
+      "Regue com azeite extra virgem por cima.",
+      "Asse a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 20,
+    "name": "Focaccia com Alecrim e Azeitonas Pretas",
+    "description": "Focaccia clássica com alecrim fresco, azeitonas pretas e azeite.",
+    "imageRes": "focaccia_rosemary_olives",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Massa de Focaccia", "amount": 800.0, "unit": "g"},
+      {"name": "Alecrim Fresco", "amount": 1.0, "unit": "ramo"},
+      {"name": "Azeitonas Pretas Pequenas", "amount": 12.0, "unit": "azeitonas"},
+      {"name": "Azeite Extra Virgem", "amount": 20.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Pegue um ramo de alecrim fresco e retire as folhinhas pequenas.",
+      "Polvilhe as folhas de alecrim na superfície da focaccia.",
+      "Coloque várias azeitonas pretas na focaccia.",
+      "Regue com azeite extra virgem por cima.",
+      "Asse a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 21,
+    "name": "Focaccia Pizza",
+    "description": "Focaccia com cobertura estilo pizza - molho de tomate, mussarela e manjericão (como Pizza Margherita).",
+    "imageRes": "focaccia_pizza",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Massa de Focaccia", "amount": 800.0, "unit": "g"},
+      {"name": "Molho de Tomate Básico", "amount": 100.0, "unit": "g"},
+      {"name": "Mussarela Fiordilatte", "amount": 120.0, "unit": "g"},
+      {"name": "Manjericão Fresco", "amount": 5.0, "unit": "folhas"},
+      {"name": "Azeite Extra Virgem", "amount": 20.0, "unit": "ml"}
+    ],
+    "instructions": [
+      "Espalhe molho de tomate por cima da massa de focaccia.",
+      "Adicione mussarela cortada em fatias redondas finas ou tiras finas.",
+      "Adicione folhas de manjericão fresco.",
+      "Regue com azeite extra virgem.",
+      "Asse a 220-230°C por 20-25 minutos."
+    ],
+    "category": "FOCACCIA",
+    "type": "TOPPING"
+  },
+  {
+    "id": 22,
+    "name": "Baguete - Método Direto",
+    "description": "Baguete francesa clássica com método direto e fermentação fria prolongada. 75% de hidratação para crosta crocante e miolo aberto.",
+    "imageRes": "baguette_direct",
+    "servings": 4,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão", "amount": 1000.0, "unit": "g"},
+      {"name": "Água (18-20°C)", "amount": 750.0, "unit": "g"},
+      {"name": "Sal Marinho", "amount": 20.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (ou 6,0g Fermento Fresco)", "amount": 2.4, "unit": "g"}
+    ],
+    "instructions": [
+      "DIA ANTERIOR: Dissolva o fermento na água, adicione metade da farinha e misture.",
+      "Adicione a farinha restante e misture até toda a farinha estar hidratada.",
+      "Polvilhe sal por cima, despeje 50g de água reservada sobre ele. Descanse 10 minutos.",
+      "Com a mão molhada, levante e estique a massa várias vezes. Descanse 10 minutos.",
+      "Repita a sova rápida 2-3 vezes até ficar lisa. Descanse 20 minutos.",
+      "Faça 3 dobras com descansos de 20 minutos entre cada uma.",
+      "Coloque a tigela na geladeira por 18-24 horas.",
+      "DIA DE ASSAR: Verifique a fermentação - a massa deve quase dobrar.",
+      "Corte a massa em pedaços de 250-300g para cada baguete.",
+      "Descanse os pedaços 10 minutos cobertos.",
+      "Modele em baguetes (veja instruções de modelagem).",
+      "Fermentação final 45-60 minutos até quase dobrar.",
+      "Faça cortes e asse a 215-220°C estático ou 200-205°C ventilado."
+    ],
+    "category": "BREAD",
+    "type": "DOUGH"
+  },
+  {
+    "id": 23,
+    "name": "Baguete com Poolish",
+    "description": "Baguete leve e atrativa usando pré-fermento poolish. 70% de hidratação com fermentação fria noturna para sabor excepcional.",
+    "imageRes": "baguette_poolish",
+    "servings": 4,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão (para poolish)", "amount": 180.0, "unit": "g"},
+      {"name": "Farinha de Centeio (para poolish)", "amount": 30.0, "unit": "g"},
+      {"name": "Água 18-20°C (para poolish)", "amount": 210.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (para poolish, ou 3,0g Fermento Fresco)", "amount": 1.2, "unit": "g"},
+      {"name": "Farinha de Trigo para Pão (massa final)", "amount": 790.0, "unit": "g"},
+      {"name": "Água 18-20°C (massa final)", "amount": 490.0, "unit": "g"},
+      {"name": "Sal Marinho (massa final)", "amount": 20.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (massa final, ou 13,0g Fermento Fresco)", "amount": 5.1, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (noite anterior): Misture água com fermento, adicione farinhas. Cubra e refrigere 12-18 horas.",
+      "MASSA FINAL: Despeje água no poolish, misture para quebrar as fibras de glúten.",
+      "Adicione fermento e farinha, mexa até a farinha estar hidratada.",
+      "Polvilhe sal por cima, despeje 50g de água restante. Descanse 10 minutos.",
+      "Com a mão molhada, levante e estique a massa várias vezes. Descanse 10 minutos.",
+      "Repita a sova rápida 2-3 vezes até ficar lisa. Último descanso 20 minutos.",
+      "Faça 3 dobras com descansos de 20 minutos entre cada uma.",
+      "Após a última dobra, descanse 1 hora até dobrar.",
+      "Corte a massa em pedaços de 250-300g para cada baguete.",
+      "Descanse os pedaços 10 minutos cobertos.",
+      "Modele em baguetes.",
+      "Fermentação final 45-60 minutos até quase dobrar.",
+      "Pré-aqueça o forno a 230°C estático ou 210°C ventilado.",
+      "Faça 4-5 cortes diagonais por baguete.",
+      "Borrife água para vapor, asse 25-30 minutos."
+    ],
+    "category": "BREAD",
+    "type": "DOUGH"
+  },
+  {
+    "id": 24,
+    "name": "Pão Branco com Poolish",
+    "description": "Pão branco versátil com pré-fermento poolish. 75% de hidratação para textura macia e sabor interessante.",
+    "imageRes": "white_bread",
+    "servings": 4,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão (para poolish)", "amount": 500.0, "unit": "g"},
+      {"name": "Água Morna 27°C (para poolish)", "amount": 500.0, "unit": "g"},
+      {"name": "Fermento Biológico Fresco (para poolish)", "amount": 1.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (para poolish, alternativa)", "amount": 0.4, "unit": "g"},
+      {"name": "Farinha de Trigo para Pão (massa final)", "amount": 500.0, "unit": "g"},
+      {"name": "Água Morna 41°C (massa final)", "amount": 250.0, "unit": "g"},
+      {"name": "Sal Marinho (massa final)", "amount": 21.0, "unit": "g"},
+      {"name": "Fermento Biológico Fresco (massa final)", "amount": 8.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (massa final, alternativa)", "amount": 3.0, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (12-16h antes): Misture água morna com fermento, adicione farinha. Cubra e descanse em temperatura ambiente 12-16 horas.",
+      "Verifique o poolish - deve ter dobrado com pequenas bolhas visíveis.",
+      "MASSA FINAL: Despeje água no poolish, misture para quebrar as fibras de glúten.",
+      "Adicione fermento e farinha, mexa até a farinha estar hidratada.",
+      "Polvilhe sal por cima, despeje 50g de água restante. Cubra.",
+      "Faça 4 sovas rápidas com 3 descansos de 10 minutos, depois descanso de 20 minutos.",
+      "Faça 3 dobras com 2 descansos de 20 minutos entre elas.",
+      "Descanse 60-90 minutos até dobrar.",
+      "Corte em 4 pedaços de 440g cada (ou 2×880g ou 6×290g).",
+      "Descanse os pedaços 10 minutos cobertos.",
+      "Modele em pães redondos (boule) ou batard.",
+      "Fermentação final 45-60 minutos até quase dobrar.",
+      "Pré-aqueça o forno a 230°C estático ou 210°C ventilado.",
+      "Faça cortes nos pães antes de assar.",
+      "Asse: 30 min (290g), 40-45 min (440g), ou 60-70 min (880g).",
+      "Borrife água para vapor ao colocar no forno."
+    ],
+    "category": "BREAD",
+    "type": "DOUGH"
+  },
+  {
+    "id": 25,
+    "name": "Ciabatta com Biga",
+    "description": "Ciabatta italiana clássica com pré-fermento biga. 67% de hidratação com azeite para miolo aberto característico e crosta crocante.",
+    "imageRes": "ciabatta_biga",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão (para biga)", "amount": 440.0, "unit": "g"},
+      {"name": "Água 18-20°C (para biga)", "amount": 225.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (para biga, ou 2,5g Fermento Fresco)", "amount": 1.0, "unit": "g"},
+      {"name": "Farinha de Trigo para Pão (massa final)", "amount": 560.0, "unit": "g"},
+      {"name": "Água 18-20°C (massa final)", "amount": 450.0, "unit": "g"},
+      {"name": "Azeite Extra Virgem (massa final)", "amount": 64.0, "unit": "g"},
+      {"name": "Sal Marinho (massa final)", "amount": 20.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (massa final, ou 12,0g Fermento Fresco)", "amount": 5.0, "unit": "g"}
+    ],
+    "instructions": [
+      "BIGA (dia anterior): Misture água com fermento, adicione farinha. Cubra e refrigere 12-18 horas.",
+      "MASSA FINAL: Despeje água na biga, misture para quebrar as fibras de glúten.",
+      "Adicione fermento e farinha, mexa até a farinha estar hidratada.",
+      "Polvilhe sal por cima, adicione azeite. Descanse 10 minutos.",
+      "Faça 3-4 sovas rápidas com descansos de 10 minutos até ficar lisa.",
+      "Faça 3 dobras com descansos de 20 minutos entre cada uma.",
+      "Descanse 60-90 minutos até dobrar.",
+      "Coloque numa superfície enfarinhada, modele em pães ciabatta.",
+      "Corte em 3 pedaços de aproximadamente 580g cada.",
+      "Fermentação final 45-60 minutos até quase dobrar.",
+      "Pré-aqueça o forno a 220°C estático ou 205°C ventilado.",
+      "Asse 30-35 minutos até dourar e ficar crocante.",
+      "Borrife água para vapor ao colocar no forno."
+    ],
+    "category": "BREAD",
+    "type": "DOUGH"
+  },
+  {
+    "id": 26,
+    "name": "Ciabatta com Poolish",
+    "description": "Ciabatta italiana com pré-fermento poolish. 74% de hidratação com azeite para textura leve, aerada e buracos característicos.",
+    "imageRes": "ciabatta_poolish",
+    "servings": 6,
+    "ingredients": [
+      {"name": "Farinha de Trigo para Pão (para poolish)", "amount": 350.0, "unit": "g"},
+      {"name": "Água 18-20°C (para poolish)", "amount": 350.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (para poolish, ou 5,0g Fermento Fresco)", "amount": 2.0, "unit": "g"},
+      {"name": "Farinha de Trigo para Pão (massa final)", "amount": 650.0, "unit": "g"},
+      {"name": "Água Morna 27-30°C (massa final)", "amount": 390.0, "unit": "g"},
+      {"name": "Sal Marinho (massa final)", "amount": 20.0, "unit": "g"},
+      {"name": "Azeite Extra Virgem (massa final)", "amount": 50.0, "unit": "g"},
+      {"name": "Fermento Biológico Seco Instantâneo (massa final, ou 10,0g Fermento Fresco)", "amount": 3.9, "unit": "g"}
+    ],
+    "instructions": [
+      "POOLISH (dia anterior): Misture água com fermento, adicione farinha. Cubra e refrigere 17-24 horas.",
+      "Verifique o poolish - deve estar borbulhante e bem fermentado.",
+      "MASSA FINAL: Despeje água morna no poolish, polvilhe fermento, misture para quebrar as fibras de glúten.",
+      "Adicione farinha, mexa até a farinha estar hidratada.",
+      "Polvilhe sal e despeje azeite por cima, adicione 50g de água restante. Descanse 10 minutos.",
+      "Faça 3 sovas rápidas com 2 descansos de 10 minutos entre elas.",
+      "Faça 3 dobras com 2 descansos de 20 minutos entre elas.",
+      "Descanse 60-90 minutos até dobrar.",
+      "Coloque numa superfície enfarinhada, espalhe em retângulo.",
+      "Corte em 6 pedaços de 280-300g cada.",
+      "Descanse os pedaços 10 minutos cobertos.",
+      "Modele cada pedaço: espalhe em retângulo, dobre em três partes.",
+      "Fermentação final 45-60 minutos até quase dobrar.",
+      "Pré-aqueça o forno a 220°C estático ou 205°C ventilado.",
+      "Asse 25-30 minutos até dourar.",
+      "Borrife água para vapor ao colocar no forno."
+    ],
+    "category": "BREAD",
+    "type": "DOUGH"
+  }
+]

@@ -75,12 +75,6 @@ android {
         minSdk = 24
     }
     
-    sourceSets {
-        getByName("main") {
-            assets.srcDirs("src/commonMain/resources")
-        }
-    }
-    
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11

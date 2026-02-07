@@ -24,7 +24,8 @@
     <!-- Guides -->
     <string name="guides_title">Guías</string>
     <string name="buy_the_book">Comprar el Libro</string>
-    <string name="buy_the_book_description">Compra \'The Elusive Open Crumb\' en Amazon</string>
+    <string name="buy_the_book_description">Compra The Elusive Open Crumb en Amazon</string>
+    <string name="buy_the_book_url">https://www.amazon.es/ELUSIVE-OPEN-CRUMB-perfection-Techniques/dp/B08VCJ52G4/</string>
     
     <!-- Common -->
     <string name="back">Atrás</string>

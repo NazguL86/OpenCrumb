@@ -40,19 +40,13 @@ import com.opencrumb.shared.ui.recipes.RecipeListScreen
 import com.opencrumb.shared.ui.recipes.RecipeListViewModel
 import com.opencrumb.shared.ui.theme.OpenCrumbTheme
 
-sealed class Screen(val route: String, val label: String, val icon: ImageVector) {
-    object Recipes : Screen("recipes", "Recipes", Icons.AutoMirrored.Filled.MenuBook)
-    object Calculator : Screen("calculator", "Calculator", Icons.Default.Calculate)
-    object Guides : Screen("guides", "Guides", Icons.Default.MenuBook)
-}
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        
+
         initAndroidContext(applicationContext)
-        
+
         setContent {
             OpenCrumbTheme {
                 MainScreen()
@@ -65,71 +59,96 @@ class MainActivity : ComponentActivity() {
 fun MainScreen() {
     val navController = rememberNavController()
     val context = LocalContext.current
-    val items = listOf(Screen.Recipes, Screen.Calculator, Screen.Guides)
-    
+
     val repository = remember { RecipeRepository() }
     val recipeViewModel = remember { RecipeListViewModel(repository) }
     val guideViewModel = remember { GuideListViewModel(repository) }
-    
+
     Scaffold(
         bottomBar = {
             val navBackStackEntry by navController.currentBackStackEntryAsState()
             val currentRoute = navBackStackEntry?.destination?.route
-            
+
             NavigationBar {
-                items.forEach { screen ->
-                    NavigationBarItem(
-                        icon = { Icon(screen.icon, contentDescription = null) },
-                        label = { Text(screen.label) },
-                        selected = currentRoute == screen.route,
-                        onClick = {
-                            navController.navigate(screen.route) {
-                                popUpTo(navController.graph.startDestinationId) {
-                                    saveState = true
-                                }
-                                launchSingleTop = true
-                                restoreState = true
+                NavigationBarItem(
+                    icon = { Icon(Icons.AutoMirrored.Filled.MenuBook, contentDescription = null) },
+                    label = { Text(context.getString(R.string.nav_recipes)) },
+                    selected = currentRoute == "recipes",
+                    onClick = {
+                        navController.navigate("recipes") {
+                            popUpTo(navController.graph.startDestinationId) {
+                                saveState = true
                             }
+                            launchSingleTop = true
+                            restoreState = true
                         }
-                    )
-                }
+                    },
+                )
+                NavigationBarItem(
+                    icon = { Icon(Icons.Default.Calculate, contentDescription = null) },
+                    label = { Text(context.getString(R.string.nav_calculator)) },
+                    selected = currentRoute == "calculator",
+                    onClick = {
+                        navController.navigate("calculator") {
+                            popUpTo(navController.graph.startDestinationId) {
+                                saveState = true
+                            }
+                            launchSingleTop = true
+                            restoreState = true
+                        }
+                    },
+                )
+                NavigationBarItem(
+                    icon = { Icon(Icons.Default.MenuBook, contentDescription = null) },
+                    label = { Text(context.getString(R.string.nav_guides)) },
+                    selected = currentRoute == "guides",
+                    onClick = {
+                        navController.navigate("guides") {
+                            popUpTo(navController.graph.startDestinationId) {
+                                saveState = true
+                            }
+                            launchSingleTop = true
+                            restoreState = true
+                        }
+                    },
+                )
             }
-        }
+        },
     ) { paddingValues ->
         NavHost(
             navController = navController,
-            startDestination = Screen.Recipes.route,
-            modifier = Modifier.padding(paddingValues)
+            startDestination = "recipes",
+            modifier = Modifier.padding(paddingValues),
         ) {
-            composable(Screen.Recipes.route) {
+            composable("recipes") {
                 val uiState by recipeViewModel.uiState.collectAsState()
                 RecipeListScreen(
                     uiState = uiState,
                     onRecipeClick = { recipeId ->
                         navController.navigate("recipe/$recipeId")
-                    }
+                    },
                 )
             }
-            
+
             composable(
                 route = "recipe/{recipeId}",
-                arguments = listOf(navArgument("recipeId") { type = NavType.IntType })
+                arguments = listOf(navArgument("recipeId") { type = NavType.IntType }),
             ) { backStackEntry ->
                 val recipeId = backStackEntry.arguments?.getInt("recipeId") ?: 0
                 val recipe = repository.getRecipeById(recipeId)
                 recipe?.let {
                     RecipeDetailScreen(
                         recipe = it,
-                        onBack = { navController.popBackStack() }
+                        onBack = { navController.popBackStack() },
                     )
                 }
             }
-            
-            composable(Screen.Calculator.route) {
+
+            composable("calculator") {
                 CalculatorScreen()
             }
-            
-            composable(Screen.Guides.route) {
+
+            composable("guides") {
                 val uiState by guideViewModel.uiState.collectAsState()
                 GuideListScreen(
                     uiState = uiState,
@@ -139,20 +158,20 @@ fun MainScreen() {
                     onExternalUrlClick = { url ->
                         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                         context.startActivity(intent)
-                    }
+                    },
                 )
             }
-            
+
             composable(
                 route = "guide/{guideId}",
-                arguments = listOf(navArgument("guideId") { type = NavType.IntType })
+                arguments = listOf(navArgument("guideId") { type = NavType.IntType }),
             ) { backStackEntry ->
                 val guideId = backStackEntry.arguments?.getInt("guideId") ?: 0
                 val guide = repository.getGuideById(guideId)
                 guide?.let {
                     GuideDetailScreen(
                         guide = it,
-                        onBack = { navController.popBackStack() }
+                        onBack = { navController.popBackStack() },
                     )
                 }
             }

@@ -24,7 +24,8 @@
     <!-- Guides -->
     <string name="guides_title">Guide</string>
     <string name="buy_the_book">Acquista il Libro</string>
-    <string name="buy_the_book_description">Acquista \'The Elusive Open Crumb\' su Amazon</string>
+    <string name="buy_the_book_description">Acquista The Elusive Open Crumb su Amazon</string>
+    <string name="buy_the_book_url">https://www.amazon.it/LALVEOLO-SFUGGENTE-ricerca-perfezione-Teniche/dp/B08VCL5C94</string>
     
     <!-- Common -->
     <string name="back">Indietro</string>

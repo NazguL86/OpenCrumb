@@ -25,6 +25,7 @@
     <string name="guides_title">Anleitungen</string>
     <string name="buy_the_book">Buch kaufen</string>
     <string name="buy_the_book_description">Kaufen Sie \'The Elusive Open Crumb\' bei Amazon</string>
+    <string name="buy_the_book_url">https://www.amazon.de/ELUSIVE-OPEN-CRUMB-perfection-Techniques/dp/B08VCJ52G4/</string>
     
     <!-- Common -->
     <string name="back">Zurück</string>

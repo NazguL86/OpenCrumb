@@ -4,6 +4,7 @@ import com.opencrumb.shared.data.model.Guide
 import com.opencrumb.shared.data.model.Recipe
 import com.opencrumb.shared.data.model.RecipeCategory
 import kotlinx.serialization.json.Json
+import kotlinx.coroutines.runBlocking
 
 class RecipeRepository {
     private val json = Json { 
@@ -11,15 +12,32 @@ class RecipeRepository {
         isLenient = true
     }
     
-    private var cachedRecipes: List<Recipe>? = null
-    private var cachedGuides: List<Guide>? = null
+    private var cachedRecipes: MutableMap<String, List<Recipe>> = mutableMapOf()
+    private var cachedGuides: MutableMap<String, List<Guide>> = mutableMapOf()
+    private var currentLanguage: String = getDeviceLanguage()
+    
+    fun setLanguage(languageCode: String) {
+        currentLanguage = languageCode
+    }
     
     fun getAllRecipes(): List<Recipe> {
-        if (cachedRecipes == null) {
-            val jsonString = readAssetFile("recipes.json")
-            cachedRecipes = json.decodeFromString<List<Recipe>>(jsonString)
+        if (cachedRecipes[currentLanguage] == null) {
+            val fileName = if (currentLanguage == "en") {
+                "recipes.json"
+            } else {
+                "recipes_$currentLanguage.json"
+            }
+            val jsonString = runBlocking {
+                try {
+                    readAssetFile(fileName)
+                } catch (e: Exception) {
+                    // Fallback to English if translation not found
+                    readAssetFile("recipes.json")
+                }
+            }
+            cachedRecipes[currentLanguage] = json.decodeFromString<List<Recipe>>(jsonString)
         }
-        return cachedRecipes ?: emptyList()
+        return cachedRecipes[currentLanguage] ?: emptyList()
     }
     
     fun getRecipesByCategory(category: RecipeCategory): List<Recipe> {
@@ -31,11 +49,23 @@ class RecipeRepository {
     }
     
     fun getAllGuides(): List<Guide> {
-        if (cachedGuides == null) {
-            val jsonString = readAssetFile("guides.json")
-            cachedGuides = json.decodeFromString<List<Guide>>(jsonString)
+        if (cachedGuides[currentLanguage] == null) {
+            val fileName = if (currentLanguage == "en") {
+                "guides.json"
+            } else {
+                "guides_$currentLanguage.json"
+            }
+            val jsonString = runBlocking {
+                try {
+                    readAssetFile(fileName)
+                } catch (e: Exception) {
+                    // Fallback to English if translation not found
+                    readAssetFile("guides.json")
+                }
+            }
+            cachedGuides[currentLanguage] = json.decodeFromString<List<Guide>>(jsonString)
         }
-        return cachedGuides ?: emptyList()
+        return cachedGuides[currentLanguage] ?: emptyList()
     }
     
     fun getGuideById(id: Int): Guide? {
