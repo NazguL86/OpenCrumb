@@ -1,20 +1,237 @@
 [
   {
-    "id": 27,
+    "id": 1,
+    "name": "Pizza in Giornata - 8 Ore",
+    "description": "Pizza in giornata con 8 ore di fermentazione. Idratazione al 70% per un impasto bello ed estensibile.",
+    "imageRes": "pizza_8_hours",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Farina di Pane e 00",
+        "amount": 495.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua (18-20°C)",
+        "amount": 345.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino",
+        "amount": 12.8,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (o 0,7g Lievito Fresco)",
+        "amount": 0.3,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Sciogliere il sale nell'acqua (18-20°C).",
+      "Aggiungere una piccola porzione di farina, poi il lievito. Mescolare bene.",
+      "Aggiungere la farina rimanente e mescolare fino a idratare tutta la farina.",
+      "Coprire e far riposare per 10 minuti.",
+      "Fare 3 impasti veloci con 2 riposi di 10 minuti tra uno e l'altro.",
+      "Far riposare l'impasto per 75-90 minuti a temperatura ambiente (20-23°C).",
+      "Tagliare in panetti da pizza (280-320g ciascuno) e formare.",
+      "Far riposare i panetti per circa 6 ore a temperatura ambiente.",
+      "Stendere la pizza e cuocere a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 2,
+    "name": "Pizza Veloce in Giornata",
+    "description": "Pizza veloce in giornata con 6-7 ore di fermentazione. Idratazione al 70% con acqua tiepida per fermentazione più rapida.",
+    "imageRes": "pizza_same_day",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Farina di Pane e 00",
+        "amount": 495.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua Tiepida (38°C)",
+        "amount": 345.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino",
+        "amount": 12.8,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (o 1,2g Lievito Fresco)",
+        "amount": 0.49,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Sciogliere il sale nell'acqua tiepida (38°C).",
+      "Aggiungere una piccola porzione di farina, poi il lievito. Mescolare bene.",
+      "Aggiungere la farina rimanente e mescolare fino a idratare tutta la farina.",
+      "Coprire e far riposare per 10 minuti.",
+      "Fare 3 impasti veloci con 2 riposi di 10 minuti tra uno e l'altro.",
+      "Far riposare l'impasto per circa 90 minuti a temperatura ambiente (20-23°C).",
+      "Tagliare in panetti da pizza (280g ciascuno) e formare.",
+      "Far riposare i panetti per circa 5 ore a temperatura ambiente.",
+      "Stendere la pizza e cuocere a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 3,
+    "name": "Pizza a Fermentazione Prolungata",
+    "description": "Pizza a fermentazione prolungata (24-48 ore). Idratazione al 70% con fermentazione a freddo per massimo sapore e digeribilità.",
+    "imageRes": "pizza_extended_fermentation",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Farina di Pane e 00",
+        "amount": 495.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua (18-20°C)",
+        "amount": 345.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino",
+        "amount": 12.8,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (o 4,5g Lievito Fresco)",
+        "amount": 1.8,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Sciogliere il sale nell'acqua (18-20°C).",
+      "Aggiungere una piccola porzione di farina, poi il lievito. Mescolare bene.",
+      "Aggiungere la farina rimanente e mescolare fino a idratare tutta la farina.",
+      "Coprire e far riposare per 10 minuti.",
+      "Fare 4 impasti veloci con 3 riposi di 10 minuti tra uno e l'altro.",
+      "Far riposare l'impasto per circa 60 minuti a temperatura ambiente (20-23°C).",
+      "Tagliare in panetti da pizza (280g ciascuno) e formare.",
+      "Mettere i panetti in frigorifero (5°C) per almeno 20-24 ore, fino a 48 ore.",
+      "Togliere dal frigorifero 1 ora prima della cottura.",
+      "Stendere la pizza e cuocere a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 4,
+    "name": "Pizza con Poolish",
+    "description": "Pizza con pre-fermentato poolish (12-14 ore). Idratazione al 75% con lievito minimo per sapore eccezionale e alveolatura aperta.",
+    "imageRes": "pizza_with_poolish",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Farina di Pane (per poolish)",
+        "amount": 247.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua Tiepida 27°C (per poolish)",
+        "amount": 247.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (per poolish, o 0,49g Lievito Fresco)",
+        "amount": 0.20,
+        "unit": "g"
+      },
+      {
+        "name": "Farina di Pane (impasto finale)",
+        "amount": 247.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua Calda 41°C (impasto finale)",
+        "amount": 99.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino (impasto finale)",
+        "amount": 9.9,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "POOLISH (sera prima): Mescolare acqua tiepida (27°C) con lievito, aggiungere farina. Coprire e far riposare 12-14 ore a temperatura ambiente (18-21°C).",
+      "IMPASTO FINALE (giorno dopo): Controllare che il poolish sia ben fermentato e triplicato di volume.",
+      "Mescolare il sale nella farina. Aggiungere acqua calda (41°C) al poolish e mescolare per sciogliere parzialmente il glutine.",
+      "Aggiungere il mix farina/sale al poolish e mescolare fino a idratare tutta la farina.",
+      "Coprire e far riposare per 10 minuti.",
+      "Fare 3 impasti veloci con 2 riposi di 10 minuti. Usare olio come lubrificante (l'impasto è molto morbido e appiccicoso).",
+      "Dopo l'ultimo impasto, riposare 20 minuti, poi fare 2 pieghe a tre con 20 minuti di riposo tra una e l'altra.",
+      "Far riposare l'impasto a temperatura ambiente per circa 6 ore (dovrebbe espandersi 2-2,5 volte).",
+      "Tagliare in panetti da pizza (280g ciascuno) e formare.",
+      "Far riposare i panetti 30 minuti, poi refrigerare 30 minuti prima della cottura.",
+      "Stendere la pizza e cuocere a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 5,
     "name": "Focaccia Genovese",
     "description": "Focaccia ligure tradizionale con superficie caratteristica a fossette, olio d'oliva abbondante e sale grosso. Interno soffice e arioso con crosta dorata e croccante.",
     "imageRes": "focaccia_genovese",
     "servings": 2,
     "ingredients": [
-      {"name": "Farina di Pane e 00", "amount": 550.0, "unit": "g"},
-      {"name": "Malto", "amount": 15.0, "unit": "g"},
-      {"name": "Acqua (temperatura ambiente)", "amount": 330.0, "unit": "g"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 25.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (o 15g Lievito Fresco)", "amount": 6.0, "unit": "g"},
-      {"name": "Sale Marino", "amount": 12.0, "unit": "g"},
-      {"name": "Acqua (per salamoia)", "amount": 120.0, "unit": "g"},
-      {"name": "Olio Extravergine d'Oliva (per salamoia)", "amount": 60.0, "unit": "g"},
-      {"name": "Sale Marino (per salamoia)", "amount": 6.0, "unit": "g"}
+      {
+        "name": "Farina di Pane e 00",
+        "amount": 550.0,
+        "unit": "g"
+      },
+      {
+        "name": "Malto",
+        "amount": 15.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua (temperatura ambiente)",
+        "amount": 330.0,
+        "unit": "g"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 25.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (o 15g Lievito Fresco)",
+        "amount": 6.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino",
+        "amount": 12.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua (per salamoia)",
+        "amount": 120.0,
+        "unit": "g"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva (per salamoia)",
+        "amount": 60.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino (per salamoia)",
+        "amount": 6.0,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "Sciogliere il lievito nell'acqua (18-20°C).",
@@ -39,126 +256,37 @@
     "type": "DOUGH"
   },
   {
-    "id": 1,
-    "name": "Pizza in Giornata - 8 Ore",
-    "description": "Pizza in giornata con 8 ore di fermentazione. Idratazione al 70% per un impasto bello ed estensibile.",
-    "imageRes": "pizza_8_hours",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Farina di Pane e 00", "amount": 495.0, "unit": "g"},
-      {"name": "Acqua (18-20°C)", "amount": 345.0, "unit": "g"},
-      {"name": "Sale Marino", "amount": 12.8, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (o 0,7g Lievito Fresco)", "amount": 0.3, "unit": "g"}
-    ],
-    "instructions": [
-      "Sciogliere il sale nell'acqua (18-20°C).",
-      "Aggiungere una piccola porzione di farina, poi il lievito. Mescolare bene.",
-      "Aggiungere la farina rimanente e mescolare fino a idratare tutta la farina.",
-      "Coprire e far riposare per 10 minuti.",
-      "Fare 3 impasti veloci con 2 riposi di 10 minuti tra uno e l'altro.",
-      "Far riposare l'impasto per 75-90 minuti a temperatura ambiente (20-23°C).",
-      "Tagliare in panetti da pizza (280-320g ciascuno) e formare.",
-      "Far riposare i panetti per circa 6 ore a temperatura ambiente.",
-      "Stendere la pizza e cuocere a 240-250°C."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 2,
-    "name": "Pizza Veloce in Giornata",
-    "description": "Pizza veloce in giornata con 6-7 ore di fermentazione. Idratazione al 70% con acqua tiepida per fermentazione più rapida.",
-    "imageRes": "pizza_same_day",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Farina di Pane e 00", "amount": 495.0, "unit": "g"},
-      {"name": "Acqua Tiepida (38°C)", "amount": 345.0, "unit": "g"},
-      {"name": "Sale Marino", "amount": 12.8, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (o 1,2g Lievito Fresco)", "amount": 0.49, "unit": "g"}
-    ],
-    "instructions": [
-      "Sciogliere il sale nell'acqua tiepida (38°C).",
-      "Aggiungere una piccola porzione di farina, poi il lievito. Mescolare bene.",
-      "Aggiungere la farina rimanente e mescolare fino a idratare tutta la farina.",
-      "Coprire e far riposare per 10 minuti.",
-      "Fare 3 impasti veloci con 2 riposi di 10 minuti tra uno e l'altro.",
-      "Far riposare l'impasto per circa 90 minuti a temperatura ambiente (20-23°C).",
-      "Tagliare in panetti da pizza (280g ciascuno) e formare.",
-      "Far riposare i panetti per circa 5 ore a temperatura ambiente.",
-      "Stendere la pizza e cuocere a 240-250°C."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 3,
-    "name": "Pizza a Fermentazione Prolungata",
-    "description": "Pizza a fermentazione prolungata (24-48 ore). Idratazione al 70% con fermentazione a freddo per massimo sapore e digeribilità.",
-    "imageRes": "pizza_extended_fermentation",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Farina di Pane e 00", "amount": 495.0, "unit": "g"},
-      {"name": "Acqua (18-20°C)", "amount": 345.0, "unit": "g"},
-      {"name": "Sale Marino", "amount": 12.8, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (o 4,5g Lievito Fresco)", "amount": 1.8, "unit": "g"}
-    ],
-    "instructions": [
-      "Sciogliere il sale nell'acqua (18-20°C).",
-      "Aggiungere una piccola porzione di farina, poi il lievito. Mescolare bene.",
-      "Aggiungere la farina rimanente e mescolare fino a idratare tutta la farina.",
-      "Coprire e far riposare per 10 minuti.",
-      "Fare 4 impasti veloci con 3 riposi di 10 minuti tra uno e l'altro.",
-      "Far riposare l'impasto per circa 60 minuti a temperatura ambiente (20-23°C).",
-      "Tagliare in panetti da pizza (280g ciascuno) e formare.",
-      "Mettere i panetti in frigorifero (5°C) per almeno 20-24 ore, fino a 48 ore.",
-      "Togliere dal frigorifero 1 ora prima della cottura.",
-      "Stendere la pizza e cuocere a 240-250°C."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 4,
-    "name": "Pizza con Poolish",
-    "description": "Pizza con pre-fermentato poolish (12-14 ore). Idratazione al 75% con lievito minimo per sapore eccezionale e alveolatura aperta.",
-    "imageRes": "pizza_with_poolish",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Farina di Pane (per poolish)", "amount": 247.0, "unit": "g"},
-      {"name": "Acqua Tiepida 27°C (per poolish)", "amount": 247.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (per poolish, o 0,49g Lievito Fresco)", "amount": 0.20, "unit": "g"},
-      {"name": "Farina di Pane (impasto finale)", "amount": 247.0, "unit": "g"},
-      {"name": "Acqua Calda 41°C (impasto finale)", "amount": 99.0, "unit": "g"},
-      {"name": "Sale Marino (impasto finale)", "amount": 9.9, "unit": "g"}
-    ],
-    "instructions": [
-      "POOLISH (sera prima): Mescolare acqua tiepida (27°C) con lievito, aggiungere farina. Coprire e far riposare 12-14 ore a temperatura ambiente (18-21°C).",
-      "IMPASTO FINALE (giorno dopo): Controllare che il poolish sia ben fermentato e triplicato di volume.",
-      "Mescolare il sale nella farina. Aggiungere acqua calda (41°C) al poolish e mescolare per sciogliere parzialmente il glutine.",
-      "Aggiungere il mix farina/sale al poolish e mescolare fino a idratare tutta la farina.",
-      "Coprire e far riposare per 10 minuti.",
-      "Fare 3 impasti veloci con 2 riposi di 10 minuti. Usare olio come lubrificante (l'impasto è molto morbido e appiccicoso).",
-      "Dopo l'ultimo impasto, riposare 20 minuti, poi fare 2 pieghe a tre con 20 minuti di riposo tra una e l'altra.",
-      "Far riposare l'impasto a temperatura ambiente per circa 6 ore (dovrebbe espandersi 2-2,5 volte).",
-      "Tagliare in panetti da pizza (280g ciascuno) e formare.",
-      "Far riposare i panetti 30 minuti, poi refrigerare 30 minuti prima della cottura.",
-      "Stendere la pizza e cuocere a 240-250°C."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 5,
+    "id": 6,
     "name": "Focaccia - Metodo Diretto",
     "description": "Focaccia classica con fermentazione a freddo. Idratazione al 78% per una consistenza soffice e ariosa con olio d'oliva.",
     "imageRes": "focaccia_direct",
     "servings": 2,
     "ingredients": [
-      {"name": "Farina di Pane e 00", "amount": 450.0, "unit": "g"},
-      {"name": "Acqua Fredda (13°C)", "amount": 350.0, "unit": "g"},
-      {"name": "Sale Marino", "amount": 9.0, "unit": "g"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 11.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (o 4,0g Lievito Fresco)", "amount": 1.6, "unit": "g"}
+      {
+        "name": "Farina di Pane e 00",
+        "amount": 450.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua Fredda (13°C)",
+        "amount": 350.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino",
+        "amount": 9.0,
+        "unit": "g"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 11.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (o 4,0g Lievito Fresco)",
+        "amount": 1.6,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "Mescolare acqua fredda (13°C) con lievito fino a scioglierlo.",
@@ -176,18 +304,42 @@
     "type": "DOUGH"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Focaccia con Poolish - 1° Metodo",
     "description": "Focaccia con pre-fermentato poolish (12-14 ore). Idratazione al 70% con lievito minimo per sapore intensificato.",
     "imageRes": "focaccia_poolish1",
     "servings": 2,
     "ingredients": [
-      {"name": "Farina di Pane e 00 (per poolish)", "amount": 235.0, "unit": "g"},
-      {"name": "Acqua Tiepida 27°C (per poolish)", "amount": 235.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (per poolish, o 0,5g Lievito Fresco)", "amount": 0.19, "unit": "g"},
-      {"name": "Farina di Pane e 00 (impasto finale)", "amount": 235.0, "unit": "g"},
-      {"name": "Acqua Calda 39-41°C (impasto finale)", "amount": 95.0, "unit": "g"},
-      {"name": "Sale Marino (impasto finale)", "amount": 9.4, "unit": "g"}
+      {
+        "name": "Farina di Pane e 00 (per poolish)",
+        "amount": 235.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua Tiepida 27°C (per poolish)",
+        "amount": 235.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (per poolish, o 0,5g Lievito Fresco)",
+        "amount": 0.19,
+        "unit": "g"
+      },
+      {
+        "name": "Farina di Pane e 00 (impasto finale)",
+        "amount": 235.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua Calda 39-41°C (impasto finale)",
+        "amount": 95.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino (impasto finale)",
+        "amount": 9.4,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (sera prima): Mescolare acqua tiepida (27°C) con lievito, aggiungere farina. Coprire e far riposare 12-14 ore a temperatura ambiente (18-21°C).",
@@ -206,20 +358,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Focaccia con Poolish - 2° Metodo",
     "description": "Focaccia con poolish fermentato a freddo. Idratazione al 74% con olio d'oliva nell'impasto finale per sapore ricco.",
     "imageRes": "focaccia_poolish2",
     "servings": 2,
     "ingredients": [
-      {"name": "Farina di Pane e 00 (per poolish)", "amount": 222.0, "unit": "g"},
-      {"name": "Acqua 18-20°C (per poolish)", "amount": 222.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (per poolish, o 3,2g Lievito Fresco)", "amount": 1.3, "unit": "g"},
-      {"name": "Farina di Pane e 00 (impasto finale)", "amount": 222.0, "unit": "g"},
-      {"name": "Acqua Tiepida 27-30°C (impasto finale)", "amount": 133.0, "unit": "g"},
-      {"name": "Sale Marino (impasto finale)", "amount": 7.0, "unit": "g"},
-      {"name": "Olio Extravergine d'Oliva (impasto finale)", "amount": 17.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (impasto finale, o 3,3g Lievito Fresco)", "amount": 1.3, "unit": "g"}
+      {
+        "name": "Farina di Pane e 00 (per poolish)",
+        "amount": 222.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua 18-20°C (per poolish)",
+        "amount": 222.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (per poolish, o 3,2g Lievito Fresco)",
+        "amount": 1.3,
+        "unit": "g"
+      },
+      {
+        "name": "Farina di Pane e 00 (impasto finale)",
+        "amount": 222.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua Tiepida 27-30°C (impasto finale)",
+        "amount": 133.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino (impasto finale)",
+        "amount": 7.0,
+        "unit": "g"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva (impasto finale)",
+        "amount": 17.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (impasto finale, o 3,3g Lievito Fresco)",
+        "amount": 1.3,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (giorno prima): Mescolare acqua (18-20°C) con lievito, aggiungere farina. Coprire e refrigerare per 12-24 ore.",
@@ -237,18 +421,42 @@
     "type": "DOUGH"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Salsa di Pomodoro Base",
     "description": "Salsa di pomodoro semplice per pizza. Frullare brevemente - la salsa deve essere rustica, non troppo liquida.",
     "imageRes": "tomato_sauce",
     "servings": 1,
     "ingredients": [
-      {"name": "Pomodori Pelati", "amount": 400.0, "unit": "g"},
-      {"name": "Origano Secco", "amount": 1.0, "unit": "pizzico"},
-      {"name": "Basilico Fresco", "amount": 3.0, "unit": "foglie"},
-      {"name": "Sale Marino", "amount": 1.0, "unit": "pizzico"},
-      {"name": "Peperoncino (opzionale)", "amount": 1.0, "unit": "pizzico piccolo"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Pomodori Pelati",
+        "amount": 400.0,
+        "unit": "g"
+      },
+      {
+        "name": "Origano Secco",
+        "amount": 1.0,
+        "unit": "pizzico"
+      },
+      {
+        "name": "Basilico Fresco",
+        "amount": 3.0,
+        "unit": "foglie"
+      },
+      {
+        "name": "Sale Marino",
+        "amount": 1.0,
+        "unit": "pizzico"
+      },
+      {
+        "name": "Peperoncino (opzionale)",
+        "amount": 1.0,
+        "unit": "pizzico piccolo"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Mettere i pomodori pelati in scatola nel frullatore.",
@@ -262,18 +470,42 @@
     "type": "TOPPING"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Pizza Margherita",
     "description": "Pizza napoletana classica con salsa di pomodoro, mozzarella fiordilatte e basilico fresco.",
     "imageRes": "pizza_margherita",
     "servings": 1,
     "ingredients": [
-      {"name": "Panetto Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Salsa di Pomodoro Base", "amount": 70.0, "unit": "g"},
-      {"name": "Mozzarella Fiordilatte", "amount": 90.0, "unit": "g"},
-      {"name": "Basilico Fresco", "amount": 3.0, "unit": "foglie"},
-      {"name": "Parmigiano Grattugiato", "amount": 5.0, "unit": "g"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Panetto Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Salsa di Pomodoro Base",
+        "amount": 70.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella Fiordilatte",
+        "amount": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "Basilico Fresco",
+        "amount": 3.0,
+        "unit": "foglie"
+      },
+      {
+        "name": "Parmigiano Grattugiato",
+        "amount": 5.0,
+        "unit": "g"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Preparare la Salsa di Pomodoro Base (vedi ricetta).",
@@ -291,17 +523,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Pizza Margherita con Mozzarella di Bufala",
     "description": "Margherita classica con mozzarella di bufala aggiunta dopo la cottura per sapore intensificato.",
     "imageRes": "pizza_margherita_buffalo",
     "servings": 1,
     "ingredients": [
-      {"name": "Panetto Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Salsa di Pomodoro Base", "amount": 70.0, "unit": "g"},
-      {"name": "Mozzarella di Bufala", "amount": 90.0, "unit": "g"},
-      {"name": "Basilico Fresco", "amount": 3.0, "unit": "foglie"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Panetto Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Salsa di Pomodoro Base",
+        "amount": 70.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella di Bufala",
+        "amount": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "Basilico Fresco",
+        "amount": 3.0,
+        "unit": "foglie"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Preparare la Salsa di Pomodoro Base (vedi ricetta).",
@@ -315,19 +567,47 @@
     "type": "TOPPING"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Pizza Marinara",
     "description": "Pizza tradizionale senza formaggio - salsa di pomodoro, acciughe, olive e capperi opzionali.",
     "imageRes": "pizza_marinara",
     "servings": 1,
     "ingredients": [
-      {"name": "Panetto Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Salsa di Pomodoro Base", "amount": 90.0, "unit": "g"},
-      {"name": "Acciughe Sott'olio", "amount": 5.5, "unit": "filetti"},
-      {"name": "Olive Nere Piccole", "amount": 9.0, "unit": "olive"},
-      {"name": "Capperi Piccoli (opzionali)", "amount": 7.0, "unit": "capperi"},
-      {"name": "Origano Secco", "amount": 1.0, "unit": "pizzico"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Panetto Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Salsa di Pomodoro Base",
+        "amount": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acciughe Sott'olio",
+        "amount": 5.5,
+        "unit": "filetti"
+      },
+      {
+        "name": "Olive Nere Piccole",
+        "amount": 9.0,
+        "unit": "olive"
+      },
+      {
+        "name": "Capperi Piccoli (opzionali)",
+        "amount": 7.0,
+        "unit": "capperi"
+      },
+      {
+        "name": "Origano Secco",
+        "amount": 1.0,
+        "unit": "pizzico"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Preparare la Salsa di Pomodoro Base (vedi ricetta).",
@@ -344,16 +624,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Pizza con Prosciutto Crudo",
     "description": "Pizza con base di formaggio e prosciutto crudo aggiunto dopo la cottura per preservarne il sapore delicato.",
     "imageRes": "pizza_prosciutto_crudo",
     "servings": 1,
     "ingredients": [
-      {"name": "Panetto Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Stracchino o Mozzarella", "amount": 140.0, "unit": "g"},
-      {"name": "Prosciutto Crudo", "amount": 4.0, "unit": "fette"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Panetto Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Stracchino o Mozzarella",
+        "amount": 140.0,
+        "unit": "g"
+      },
+      {
+        "name": "Prosciutto Crudo",
+        "amount": 4.0,
+        "unit": "fette"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Usare formaggio Stracchino italiano (chiamato anche Crescenza) se possibile, altrimenti usare mozzarella fiordilatte.",
@@ -368,20 +664,52 @@
     "type": "TOPPING"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Pizza con Prosciutto Crudo e Funghi",
     "description": "Pizza con formaggio, funghi saltati e prosciutto crudo aggiunto dopo la cottura.",
     "imageRes": "pizza_prosciutto_crudo_mushrooms",
     "servings": 1,
     "ingredients": [
-      {"name": "Panetto Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Stracchino o Mozzarella", "amount": 140.0, "unit": "g"},
-      {"name": "Prosciutto Crudo", "amount": 4.0, "unit": "fette"},
-      {"name": "Funghi Champignon", "amount": 110.0, "unit": "g"},
-      {"name": "Aglio", "amount": 1.0, "unit": "spicchio"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 15.0, "unit": "ml"},
-      {"name": "Peperoncino in Scaglie (opzionale)", "amount": 1.0, "unit": "pizzico"},
-      {"name": "Sale", "amount": 1.0, "unit": "pizzico"}
+      {
+        "name": "Panetto Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Stracchino o Mozzarella",
+        "amount": 140.0,
+        "unit": "g"
+      },
+      {
+        "name": "Prosciutto Crudo",
+        "amount": 4.0,
+        "unit": "fette"
+      },
+      {
+        "name": "Funghi Champignon",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aglio",
+        "amount": 1.0,
+        "unit": "spicchio"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Peperoncino in Scaglie (opzionale)",
+        "amount": 1.0,
+        "unit": "pizzico"
+      },
+      {
+        "name": "Sale",
+        "amount": 1.0,
+        "unit": "pizzico"
+      }
     ],
     "instructions": [
       "Pulire e saltare 100-120g di funghi champignon in padella con olio d'oliva, spicchio d'aglio, sale e peperoncino opzionale.",
@@ -397,18 +725,42 @@
     "type": "TOPPING"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Pizza con Prosciutto Cotto e Mozzarella",
     "description": "Pizza con prosciutto cotto, mozzarella e olive nere.",
     "imageRes": "pizza_prosciutto_cotto",
     "servings": 1,
     "ingredients": [
-      {"name": "Panetto Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Prosciutto Cotto", "amount": 4.0, "unit": "fette"},
-      {"name": "Mozzarella Fiordilatte", "amount": 110.0, "unit": "g"},
-      {"name": "Olive Nere Piccole", "amount": 11.0, "unit": "olive"},
-      {"name": "Origano Secco", "amount": 1.0, "unit": "pizzico"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Panetto Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Prosciutto Cotto",
+        "amount": 4.0,
+        "unit": "fette"
+      },
+      {
+        "name": "Mozzarella Fiordilatte",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Olive Nere Piccole",
+        "amount": 11.0,
+        "unit": "olive"
+      },
+      {
+        "name": "Origano Secco",
+        "amount": 1.0,
+        "unit": "pizzico"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Posizionare l'impasto steso su superficie ben infarinata.",
@@ -423,19 +775,47 @@
     "type": "TOPPING"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Pizza con Zucchine e Speck",
     "description": "Pizza con zucchine saltate, strisce di speck e parmigiano.",
     "imageRes": "pizza_zucchini_speck",
     "servings": 1,
     "ingredients": [
-      {"name": "Panetto Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Zucchine Giovani (cotte)", "amount": 4.0, "unit": "pezzi"},
-      {"name": "Speck (strisce piccole)", "amount": 70.0, "unit": "g"},
-      {"name": "Parmigiano Grattugiato", "amount": 35.0, "unit": "g"},
-      {"name": "Aglio", "amount": 1.0, "unit": "spicchio"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 15.0, "unit": "ml"},
-      {"name": "Peperoncino in Scaglie (opzionale)", "amount": 1.0, "unit": "pizzico"}
+      {
+        "name": "Panetto Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Zucchine Giovani (cotte)",
+        "amount": 4.0,
+        "unit": "pezzi"
+      },
+      {
+        "name": "Speck (strisce piccole)",
+        "amount": 70.0,
+        "unit": "g"
+      },
+      {
+        "name": "Parmigiano Grattugiato",
+        "amount": 35.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aglio",
+        "amount": 1.0,
+        "unit": "spicchio"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Peperoncino in Scaglie (opzionale)",
+        "amount": 1.0,
+        "unit": "pizzico"
+      }
     ],
     "instructions": [
       "Tagliare 3-5 zucchine verdi giovani (15-20cm lunghe) a rondelle piccole (3-4mm spesse) o strisce piccole.",
@@ -451,20 +831,52 @@
     "type": "TOPPING"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "Pizza con Broccoli e Funghi",
     "description": "Pizza con broccoli saltati, funghi e mozzarella o stracchino.",
     "imageRes": "pizza_broccoli_mushrooms",
     "servings": 1,
     "ingredients": [
-      {"name": "Panetto Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Broccoli (saltati)", "amount": 225.0, "unit": "g"},
-      {"name": "Mozzarella o Stracchino", "amount": 110.0, "unit": "g"},
-      {"name": "Funghi Champignon", "amount": 110.0, "unit": "g"},
-      {"name": "Aglio", "amount": 1.0, "unit": "spicchio"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 15.0, "unit": "ml"},
-      {"name": "Sale", "amount": 1.0, "unit": "pizzico"},
-      {"name": "Peperoncino in Scaglie (opzionale)", "amount": 1.0, "unit": "pizzico"}
+      {
+        "name": "Panetto Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Broccoli (saltati)",
+        "amount": 225.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella o Stracchino",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Funghi Champignon",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aglio",
+        "amount": 1.0,
+        "unit": "spicchio"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Sale",
+        "amount": 1.0,
+        "unit": "pizzico"
+      },
+      {
+        "name": "Peperoncino in Scaglie (opzionale)",
+        "amount": 1.0,
+        "unit": "pizzico"
+      }
     ],
     "instructions": [
       "Pulire i broccoli e saltarli in padella profonda con olio d'oliva, coprendo con coperchio quando non si mescola.",
@@ -479,17 +891,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Pizza con Mortadella e Pistacchi",
     "description": "Pizza con mozzarella o stracchino, fette di mortadella e pistacchi tritati aggiunti dopo la cottura.",
     "imageRes": "pizza_mortadella_pistacchio",
     "servings": 1,
     "ingredients": [
-      {"name": "Panetto Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Mortadella", "amount": 110.0, "unit": "g"},
-      {"name": "Mozzarella o Stracchino", "amount": 110.0, "unit": "g"},
-      {"name": "Pistacchi (tritati)", "amount": 17.5, "unit": "g"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Panetto Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mortadella",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella o Stracchino",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Pistacchi (tritati)",
+        "amount": 17.5,
+        "unit": "g"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Posizionare l'impasto steso su superficie ben infarinata.",
@@ -503,16 +935,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Focaccia con Olive Verdi",
     "description": "Focaccia semplice condita con olive verdi, sale grosso marino e olio d'oliva.",
     "imageRes": "focaccia_green_olives",
     "servings": 2,
     "ingredients": [
-      {"name": "Impasto Focaccia", "amount": 800.0, "unit": "g"},
-      {"name": "Olive Verdi", "amount": 15.0, "unit": "olive"},
-      {"name": "Sale Grosso Marino", "amount": 2.0, "unit": "pizzico"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Impasto Focaccia",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Olive Verdi",
+        "amount": 15.0,
+        "unit": "olive"
+      },
+      {
+        "name": "Sale Grosso Marino",
+        "amount": 2.0,
+        "unit": "pizzico"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Quando è quasi pronta per la cottura, posizionare diverse olive verdi nell'impasto a intervalli abbastanza regolari.",
@@ -525,17 +973,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Focaccia con Pomodorini e Olive Nere",
     "description": "Focaccia condita con pomodorini, olive nere, origano e olio d'oliva.",
     "imageRes": "focaccia_cherry_tomatoes",
     "servings": 2,
     "ingredients": [
-      {"name": "Impasto Focaccia", "amount": 800.0, "unit": "g"},
-      {"name": "Pomodorini", "amount": 7.0, "unit": "pomodorini"},
-      {"name": "Olive Nere Piccole", "amount": 12.0, "unit": "olive"},
-      {"name": "Origano Secco", "amount": 1.0, "unit": "pizzico"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Impasto Focaccia",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Pomodorini",
+        "amount": 7.0,
+        "unit": "pomodorini"
+      },
+      {
+        "name": "Olive Nere Piccole",
+        "amount": 12.0,
+        "unit": "olive"
+      },
+      {
+        "name": "Origano Secco",
+        "amount": 1.0,
+        "unit": "pizzico"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Tagliare 6-8 pomodorini a metà.",
@@ -549,16 +1017,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Focaccia con Rosmarino e Olive Nere",
     "description": "Focaccia classica con rosmarino fresco, olive nere e olio d'oliva.",
     "imageRes": "focaccia_rosemary_olives",
     "servings": 2,
     "ingredients": [
-      {"name": "Impasto Focaccia", "amount": 800.0, "unit": "g"},
-      {"name": "Rosmarino Fresco", "amount": 1.0, "unit": "rametto"},
-      {"name": "Olive Nere Piccole", "amount": 12.0, "unit": "olive"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Impasto Focaccia",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Rosmarino Fresco",
+        "amount": 1.0,
+        "unit": "rametto"
+      },
+      {
+        "name": "Olive Nere Piccole",
+        "amount": 12.0,
+        "unit": "olive"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Prendere un rametto di rosmarino fresco e staccare le foglioline piccole.",
@@ -570,17 +1054,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Focaccia Pizza",
     "description": "Focaccia con condimento stile pizza - salsa di pomodoro, mozzarella e basilico (come Pizza Margherita).",
     "imageRes": "focaccia_pizza",
     "servings": 2,
     "ingredients": [
-      {"name": "Impasto Focaccia", "amount": 800.0, "unit": "g"},
-      {"name": "Salsa di Pomodoro Base", "amount": 100.0, "unit": "g"},
-      {"name": "Mozzarella Fiordilatte", "amount": 120.0, "unit": "g"},
-      {"name": "Basilico Fresco", "amount": 5.0, "unit": "foglie"},
-      {"name": "Olio Extravergine d'Oliva", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Impasto Focaccia",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Salsa di Pomodoro Base",
+        "amount": 100.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella Fiordilatte",
+        "amount": 120.0,
+        "unit": "g"
+      },
+      {
+        "name": "Basilico Fresco",
+        "amount": 5.0,
+        "unit": "foglie"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Stendere la salsa di pomodoro sulla superficie dell'impasto focaccia.",
@@ -593,16 +1097,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Baguette - Metodo Diretto",
     "description": "Baguette francese classica con metodo diretto e fermentazione prolungata a freddo. Idratazione al 75% per crosta croccante e alveolatura aperta.",
     "imageRes": "baguette_direct",
     "servings": 4,
     "ingredients": [
-      {"name": "Farina di Pane (o Pane e 00)", "amount": 1000.0, "unit": "g"},
-      {"name": "Acqua (18-20°C)", "amount": 750.0, "unit": "g"},
-      {"name": "Sale Marino", "amount": 20.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (o 6,0g Lievito Fresco)", "amount": 2.4, "unit": "g"}
+      {
+        "name": "Farina di Pane (o Pane e 00)",
+        "amount": 1000.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua (18-20°C)",
+        "amount": 750.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (o 6,0g Lievito Fresco)",
+        "amount": 2.4,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "GIORNO PRIMA: Sciogliere il lievito nell'acqua, aggiungere metà farina e mescolare.",
@@ -623,20 +1143,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Baguette con Poolish",
     "description": "Baguette leggera e attraente usando pre-fermentato poolish. Idratazione al 70% con fermentazione notturna a freddo per sapore eccezionale.",
     "imageRes": "baguette_poolish",
     "servings": 4,
     "ingredients": [
-      {"name": "Farina di Pane e 00 (per poolish)", "amount": 180.0, "unit": "g"},
-      {"name": "Farina di Segale (per poolish)", "amount": 30.0, "unit": "g"},
-      {"name": "Acqua 18-20°C (per poolish)", "amount": 210.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (per poolish, o 3,0g Lievito Fresco)", "amount": 1.2, "unit": "g"},
-      {"name": "Farina di Pane e 00 (impasto finale)", "amount": 790.0, "unit": "g"},
-      {"name": "Acqua 18-20°C (impasto finale)", "amount": 490.0, "unit": "g"},
-      {"name": "Sale Marino (impasto finale)", "amount": 20.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (impasto finale, o 13,0g Lievito Fresco)", "amount": 5.1, "unit": "g"}
+      {
+        "name": "Farina di Pane e 00 (per poolish)",
+        "amount": 180.0,
+        "unit": "g"
+      },
+      {
+        "name": "Farina di Segale (per poolish)",
+        "amount": 30.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua 18-20°C (per poolish)",
+        "amount": 210.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (per poolish, o 3,0g Lievito Fresco)",
+        "amount": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Farina di Pane e 00 (impasto finale)",
+        "amount": 790.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua 18-20°C (impasto finale)",
+        "amount": 490.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino (impasto finale)",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (impasto finale, o 13,0g Lievito Fresco)",
+        "amount": 5.1,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (sera prima): Mescolare acqua con lievito, aggiungere farine. Coprire e refrigerare 12-18 ore.",
@@ -659,21 +1211,57 @@
     "type": "DOUGH"
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Pane Bianco con Poolish",
     "description": "Pane bianco versatile con pre-fermentato poolish. Idratazione al 75% per consistenza soffice e sapore interessante.",
     "imageRes": "white_bread",
     "servings": 4,
     "ingredients": [
-      {"name": "Farina di Pane e 00 (per poolish)", "amount": 500.0, "unit": "g"},
-      {"name": "Acqua Tiepida 27°C (per poolish)", "amount": 500.0, "unit": "g"},
-      {"name": "Lievito Fresco (per poolish)", "amount": 1.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (per poolish, alternativo)", "amount": 0.4, "unit": "g"},
-      {"name": "Farina di Pane e 00 (impasto finale)", "amount": 500.0, "unit": "g"},
-      {"name": "Acqua Calda 41°C (impasto finale)", "amount": 250.0, "unit": "g"},
-      {"name": "Sale Marino (impasto finale)", "amount": 21.0, "unit": "g"},
-      {"name": "Lievito Fresco (impasto finale)", "amount": 8.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (impasto finale, alternativo)", "amount": 3.0, "unit": "g"}
+      {
+        "name": "Farina di Pane e 00 (per poolish)",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua Tiepida 27°C (per poolish)",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Fresco (per poolish)",
+        "amount": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (per poolish, alternativo)",
+        "amount": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Farina di Pane e 00 (impasto finale)",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua Calda 41°C (impasto finale)",
+        "amount": 250.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino (impasto finale)",
+        "amount": 21.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Fresco (impasto finale)",
+        "amount": 8.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (impasto finale, alternativo)",
+        "amount": 3.0,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (12-16h prima): Mescolare acqua tiepida con lievito, aggiungere farina. Coprire e riposare a temperatura ambiente 12-16 ore.",
@@ -697,20 +1285,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "Ciabatta con Biga",
     "description": "Ciabatta italiana classica con pre-fermentato biga. Idratazione al 67% con olio d'oliva per caratteristica alveolatura aperta e crosta croccante.",
     "imageRes": "ciabatta_biga",
     "servings": 3,
     "ingredients": [
-      {"name": "Farina di Pane e 00 (per biga)", "amount": 440.0, "unit": "g"},
-      {"name": "Acqua 18-20°C (per biga)", "amount": 225.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (per biga, o 2,5g Lievito Fresco)", "amount": 1.0, "unit": "g"},
-      {"name": "Farina di Pane e 00 (impasto finale)", "amount": 560.0, "unit": "g"},
-      {"name": "Acqua 18-20°C (impasto finale)", "amount": 450.0, "unit": "g"},
-      {"name": "Olio Extravergine d'Oliva (impasto finale)", "amount": 64.0, "unit": "g"},
-      {"name": "Sale Marino (impasto finale)", "amount": 20.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (impasto finale, o 12,0g Lievito Fresco)", "amount": 5.0, "unit": "g"}
+      {
+        "name": "Farina di Pane e 00 (per biga)",
+        "amount": 440.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua 18-20°C (per biga)",
+        "amount": 225.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (per biga, o 2,5g Lievito Fresco)",
+        "amount": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "Farina di Pane e 00 (impasto finale)",
+        "amount": 560.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua 18-20°C (impasto finale)",
+        "amount": 450.0,
+        "unit": "g"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva (impasto finale)",
+        "amount": 64.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino (impasto finale)",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (impasto finale, o 12,0g Lievito Fresco)",
+        "amount": 5.0,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "BIGA (giorno prima): Mescolare acqua con lievito, aggiungere farina. Coprire e refrigerare 12-18 ore.",
@@ -731,20 +1351,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "Ciabatta con Poolish",
     "description": "Ciabatta italiana con pre-fermentato poolish. Idratazione al 74% con olio d'oliva per consistenza leggera, ariosa e buchi caratteristici.",
     "imageRes": "ciabatta_poolish",
     "servings": 6,
     "ingredients": [
-      {"name": "Farina di Pane e 00 (per poolish)", "amount": 350.0, "unit": "g"},
-      {"name": "Acqua 18-20°C (per poolish)", "amount": 350.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (per poolish, o 5,0g Lievito Fresco)", "amount": 2.0, "unit": "g"},
-      {"name": "Farina di Pane e 00 (impasto finale)", "amount": 650.0, "unit": "g"},
-      {"name": "Acqua Tiepida 27-30°C (impasto finale)", "amount": 390.0, "unit": "g"},
-      {"name": "Sale Marino (impasto finale)", "amount": 20.0, "unit": "g"},
-      {"name": "Olio Extravergine d'Oliva (impasto finale)", "amount": 50.0, "unit": "g"},
-      {"name": "Lievito Secco Istantaneo (impasto finale, o 10,0g Lievito Fresco)", "amount": 3.9, "unit": "g"}
+      {
+        "name": "Farina di Pane e 00 (per poolish)",
+        "amount": 350.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua 18-20°C (per poolish)",
+        "amount": 350.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (per poolish, o 5,0g Lievito Fresco)",
+        "amount": 2.0,
+        "unit": "g"
+      },
+      {
+        "name": "Farina di Pane e 00 (impasto finale)",
+        "amount": 650.0,
+        "unit": "g"
+      },
+      {
+        "name": "Acqua Tiepida 27-30°C (impasto finale)",
+        "amount": 390.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale Marino (impasto finale)",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Olio Extravergine d'Oliva (impasto finale)",
+        "amount": 50.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lievito Secco Istantaneo (impasto finale, o 10,0g Lievito Fresco)",
+        "amount": 3.9,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (giorno prima): Mescolare acqua con lievito, aggiungere farina. Coprire e refrigerare 17-24 ore.",

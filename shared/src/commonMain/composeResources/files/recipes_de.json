@@ -1,20 +1,237 @@
 [
   {
-    "id": 27,
+    "id": 1,
+    "name": "Pizza am selben Tag - 8 Stunden",
+    "description": "Pizza am selben Tag mit 8 Stunden Gärung. 70% Hydratation für einen schönen, dehnbaren Teig.",
+    "imageRes": "pizza_8_hours",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Brot- und Weizenmehl",
+        "amount": 495.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser (18-20°C)",
+        "amount": 345.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz",
+        "amount": 12.8,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (oder 0,7g frische Hefe)",
+        "amount": 0.3,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Salz in Wasser (18-20°C) auflösen.",
+      "Kleine Portion Mehl hinzufügen, dann Hefe. Gut vermischen.",
+      "Restliches Mehl hinzufügen und mischen bis alles Mehl hydratisiert ist.",
+      "Abdecken und 10 Minuten ruhen lassen.",
+      "3 kurze Knetungen mit je 10 Minuten Pause dazwischen.",
+      "Teig 75-90 Minuten bei Raumtemperatur (20-23°C) ruhen lassen.",
+      "In Pizzabälle schneiden (280-320g je Stück) und formen.",
+      "Bälle etwa 6 Stunden bei Raumtemperatur ruhen lassen.",
+      "Pizza formen und bei 240-250°C backen."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 2,
+    "name": "Schnelle Pizza am selben Tag",
+    "description": "Schnelle Pizza am selben Tag mit 6-7 Stunden Gärung. 70% Hydratation mit warmem Wasser für schnellere Gärung.",
+    "imageRes": "pizza_same_day",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Brot- und Weizenmehl",
+        "amount": 495.0,
+        "unit": "g"
+      },
+      {
+        "name": "Warmes Wasser (38°C)",
+        "amount": 345.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz",
+        "amount": 12.8,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (oder 1,2g frische Hefe)",
+        "amount": 0.49,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Salz in warmem Wasser (38°C) auflösen.",
+      "Kleine Portion Mehl hinzufügen, dann Hefe. Gut vermischen.",
+      "Restliches Mehl hinzufügen und mischen bis alles Mehl hydratisiert ist.",
+      "Abdecken und 10 Minuten ruhen lassen.",
+      "3 kurze Knetungen mit je 10 Minuten Pause dazwischen.",
+      "Teig etwa 90 Minuten bei Raumtemperatur (20-23°C) ruhen lassen.",
+      "In Pizzabälle schneiden (280g je Stück) und formen.",
+      "Bälle etwa 5 Stunden bei Raumtemperatur ruhen lassen.",
+      "Pizza formen und bei 240-250°C backen."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 3,
+    "name": "Pizza mit verlängerter Gärung",
+    "description": "Pizza mit verlängerter Gärung (24-48 Stunden). 70% Hydratation mit Kaltgärung für maximalen Geschmack und Bekömmlichkeit.",
+    "imageRes": "pizza_extended_fermentation",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Brot- und Weizenmehl",
+        "amount": 495.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser (18-20°C)",
+        "amount": 345.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz",
+        "amount": 12.8,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (oder 4,5g frische Hefe)",
+        "amount": 1.8,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Salz in Wasser (18-20°C) auflösen.",
+      "Kleine Portion Mehl hinzufügen, dann Hefe. Gut vermischen.",
+      "Restliches Mehl hinzufügen und mischen bis alles Mehl hydratisiert ist.",
+      "Abdecken und 10 Minuten ruhen lassen.",
+      "4 kurze Knetungen mit je 10 Minuten Pause dazwischen.",
+      "Teig etwa 60 Minuten bei Raumtemperatur (20-23°C) ruhen lassen.",
+      "In Pizzabälle schneiden (280g je Stück) und formen.",
+      "Bälle in Kühlschrank (5°C) für mindestens 20-24 Stunden, bis zu 48 Stunden.",
+      "1 Stunde vor dem Backen aus dem Kühlschrank nehmen.",
+      "Pizza formen und bei 240-250°C backen."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 4,
+    "name": "Pizza mit Poolish",
+    "description": "Pizza mit Poolish-Vorteig (12-14 Stunden). 75% Hydratation mit minimaler Hefe für außergewöhnlichen Geschmack und offene Krume.",
+    "imageRes": "pizza_with_poolish",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Brotmehl (für Poolish)",
+        "amount": 247.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lauwarmes Wasser 27°C (für Poolish)",
+        "amount": 247.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (für Poolish, oder 0,49g frische Hefe)",
+        "amount": 0.20,
+        "unit": "g"
+      },
+      {
+        "name": "Brotmehl (Hauptteig)",
+        "amount": 247.0,
+        "unit": "g"
+      },
+      {
+        "name": "Warmes Wasser 41°C (Hauptteig)",
+        "amount": 99.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz (Hauptteig)",
+        "amount": 9.9,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "POOLISH (Abend vorher): Lauwarmes Wasser (27°C) mit Hefe mischen, Mehl hinzufügen. Abdecken und 12-14 Stunden bei Raumtemperatur (18-21°C) ruhen lassen.",
+      "HAUPTTEIG (nächster Tag): Prüfen ob Poolish gut gegärt und verdreifacht ist.",
+      "Salz ins Mehl mischen. Warmes Wasser (41°C) zum Poolish geben und mischen um Gluten teilweise aufzulösen.",
+      "Mehl-Salz-Mischung zum Poolish geben und mischen bis alles Mehl hydratisiert ist.",
+      "Abdecken und 10 Minuten ruhen lassen.",
+      "3 kurze Knetungen mit je 10 Minuten Pause. Öl als Gleitmittel verwenden (Teig ist sehr weich und klebrig).",
+      "Nach letzter Knetung 20 Minuten ruhen, dann 2 Dehnen und Falten mit 20 Minuten Pause dazwischen.",
+      "Teig etwa 6 Stunden bei Raumtemperatur ruhen lassen (sollte sich 2-2,5x vergrößern).",
+      "In Pizzabälle schneiden (280g je Stück) und formen.",
+      "Bälle 30 Minuten ruhen lassen, dann 30 Minuten kühlen vor dem Backen.",
+      "Pizza formen und bei 240-250°C backen."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 5,
     "name": "Focaccia Genovese",
     "description": "Traditionelle ligurische Focaccia mit charakteristischer genoppter Oberfläche, reichlich Olivenöl und grobem Salz. Weiche, luftige Krume mit goldener, knuspriger Kruste.",
     "imageRes": "focaccia_genovese",
     "servings": 2,
     "ingredients": [
-      {"name": "Brot- und Weizenmehl", "amount": 550.0, "unit": "g"},
-      {"name": "Malz", "amount": 15.0, "unit": "g"},
-      {"name": "Wasser (Raumtemperatur)", "amount": 330.0, "unit": "g"},
-      {"name": "Natives Olivenöl Extra", "amount": 25.0, "unit": "g"},
-      {"name": "Trockenhefe (oder 15g frische Hefe)", "amount": 6.0, "unit": "g"},
-      {"name": "Meersalz", "amount": 12.0, "unit": "g"},
-      {"name": "Wasser (für Salamoia)", "amount": 120.0, "unit": "g"},
-      {"name": "Natives Olivenöl Extra (für Salamoia)", "amount": 60.0, "unit": "g"},
-      {"name": "Meersalz (für Salamoia)", "amount": 6.0, "unit": "g"}
+      {
+        "name": "Brot- und Weizenmehl",
+        "amount": 550.0,
+        "unit": "g"
+      },
+      {
+        "name": "Malz",
+        "amount": 15.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser (Raumtemperatur)",
+        "amount": 330.0,
+        "unit": "g"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 25.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (oder 15g frische Hefe)",
+        "amount": 6.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz",
+        "amount": 12.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser (für Salamoia)",
+        "amount": 120.0,
+        "unit": "g"
+      },
+      {
+        "name": "Natives Olivenöl Extra (für Salamoia)",
+        "amount": 60.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz (für Salamoia)",
+        "amount": 6.0,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "Hefe in Wasser (18-20°C) auflösen.",
@@ -39,126 +256,37 @@
     "type": "DOUGH"
   },
   {
-    "id": 1,
-    "name": "Pizza am selben Tag - 8 Stunden",
-    "description": "Pizza am selben Tag mit 8 Stunden Gärung. 70% Hydratation für einen schönen, dehnbaren Teig.",
-    "imageRes": "pizza_8_hours",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Brot- und Weizenmehl", "amount": 495.0, "unit": "g"},
-      {"name": "Wasser (18-20°C)", "amount": 345.0, "unit": "g"},
-      {"name": "Meersalz", "amount": 12.8, "unit": "g"},
-      {"name": "Trockenhefe (oder 0,7g frische Hefe)", "amount": 0.3, "unit": "g"}
-    ],
-    "instructions": [
-      "Salz in Wasser (18-20°C) auflösen.",
-      "Kleine Portion Mehl hinzufügen, dann Hefe. Gut vermischen.",
-      "Restliches Mehl hinzufügen und mischen bis alles Mehl hydratisiert ist.",
-      "Abdecken und 10 Minuten ruhen lassen.",
-      "3 kurze Knetungen mit je 10 Minuten Pause dazwischen.",
-      "Teig 75-90 Minuten bei Raumtemperatur (20-23°C) ruhen lassen.",
-      "In Pizzabälle schneiden (280-320g je Stück) und formen.",
-      "Bälle etwa 6 Stunden bei Raumtemperatur ruhen lassen.",
-      "Pizza formen und bei 240-250°C backen."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 2,
-    "name": "Schnelle Pizza am selben Tag",
-    "description": "Schnelle Pizza am selben Tag mit 6-7 Stunden Gärung. 70% Hydratation mit warmem Wasser für schnellere Gärung.",
-    "imageRes": "pizza_same_day",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Brot- und Weizenmehl", "amount": 495.0, "unit": "g"},
-      {"name": "Warmes Wasser (38°C)", "amount": 345.0, "unit": "g"},
-      {"name": "Meersalz", "amount": 12.8, "unit": "g"},
-      {"name": "Trockenhefe (oder 1,2g frische Hefe)", "amount": 0.49, "unit": "g"}
-    ],
-    "instructions": [
-      "Salz in warmem Wasser (38°C) auflösen.",
-      "Kleine Portion Mehl hinzufügen, dann Hefe. Gut vermischen.",
-      "Restliches Mehl hinzufügen und mischen bis alles Mehl hydratisiert ist.",
-      "Abdecken und 10 Minuten ruhen lassen.",
-      "3 kurze Knetungen mit je 10 Minuten Pause dazwischen.",
-      "Teig etwa 90 Minuten bei Raumtemperatur (20-23°C) ruhen lassen.",
-      "In Pizzabälle schneiden (280g je Stück) und formen.",
-      "Bälle etwa 5 Stunden bei Raumtemperatur ruhen lassen.",
-      "Pizza formen und bei 240-250°C backen."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 3,
-    "name": "Pizza mit verlängerter Gärung",
-    "description": "Pizza mit verlängerter Gärung (24-48 Stunden). 70% Hydratation mit Kaltgärung für maximalen Geschmack und Bekömmlichkeit.",
-    "imageRes": "pizza_extended_fermentation",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Brot- und Weizenmehl", "amount": 495.0, "unit": "g"},
-      {"name": "Wasser (18-20°C)", "amount": 345.0, "unit": "g"},
-      {"name": "Meersalz", "amount": 12.8, "unit": "g"},
-      {"name": "Trockenhefe (oder 4,5g frische Hefe)", "amount": 1.8, "unit": "g"}
-    ],
-    "instructions": [
-      "Salz in Wasser (18-20°C) auflösen.",
-      "Kleine Portion Mehl hinzufügen, dann Hefe. Gut vermischen.",
-      "Restliches Mehl hinzufügen und mischen bis alles Mehl hydratisiert ist.",
-      "Abdecken und 10 Minuten ruhen lassen.",
-      "4 kurze Knetungen mit je 10 Minuten Pause dazwischen.",
-      "Teig etwa 60 Minuten bei Raumtemperatur (20-23°C) ruhen lassen.",
-      "In Pizzabälle schneiden (280g je Stück) und formen.",
-      "Bälle in Kühlschrank (5°C) für mindestens 20-24 Stunden, bis zu 48 Stunden.",
-      "1 Stunde vor dem Backen aus dem Kühlschrank nehmen.",
-      "Pizza formen und bei 240-250°C backen."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 4,
-    "name": "Pizza mit Poolish",
-    "description": "Pizza mit Poolish-Vorteig (12-14 Stunden). 75% Hydratation mit minimaler Hefe für außergewöhnlichen Geschmack und offene Krume.",
-    "imageRes": "pizza_with_poolish",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Brotmehl (für Poolish)", "amount": 247.0, "unit": "g"},
-      {"name": "Lauwarmes Wasser 27°C (für Poolish)", "amount": 247.0, "unit": "g"},
-      {"name": "Trockenhefe (für Poolish, oder 0,49g frische Hefe)", "amount": 0.20, "unit": "g"},
-      {"name": "Brotmehl (Hauptteig)", "amount": 247.0, "unit": "g"},
-      {"name": "Warmes Wasser 41°C (Hauptteig)", "amount": 99.0, "unit": "g"},
-      {"name": "Meersalz (Hauptteig)", "amount": 9.9, "unit": "g"}
-    ],
-    "instructions": [
-      "POOLISH (Abend vorher): Lauwarmes Wasser (27°C) mit Hefe mischen, Mehl hinzufügen. Abdecken und 12-14 Stunden bei Raumtemperatur (18-21°C) ruhen lassen.",
-      "HAUPTTEIG (nächster Tag): Prüfen ob Poolish gut gegärt und verdreifacht ist.",
-      "Salz ins Mehl mischen. Warmes Wasser (41°C) zum Poolish geben und mischen um Gluten teilweise aufzulösen.",
-      "Mehl-Salz-Mischung zum Poolish geben und mischen bis alles Mehl hydratisiert ist.",
-      "Abdecken und 10 Minuten ruhen lassen.",
-      "3 kurze Knetungen mit je 10 Minuten Pause. Öl als Gleitmittel verwenden (Teig ist sehr weich und klebrig).",
-      "Nach letzter Knetung 20 Minuten ruhen, dann 2 Dehnen und Falten mit 20 Minuten Pause dazwischen.",
-      "Teig etwa 6 Stunden bei Raumtemperatur ruhen lassen (sollte sich 2-2,5x vergrößern).",
-      "In Pizzabälle schneiden (280g je Stück) und formen.",
-      "Bälle 30 Minuten ruhen lassen, dann 30 Minuten kühlen vor dem Backen.",
-      "Pizza formen und bei 240-250°C backen."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 5,
+    "id": 6,
     "name": "Focaccia - Direkte Methode",
     "description": "Klassische Focaccia mit Kaltgärung. 78% Hydratation für weiche, luftige Textur mit Olivenöl.",
     "imageRes": "focaccia_direct",
     "servings": 2,
     "ingredients": [
-      {"name": "Brot- und Weizenmehl", "amount": 450.0, "unit": "g"},
-      {"name": "Kaltes Wasser (13°C)", "amount": 350.0, "unit": "g"},
-      {"name": "Meersalz", "amount": 9.0, "unit": "g"},
-      {"name": "Natives Olivenöl Extra", "amount": 11.0, "unit": "g"},
-      {"name": "Trockenhefe (oder 4,0g frische Hefe)", "amount": 1.6, "unit": "g"}
+      {
+        "name": "Brot- und Weizenmehl",
+        "amount": 450.0,
+        "unit": "g"
+      },
+      {
+        "name": "Kaltes Wasser (13°C)",
+        "amount": 350.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz",
+        "amount": 9.0,
+        "unit": "g"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 11.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (oder 4,0g frische Hefe)",
+        "amount": 1.6,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "Kaltes Wasser (13°C) mit Hefe mischen bis aufgelöst.",
@@ -176,18 +304,42 @@
     "type": "DOUGH"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Focaccia mit Poolish - 1. Methode",
     "description": "Focaccia mit Poolish-Vorteig (12-14 Stunden). 70% Hydratation mit minimaler Hefe für verstärkten Geschmack.",
     "imageRes": "focaccia_poolish1",
     "servings": 2,
     "ingredients": [
-      {"name": "Brot- und Weizenmehl (für Poolish)", "amount": 235.0, "unit": "g"},
-      {"name": "Lauwarmes Wasser 27°C (für Poolish)", "amount": 235.0, "unit": "g"},
-      {"name": "Trockenhefe (für Poolish, oder 0,5g frische Hefe)", "amount": 0.19, "unit": "g"},
-      {"name": "Brot- und Weizenmehl (Hauptteig)", "amount": 235.0, "unit": "g"},
-      {"name": "Warmes Wasser 39-41°C (Hauptteig)", "amount": 95.0, "unit": "g"},
-      {"name": "Meersalz (Hauptteig)", "amount": 9.4, "unit": "g"}
+      {
+        "name": "Brot- und Weizenmehl (für Poolish)",
+        "amount": 235.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lauwarmes Wasser 27°C (für Poolish)",
+        "amount": 235.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (für Poolish, oder 0,5g frische Hefe)",
+        "amount": 0.19,
+        "unit": "g"
+      },
+      {
+        "name": "Brot- und Weizenmehl (Hauptteig)",
+        "amount": 235.0,
+        "unit": "g"
+      },
+      {
+        "name": "Warmes Wasser 39-41°C (Hauptteig)",
+        "amount": 95.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz (Hauptteig)",
+        "amount": 9.4,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (Abend vorher): Lauwarmes Wasser (27°C) mit Hefe mischen, Mehl hinzufügen. Abdecken und 12-14 Stunden bei Raumtemperatur (18-21°C) ruhen lassen.",
@@ -206,20 +358,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Focaccia mit Poolish - 2. Methode",
     "description": "Focaccia mit kaltgegärtem Poolish. 74% Hydratation mit Olivenöl im Hauptteig für reichen Geschmack.",
     "imageRes": "focaccia_poolish2",
     "servings": 2,
     "ingredients": [
-      {"name": "Brot- und Weizenmehl (für Poolish)", "amount": 222.0, "unit": "g"},
-      {"name": "Wasser 18-20°C (für Poolish)", "amount": 222.0, "unit": "g"},
-      {"name": "Trockenhefe (für Poolish, oder 3,2g frische Hefe)", "amount": 1.3, "unit": "g"},
-      {"name": "Brot- und Weizenmehl (Hauptteig)", "amount": 222.0, "unit": "g"},
-      {"name": "Lauwarmes Wasser 27-30°C (Hauptteig)", "amount": 133.0, "unit": "g"},
-      {"name": "Meersalz (Hauptteig)", "amount": 7.0, "unit": "g"},
-      {"name": "Natives Olivenöl Extra (Hauptteig)", "amount": 17.0, "unit": "g"},
-      {"name": "Trockenhefe (Hauptteig, oder 3,3g frische Hefe)", "amount": 1.3, "unit": "g"}
+      {
+        "name": "Brot- und Weizenmehl (für Poolish)",
+        "amount": 222.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser 18-20°C (für Poolish)",
+        "amount": 222.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (für Poolish, oder 3,2g frische Hefe)",
+        "amount": 1.3,
+        "unit": "g"
+      },
+      {
+        "name": "Brot- und Weizenmehl (Hauptteig)",
+        "amount": 222.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lauwarmes Wasser 27-30°C (Hauptteig)",
+        "amount": 133.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz (Hauptteig)",
+        "amount": 7.0,
+        "unit": "g"
+      },
+      {
+        "name": "Natives Olivenöl Extra (Hauptteig)",
+        "amount": 17.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (Hauptteig, oder 3,3g frische Hefe)",
+        "amount": 1.3,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (Tag vorher): Wasser (18-20°C) mit Hefe mischen, Mehl hinzufügen. Abdecken und 12-24 Stunden kühlen.",
@@ -237,18 +421,42 @@
     "type": "DOUGH"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Einfache Tomatensauce",
     "description": "Einfache Tomatensauce für Pizza. Kurz mixen - Sauce sollte grob sein, nicht zu flüssig.",
     "imageRes": "tomato_sauce",
     "servings": 1,
     "ingredients": [
-      {"name": "Geschälte Tomaten aus der Dose", "amount": 400.0, "unit": "g"},
-      {"name": "Getrockneter Oregano", "amount": 1.0, "unit": "Prise"},
-      {"name": "Frisches Basilikum", "amount": 3.0, "unit": "Blätter"},
-      {"name": "Meersalz", "amount": 1.0, "unit": "Prise"},
-      {"name": "Chilipulver (optional)", "amount": 1.0, "unit": "kleine Prise"},
-      {"name": "Natives Olivenöl Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Geschälte Tomaten aus der Dose",
+        "amount": 400.0,
+        "unit": "g"
+      },
+      {
+        "name": "Getrockneter Oregano",
+        "amount": 1.0,
+        "unit": "Prise"
+      },
+      {
+        "name": "Frisches Basilikum",
+        "amount": 3.0,
+        "unit": "Blätter"
+      },
+      {
+        "name": "Meersalz",
+        "amount": 1.0,
+        "unit": "Prise"
+      },
+      {
+        "name": "Chilipulver (optional)",
+        "amount": 1.0,
+        "unit": "kleine Prise"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Geschälte Tomaten aus der Dose in Mixerschüssel geben.",
@@ -262,18 +470,42 @@
     "type": "TOPPING"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Pizza Margherita",
     "description": "Klassische neapolitanische Pizza mit Tomatensauce, Mozzarella Fiordilatte und frischem Basilikum.",
     "imageRes": "pizza_margherita",
     "servings": 1,
     "ingredients": [
-      {"name": "Pizzateigkugel", "amount": 280.0, "unit": "g"},
-      {"name": "Einfache Tomatensauce", "amount": 70.0, "unit": "g"},
-      {"name": "Mozzarella Fiordilatte", "amount": 90.0, "unit": "g"},
-      {"name": "Frisches Basilikum", "amount": 3.0, "unit": "Blätter"},
-      {"name": "Geriebener Parmesan", "amount": 5.0, "unit": "g"},
-      {"name": "Natives Olivenöl Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Pizzateigkugel",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Einfache Tomatensauce",
+        "amount": 70.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella Fiordilatte",
+        "amount": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "Frisches Basilikum",
+        "amount": 3.0,
+        "unit": "Blätter"
+      },
+      {
+        "name": "Geriebener Parmesan",
+        "amount": 5.0,
+        "unit": "g"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Einfache Tomatensauce zubereiten (siehe Rezept).",
@@ -291,17 +523,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Pizza Margherita mit Büffelmozzarella",
     "description": "Klassische Margherita mit Büffelmozzarella, die nach dem Backen hinzugefügt wird für verstärkten Geschmack.",
     "imageRes": "pizza_margherita_buffalo",
     "servings": 1,
     "ingredients": [
-      {"name": "Pizzateigkugel", "amount": 280.0, "unit": "g"},
-      {"name": "Einfache Tomatensauce", "amount": 70.0, "unit": "g"},
-      {"name": "Mozzarella di Bufala", "amount": 90.0, "unit": "g"},
-      {"name": "Frisches Basilikum", "amount": 3.0, "unit": "Blätter"},
-      {"name": "Natives Olivenöl Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Pizzateigkugel",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Einfache Tomatensauce",
+        "amount": 70.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella di Bufala",
+        "amount": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "Frisches Basilikum",
+        "amount": 3.0,
+        "unit": "Blätter"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Einfache Tomatensauce zubereiten (siehe Rezept).",
@@ -316,19 +568,47 @@
     "type": "TOPPING"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Pizza Marinara",
     "description": "Traditionelle Pizza ohne Käse - Tomatensauce, Sardellen, Oliven und optional Kapern.",
     "imageRes": "pizza_marinara",
     "servings": 1,
     "ingredients": [
-      {"name": "Pizzateigkugel", "amount": 280.0, "unit": "g"},
-      {"name": "Einfache Tomatensauce", "amount": 90.0, "unit": "g"},
-      {"name": "Sardellen aus der Dose", "amount": 5.5, "unit": "Filets"},
-      {"name": "Kleine schwarze Oliven", "amount": 9.0, "unit": "Oliven"},
-      {"name": "Kleine Kapern (optional)", "amount": 7.0, "unit": "Kapern"},
-      {"name": "Getrockneter Oregano", "amount": 1.0, "unit": "Prise"},
-      {"name": "Natives Olivenöl Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Pizzateigkugel",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Einfache Tomatensauce",
+        "amount": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sardellen aus der Dose",
+        "amount": 5.5,
+        "unit": "Filets"
+      },
+      {
+        "name": "Kleine schwarze Oliven",
+        "amount": 9.0,
+        "unit": "Oliven"
+      },
+      {
+        "name": "Kleine Kapern (optional)",
+        "amount": 7.0,
+        "unit": "Kapern"
+      },
+      {
+        "name": "Getrockneter Oregano",
+        "amount": 1.0,
+        "unit": "Prise"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Einfache Tomatensauce zubereiten (siehe Rezept).",
@@ -345,16 +625,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Pizza mit Prosciutto Crudo",
     "description": "Pizza mit Käsebasis und Prosciutto Crudo, der nach dem Backen hinzugefügt wird um seinen delikaten Geschmack zu bewahren.",
     "imageRes": "pizza_prosciutto_crudo",
     "servings": 1,
     "ingredients": [
-      {"name": "Pizzateigkugel", "amount": 280.0, "unit": "g"},
-      {"name": "Stracchino oder Mozzarella", "amount": 140.0, "unit": "g"},
-      {"name": "Prosciutto Crudo", "amount": 4.0, "unit": "Scheiben"},
-      {"name": "Natives Olivenöl Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Pizzateigkugel",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Stracchino oder Mozzarella",
+        "amount": 140.0,
+        "unit": "g"
+      },
+      {
+        "name": "Prosciutto Crudo",
+        "amount": 4.0,
+        "unit": "Scheiben"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Italienischen Stracchino-Käse (auch Crescenza genannt) verwenden wenn möglich, sonst Mozzarella Fiordilatte.",
@@ -369,20 +665,52 @@
     "type": "TOPPING"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Pizza mit Prosciutto Crudo und Champignons",
     "description": "Pizza mit Käse, sautierten Champignons und Prosciutto Crudo, der nach dem Backen hinzugefügt wird.",
     "imageRes": "pizza_prosciutto_crudo_mushrooms",
     "servings": 1,
     "ingredients": [
-      {"name": "Pizzateigkugel", "amount": 280.0, "unit": "g"},
-      {"name": "Stracchino oder Mozzarella", "amount": 140.0, "unit": "g"},
-      {"name": "Prosciutto Crudo", "amount": 4.0, "unit": "Scheiben"},
-      {"name": "Champignons", "amount": 110.0, "unit": "g"},
-      {"name": "Knoblauch", "amount": 1.0, "unit": "Zehe"},
-      {"name": "Natives Olivenöl Extra", "amount": 15.0, "unit": "ml"},
-      {"name": "Chiliflocken (optional)", "amount": 1.0, "unit": "Prise"},
-      {"name": "Salz", "amount": 1.0, "unit": "Prise"}
+      {
+        "name": "Pizzateigkugel",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Stracchino oder Mozzarella",
+        "amount": 140.0,
+        "unit": "g"
+      },
+      {
+        "name": "Prosciutto Crudo",
+        "amount": 4.0,
+        "unit": "Scheiben"
+      },
+      {
+        "name": "Champignons",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1.0,
+        "unit": "Zehe"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Chiliflocken (optional)",
+        "amount": 1.0,
+        "unit": "Prise"
+      },
+      {
+        "name": "Salz",
+        "amount": 1.0,
+        "unit": "Prise"
+      }
     ],
     "instructions": [
       "100-120g Champignons putzen und in Pfanne mit Olivenöl, Knoblauchzehe, Salz und optional Chiliflocken anbraten.",
@@ -398,18 +726,42 @@
     "type": "TOPPING"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Pizza mit Prosciutto Cotto und Mozzarella",
     "description": "Pizza mit gekochtem Schinken (Prosciutto Cotto), Mozzarella und schwarzen Oliven.",
     "imageRes": "pizza_prosciutto_cotto",
     "servings": 1,
     "ingredients": [
-      {"name": "Pizzateigkugel", "amount": 280.0, "unit": "g"},
-      {"name": "Prosciutto Cotto", "amount": 4.0, "unit": "Scheiben"},
-      {"name": "Mozzarella Fiordilatte", "amount": 110.0, "unit": "g"},
-      {"name": "Kleine schwarze Oliven", "amount": 11.0, "unit": "Oliven"},
-      {"name": "Getrockneter Oregano", "amount": 1.0, "unit": "Prise"},
-      {"name": "Natives Olivenöl Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Pizzateigkugel",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Prosciutto Cotto",
+        "amount": 4.0,
+        "unit": "Scheiben"
+      },
+      {
+        "name": "Mozzarella Fiordilatte",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Kleine schwarze Oliven",
+        "amount": 11.0,
+        "unit": "Oliven"
+      },
+      {
+        "name": "Getrockneter Oregano",
+        "amount": 1.0,
+        "unit": "Prise"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Ausgerollten Pizzateig auf gut bemehlte Arbeitsfläche legen.",
@@ -424,19 +776,47 @@
     "type": "TOPPING"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Pizza mit Zucchini und Speck",
     "description": "Pizza mit sautierten Zucchini, Speckstreifen und Parmesan.",
     "imageRes": "pizza_zucchini_speck",
     "servings": 1,
     "ingredients": [
-      {"name": "Pizzateigkugel", "amount": 280.0, "unit": "g"},
-      {"name": "Junge Zucchini (gegart)", "amount": 4.0, "unit": "Stück"},
-      {"name": "Speck (kleine Streifen)", "amount": 70.0, "unit": "g"},
-      {"name": "Parmesan (gerieben)", "amount": 35.0, "unit": "g"},
-      {"name": "Knoblauch", "amount": 1.0, "unit": "Zehe"},
-      {"name": "Natives Olivenöl Extra", "amount": 15.0, "unit": "ml"},
-      {"name": "Chiliflocken (optional)", "amount": 1.0, "unit": "Prise"}
+      {
+        "name": "Pizzateigkugel",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Junge Zucchini (gegart)",
+        "amount": 4.0,
+        "unit": "Stück"
+      },
+      {
+        "name": "Speck (kleine Streifen)",
+        "amount": 70.0,
+        "unit": "g"
+      },
+      {
+        "name": "Parmesan (gerieben)",
+        "amount": 35.0,
+        "unit": "g"
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1.0,
+        "unit": "Zehe"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Chiliflocken (optional)",
+        "amount": 1.0,
+        "unit": "Prise"
+      }
     ],
     "instructions": [
       "3-5 junge grüne Zucchini (15-20cm lang) in kleine runde Scheiben (3-4mm dick) oder kleine Streifen schneiden.",
@@ -453,20 +833,52 @@
     "type": "TOPPING"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "Pizza mit Brokkoli und Champignons",
     "description": "Pizza mit sautiertem Brokkoli, Champignons und Mozzarella oder Stracchino-Käse.",
     "imageRes": "pizza_broccoli_mushrooms",
     "servings": 1,
     "ingredients": [
-      {"name": "Pizzateigkugel", "amount": 280.0, "unit": "g"},
-      {"name": "Brokkoli (sautiert)", "amount": 225.0, "unit": "g"},
-      {"name": "Mozzarella oder Stracchino", "amount": 110.0, "unit": "g"},
-      {"name": "Champignons", "amount": 110.0, "unit": "g"},
-      {"name": "Knoblauch", "amount": 1.0, "unit": "Zehe"},
-      {"name": "Natives Olivenöl Extra", "amount": 15.0, "unit": "ml"},
-      {"name": "Salz", "amount": 1.0, "unit": "Prise"},
-      {"name": "Chiliflocken (optional)", "amount": 1.0, "unit": "Prise"}
+      {
+        "name": "Pizzateigkugel",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Brokkoli (sautiert)",
+        "amount": 225.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella oder Stracchino",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Champignons",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Knoblauch",
+        "amount": 1.0,
+        "unit": "Zehe"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Salz",
+        "amount": 1.0,
+        "unit": "Prise"
+      },
+      {
+        "name": "Chiliflocken (optional)",
+        "amount": 1.0,
+        "unit": "Prise"
+      }
     ],
     "instructions": [
       "Brokkoli putzen und in tiefer Pfanne mit Olivenöl anbraten, dabei mit Deckel abdecken wenn nicht gerührt wird.",
@@ -481,17 +893,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Pizza mit Mortadella und Pistazien",
     "description": "Pizza mit Mozzarella oder Stracchino, Mortadella-Scheiben und gehackten Pistazien, die nach dem Backen hinzugefügt werden.",
     "imageRes": "pizza_mortadella_pistacchio",
     "servings": 1,
     "ingredients": [
-      {"name": "Pizzateigkugel", "amount": 280.0, "unit": "g"},
-      {"name": "Mortadella", "amount": 110.0, "unit": "g"},
-      {"name": "Mozzarella oder Stracchino", "amount": 110.0, "unit": "g"},
-      {"name": "Pistazien (gehackt)", "amount": 17.5, "unit": "g"},
-      {"name": "Natives Olivenöl Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Pizzateigkugel",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mortadella",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella oder Stracchino",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Pistazien (gehackt)",
+        "amount": 17.5,
+        "unit": "g"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Ausgerollten Pizzateig auf gut bemehlte Arbeitsfläche legen.",
@@ -505,16 +937,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Focaccia mit grünen Oliven",
     "description": "Einfache Focaccia mit grünen Oliven, grobem Meersalz und Olivenöl.",
     "imageRes": "focaccia_green_olives",
     "servings": 2,
     "ingredients": [
-      {"name": "Focaccia-Teig", "amount": 800.0, "unit": "g"},
-      {"name": "Grüne Oliven", "amount": 15.0, "unit": "Oliven"},
-      {"name": "Grobes Meersalz", "amount": 2.0, "unit": "Prisen"},
-      {"name": "Natives Olivenöl Extra", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Focaccia-Teig",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Grüne Oliven",
+        "amount": 15.0,
+        "unit": "Oliven"
+      },
+      {
+        "name": "Grobes Meersalz",
+        "amount": 2.0,
+        "unit": "Prisen"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Kurz vor dem Backen mehrere grüne Oliven in regelmäßigen Abständen in den Teig drücken.",
@@ -527,17 +975,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Focaccia mit Kirschtomaten und schwarzen Oliven",
     "description": "Focaccia mit Kirschtomaten, schwarzen Oliven, Oregano und Olivenöl.",
     "imageRes": "focaccia_cherry_tomatoes",
     "servings": 2,
     "ingredients": [
-      {"name": "Focaccia-Teig", "amount": 800.0, "unit": "g"},
-      {"name": "Kirschtomaten", "amount": 7.0, "unit": "Tomaten"},
-      {"name": "Kleine schwarze Oliven", "amount": 12.0, "unit": "Oliven"},
-      {"name": "Getrockneter Oregano", "amount": 1.0, "unit": "Prise"},
-      {"name": "Natives Olivenöl Extra", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Focaccia-Teig",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Kirschtomaten",
+        "amount": 7.0,
+        "unit": "Tomaten"
+      },
+      {
+        "name": "Kleine schwarze Oliven",
+        "amount": 12.0,
+        "unit": "Oliven"
+      },
+      {
+        "name": "Getrockneter Oregano",
+        "amount": 1.0,
+        "unit": "Prise"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "6-8 Kirschtomaten halbieren.",
@@ -551,16 +1019,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Focaccia mit Rosmarin und schwarzen Oliven",
     "description": "Klassische Focaccia mit frischem Rosmarin, schwarzen Oliven und Olivenöl.",
     "imageRes": "focaccia_rosemary_olives",
     "servings": 2,
     "ingredients": [
-      {"name": "Focaccia-Teig", "amount": 800.0, "unit": "g"},
-      {"name": "Frischer Rosmarin", "amount": 1.0, "unit": "Zweig"},
-      {"name": "Kleine schwarze Oliven", "amount": 12.0, "unit": "Oliven"},
-      {"name": "Natives Olivenöl Extra", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Focaccia-Teig",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Frischer Rosmarin",
+        "amount": 1.0,
+        "unit": "Zweig"
+      },
+      {
+        "name": "Kleine schwarze Oliven",
+        "amount": 12.0,
+        "unit": "Oliven"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Einen frischen Rosmarinzweig nehmen und die kleinen Blätter abzupfen.",
@@ -573,17 +1057,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Pizza-Focaccia",
     "description": "Focaccia mit Pizza-Belag - Tomatensauce, Mozzarella und Basilikum (wie Pizza Margherita).",
     "imageRes": "focaccia_pizza",
     "servings": 2,
     "ingredients": [
-      {"name": "Focaccia-Teig", "amount": 800.0, "unit": "g"},
-      {"name": "Einfache Tomatensauce", "amount": 100.0, "unit": "g"},
-      {"name": "Mozzarella Fiordilatte", "amount": 120.0, "unit": "g"},
-      {"name": "Frisches Basilikum", "amount": 5.0, "unit": "Blätter"},
-      {"name": "Natives Olivenöl Extra", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Focaccia-Teig",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Einfache Tomatensauce",
+        "amount": 100.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella Fiordilatte",
+        "amount": 120.0,
+        "unit": "g"
+      },
+      {
+        "name": "Frisches Basilikum",
+        "amount": 5.0,
+        "unit": "Blätter"
+      },
+      {
+        "name": "Natives Olivenöl Extra",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Tomatensauce auf Focaccia-Teig verteilen.",
@@ -596,16 +1100,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Baguette - Direkte Methode",
     "description": "Klassisches französisches Baguette mit direkter Methode und verlängerter Kaltgärung. 75% Hydratation für knusprige Kruste und offene Krume.",
     "imageRes": "baguette_direct",
     "servings": 4,
     "ingredients": [
-      {"name": "Brotmehl (oder Brot- und Weizenmehl)", "amount": 1000.0, "unit": "g"},
-      {"name": "Wasser (18-20°C)", "amount": 750.0, "unit": "g"},
-      {"name": "Meersalz", "amount": 20.0, "unit": "g"},
-      {"name": "Trockenhefe (oder 6,0g frische Hefe)", "amount": 2.4, "unit": "g"}
+      {
+        "name": "Brotmehl (oder Brot- und Weizenmehl)",
+        "amount": 1000.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser (18-20°C)",
+        "amount": 750.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (oder 6,0g frische Hefe)",
+        "amount": 2.4,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "TAG VORHER: Hefe in Wasser auflösen, Hälfte des Mehls hinzufügen und mischen.",
@@ -626,20 +1146,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Baguette mit Poolish",
     "description": "Leichtes und attraktives Baguette mit Poolish-Vorteig. 70% Hydratation mit Kaltgärung über Nacht für außergewöhnlichen Geschmack.",
     "imageRes": "baguette_poolish",
     "servings": 4,
     "ingredients": [
-      {"name": "Brot- und Weizenmehl (für Poolish)", "amount": 180.0, "unit": "g"},
-      {"name": "Roggenmehl (für Poolish)", "amount": 30.0, "unit": "g"},
-      {"name": "Wasser 18-20°C (für Poolish)", "amount": 210.0, "unit": "g"},
-      {"name": "Trockenhefe (für Poolish, oder 3,0g frische Hefe)", "amount": 1.2, "unit": "g"},
-      {"name": "Brot- und Weizenmehl (Hauptteig)", "amount": 790.0, "unit": "g"},
-      {"name": "Wasser 18-20°C (Hauptteig)", "amount": 490.0, "unit": "g"},
-      {"name": "Meersalz (Hauptteig)", "amount": 20.0, "unit": "g"},
-      {"name": "Trockenhefe (Hauptteig, oder 13,0g frische Hefe)", "amount": 5.1, "unit": "g"}
+      {
+        "name": "Brot- und Weizenmehl (für Poolish)",
+        "amount": 180.0,
+        "unit": "g"
+      },
+      {
+        "name": "Roggenmehl (für Poolish)",
+        "amount": 30.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser 18-20°C (für Poolish)",
+        "amount": 210.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (für Poolish, oder 3,0g frische Hefe)",
+        "amount": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Brot- und Weizenmehl (Hauptteig)",
+        "amount": 790.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser 18-20°C (Hauptteig)",
+        "amount": 490.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz (Hauptteig)",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (Hauptteig, oder 13,0g frische Hefe)",
+        "amount": 5.1,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (Abend vorher): Wasser mit Hefe mischen, Mehle hinzufügen. Abdecken und 12-18 Stunden kühlen.",
@@ -662,21 +1214,57 @@
     "type": "DOUGH"
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Weißbrot mit Poolish",
     "description": "Vielseitiges Weißbrot mit Poolish-Vorteig. 75% Hydratation für weiche Textur und interessanten Geschmack.",
     "imageRes": "white_bread",
     "servings": 4,
     "ingredients": [
-      {"name": "Brot- und Weizenmehl (für Poolish)", "amount": 500.0, "unit": "g"},
-      {"name": "Lauwarmes Wasser 27°C (für Poolish)", "amount": 500.0, "unit": "g"},
-      {"name": "Frische Hefe (für Poolish)", "amount": 1.0, "unit": "g"},
-      {"name": "Trockenhefe (für Poolish, Alternative)", "amount": 0.4, "unit": "g"},
-      {"name": "Brot- und Weizenmehl (Hauptteig)", "amount": 500.0, "unit": "g"},
-      {"name": "Warmes Wasser 41°C (Hauptteig)", "amount": 250.0, "unit": "g"},
-      {"name": "Meersalz (Hauptteig)", "amount": 21.0, "unit": "g"},
-      {"name": "Frische Hefe (Hauptteig)", "amount": 8.0, "unit": "g"},
-      {"name": "Trockenhefe (Hauptteig, Alternative)", "amount": 3.0, "unit": "g"}
+      {
+        "name": "Brot- und Weizenmehl (für Poolish)",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lauwarmes Wasser 27°C (für Poolish)",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "Frische Hefe (für Poolish)",
+        "amount": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (für Poolish, Alternative)",
+        "amount": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Brot- und Weizenmehl (Hauptteig)",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "Warmes Wasser 41°C (Hauptteig)",
+        "amount": 250.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz (Hauptteig)",
+        "amount": 21.0,
+        "unit": "g"
+      },
+      {
+        "name": "Frische Hefe (Hauptteig)",
+        "amount": 8.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (Hauptteig, Alternative)",
+        "amount": 3.0,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (12-16h vorher): Lauwarmes Wasser mit Hefe mischen, Mehl hinzufügen. Abdecken und 12-16 Stunden bei Raumtemperatur ruhen.",
@@ -700,20 +1288,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "Ciabatta mit Biga",
     "description": "Klassische italienische Ciabatta mit Biga-Vorteig. 67% Hydratation mit Olivenöl für charakteristische offene Krume und knusprige Kruste.",
     "imageRes": "ciabatta_biga",
     "servings": 3,
     "ingredients": [
-      {"name": "Brot- und Weizenmehl (für Biga)", "amount": 440.0, "unit": "g"},
-      {"name": "Wasser 18-20°C (für Biga)", "amount": 225.0, "unit": "g"},
-      {"name": "Trockenhefe (für Biga, oder 2,5g frische Hefe)", "amount": 1.0, "unit": "g"},
-      {"name": "Brot- und Weizenmehl (Hauptteig)", "amount": 560.0, "unit": "g"},
-      {"name": "Wasser 18-20°C (Hauptteig)", "amount": 450.0, "unit": "g"},
-      {"name": "Natives Olivenöl Extra (Hauptteig)", "amount": 64.0, "unit": "g"},
-      {"name": "Meersalz (Hauptteig)", "amount": 20.0, "unit": "g"},
-      {"name": "Trockenhefe (Hauptteig, oder 12,0g frische Hefe)", "amount": 5.0, "unit": "g"}
+      {
+        "name": "Brot- und Weizenmehl (für Biga)",
+        "amount": 440.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser 18-20°C (für Biga)",
+        "amount": 225.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (für Biga, oder 2,5g frische Hefe)",
+        "amount": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "Brot- und Weizenmehl (Hauptteig)",
+        "amount": 560.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser 18-20°C (Hauptteig)",
+        "amount": 450.0,
+        "unit": "g"
+      },
+      {
+        "name": "Natives Olivenöl Extra (Hauptteig)",
+        "amount": 64.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz (Hauptteig)",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (Hauptteig, oder 12,0g frische Hefe)",
+        "amount": 5.0,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "BIGA (Tag vorher): Wasser mit Hefe mischen, Mehl hinzufügen. Abdecken und 12-18 Stunden kühlen.",
@@ -734,20 +1354,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "Ciabatta mit Poolish",
     "description": "Italienische Ciabatta mit Poolish-Vorteig. 74% Hydratation mit Olivenöl für leichte, luftige Textur und charakteristische Löcher.",
     "imageRes": "ciabatta_poolish",
     "servings": 6,
     "ingredients": [
-      {"name": "Brot- und Weizenmehl (für Poolish)", "amount": 350.0, "unit": "g"},
-      {"name": "Wasser 18-20°C (für Poolish)", "amount": 350.0, "unit": "g"},
-      {"name": "Trockenhefe (für Poolish, oder 5,0g frische Hefe)", "amount": 2.0, "unit": "g"},
-      {"name": "Brot- und Weizenmehl (Hauptteig)", "amount": 650.0, "unit": "g"},
-      {"name": "Lauwarmes Wasser 27-30°C (Hauptteig)", "amount": 390.0, "unit": "g"},
-      {"name": "Meersalz (Hauptteig)", "amount": 20.0, "unit": "g"},
-      {"name": "Natives Olivenöl Extra (Hauptteig)", "amount": 50.0, "unit": "g"},
-      {"name": "Trockenhefe (Hauptteig, oder 10,0g frische Hefe)", "amount": 3.9, "unit": "g"}
+      {
+        "name": "Brot- und Weizenmehl (für Poolish)",
+        "amount": 350.0,
+        "unit": "g"
+      },
+      {
+        "name": "Wasser 18-20°C (für Poolish)",
+        "amount": 350.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (für Poolish, oder 5,0g frische Hefe)",
+        "amount": 2.0,
+        "unit": "g"
+      },
+      {
+        "name": "Brot- und Weizenmehl (Hauptteig)",
+        "amount": 650.0,
+        "unit": "g"
+      },
+      {
+        "name": "Lauwarmes Wasser 27-30°C (Hauptteig)",
+        "amount": 390.0,
+        "unit": "g"
+      },
+      {
+        "name": "Meersalz (Hauptteig)",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Natives Olivenöl Extra (Hauptteig)",
+        "amount": 50.0,
+        "unit": "g"
+      },
+      {
+        "name": "Trockenhefe (Hauptteig, oder 10,0g frische Hefe)",
+        "amount": 3.9,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (Tag vorher): Wasser mit Hefe mischen, Mehl hinzufügen. Abdecken und 17-24 Stunden kühlen.",

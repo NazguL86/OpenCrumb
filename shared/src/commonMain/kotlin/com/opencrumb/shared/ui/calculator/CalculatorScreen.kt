@@ -20,6 +20,7 @@ import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.MenuAnchorType
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Switch
@@ -39,36 +40,45 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import kotlin.math.max
-import kotlin.math.roundToInt
 import kotlin.math.round
+import kotlin.math.roundToInt
 
 private fun Double.format(decimals: Int): String {
-    val multiplier = when (decimals) {
-        0 -> 1.0
-        1 -> 10.0
-        2 -> 100.0
-        3 -> 1000.0
-        else -> 1.0
-    }
+    val multiplier =
+        when (decimals) {
+            0 -> 1.0
+            1 -> 10.0
+            2 -> 100.0
+            3 -> 1000.0
+            else -> 1.0
+        }
     val rounded = round(this * multiplier) / multiplier
     return when (decimals) {
-        0 -> rounded.toInt().toString()
+        0 -> {
+            rounded.toInt().toString()
+        }
+
         1 -> {
             val int = rounded.toInt()
             val dec = ((rounded - int) * 10).toInt()
             "$int.$dec"
         }
+
         2 -> {
             val int = rounded.toInt()
             val dec = ((rounded - int) * 100).toInt()
             "$int.${dec.toString().padStart(2, '0')}"
         }
+
         3 -> {
             val int = rounded.toInt()
             val dec = ((rounded - int) * 1000).toInt()
             "$int.${dec.toString().padStart(3, '0')}"
         }
-        else -> rounded.toString()
+
+        else -> {
+            rounded.toString()
+        }
     }
 }
 
@@ -92,12 +102,16 @@ enum class YeastType(
     Fresh("Fresh", 0.0145, 0.0038),
 }
 
-enum class ProofingTime(val displayName: String) {
+enum class ProofingTime(
+    val displayName: String,
+) {
     SameDay("Same Day (3-8h)"),
     NextDay("Next Day (24h)"),
 }
 
-enum class DoughType(val displayName: String) {
+enum class DoughType(
+    val displayName: String,
+) {
     Neapolitan("Neapolitan"),
     Focaccia("Focaccia"),
 }
@@ -113,27 +127,29 @@ private data class DoughDefaults(
     val manualYeastPercent: Double,
 )
 
-private val neapolitanDefaults = DoughDefaults(
-    doughBalls = 3,
-    ballWeight = 240,
-    hydration = 70.0,
-    saltPercent = 3.0,
-    yeastType = YeastType.InstantDry,
-    proofingTime = ProofingTime.SameDay,
-    isYeastManual = false,
-    manualYeastPercent = 0.11,
-)
+private val neapolitanDefaults =
+    DoughDefaults(
+        doughBalls = 3,
+        ballWeight = 240,
+        hydration = 70.0,
+        saltPercent = 3.0,
+        yeastType = YeastType.InstantDry,
+        proofingTime = ProofingTime.SameDay,
+        isYeastManual = false,
+        manualYeastPercent = 0.11,
+    )
 
-private val focacciaDefaults = DoughDefaults(
-    doughBalls = 2,
-    ballWeight = 476,
-    hydration = 70.0,
-    saltPercent = 2.5,
-    yeastType = YeastType.InstantDry,
-    proofingTime = ProofingTime.SameDay,
-    isYeastManual = false,
-    manualYeastPercent = 0.5,
-)
+private val focacciaDefaults =
+    DoughDefaults(
+        doughBalls = 2,
+        ballWeight = 476,
+        hydration = 70.0,
+        saltPercent = 2.5,
+        yeastType = YeastType.InstantDry,
+        proofingTime = ProofingTime.SameDay,
+        isYeastManual = false,
+        manualYeastPercent = 0.5,
+    )
 
 @Composable
 fun NumberStepper(
@@ -190,10 +206,11 @@ fun DecimalStepper(
             ) {
                 Text("-", style = MaterialTheme.typography.headlineMedium)
             }
-            val formatted = when (decimals) {
-                0 -> "${value.toInt()}%"
-                else -> "${value.format(decimals)}%"
-            }
+            val formatted =
+                when (decimals) {
+                    0 -> "${value.toInt()}%"
+                    else -> "${value.format(decimals)}%"
+                }
             Text(text = formatted, style = MaterialTheme.typography.bodyLarge)
             IconButton(
                 onClick = { onValueChange(value + step) },
@@ -221,10 +238,11 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
     var proofingTimeExpanded by remember { mutableStateOf(false) }
 
     val applyDefaults: (DoughType) -> Unit = { doughType ->
-        val defaults = when (doughType) {
-            DoughType.Neapolitan -> neapolitanDefaults
-            DoughType.Focaccia -> focacciaDefaults
-        }
+        val defaults =
+            when (doughType) {
+                DoughType.Neapolitan -> neapolitanDefaults
+                DoughType.Focaccia -> focacciaDefaults
+            }
         doughBalls = defaults.doughBalls
         ballWeight = defaults.ballWeight
         hydration = defaults.hydration
@@ -236,20 +254,28 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
     }
 
     val totals by remember(
-        doughBalls, ballWeight, hydration, saltPercent,
-        selectedYeastType, selectedProofingTime, isYeastManual, manualYeastPercent,
+        doughBalls,
+        ballWeight,
+        hydration,
+        saltPercent,
+        selectedYeastType,
+        selectedProofingTime,
+        isYeastManual,
+        manualYeastPercent,
     ) {
         derivedStateOf {
             val totalDoughWeight = doughBalls * ballWeight
-            val finalYeastPercentValue = if (isYeastManual) {
-                manualYeastPercent
-            } else {
-                val yeastFactor = when (selectedProofingTime) {
-                    ProofingTime.SameDay -> selectedYeastType.sameDayPercentage
-                    ProofingTime.NextDay -> selectedYeastType.nextDayPercentage
+            val finalYeastPercentValue =
+                if (isYeastManual) {
+                    manualYeastPercent
+                } else {
+                    val yeastFactor =
+                        when (selectedProofingTime) {
+                            ProofingTime.SameDay -> selectedYeastType.sameDayPercentage
+                            ProofingTime.NextDay -> selectedYeastType.nextDayPercentage
+                        }
+                    yeastFactor * 100.0
                 }
-                yeastFactor * 100.0
-            }
 
             val hydrationFactor = hydration / 100.0
             val saltFactor = saltPercent / 100.0
@@ -310,9 +336,15 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
                         verticalArrangement = Arrangement.spacedBy(8.dp),
                     ) {
                         Text("Flour: ${totals.flour.roundToInt()}g (100%)", style = MaterialTheme.typography.bodyLarge)
-                        Text("Water: ${totals.water.roundToInt()}g (${totals.waterPercent.toInt()}%)", style = MaterialTheme.typography.bodyLarge)
+                        Text(
+                            "Water: ${totals.water.roundToInt()}g (${totals.waterPercent.toInt()}%)",
+                            style = MaterialTheme.typography.bodyLarge,
+                        )
                         Text("Salt: ${totals.salt.format(1)}g (${totals.saltPercent.toInt()}%)", style = MaterialTheme.typography.bodyLarge)
-                        Text("Yeast: ${totals.yeast.format(2)}g (${totals.yeastPercent.format(3)}%)", style = MaterialTheme.typography.bodyLarge)
+                        Text(
+                            "Yeast: ${totals.yeast.format(2)}g (${totals.yeastPercent.format(3)}%)",
+                            style = MaterialTheme.typography.bodyLarge,
+                        )
                     }
                 }
 
@@ -342,7 +374,7 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
                         readOnly = true,
                         label = { Text("Yeast type") },
                         trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = yeastExpanded) },
-                        modifier = Modifier.menuAnchor().fillMaxWidth(),
+                        modifier = Modifier.menuAnchor(MenuAnchorType.PrimaryNotEditable).fillMaxWidth(),
                         enabled = !isYeastManual,
                     )
                     ExposedDropdownMenu(
@@ -371,7 +403,7 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
                         readOnly = true,
                         label = { Text("Proofing time") },
                         trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = proofingTimeExpanded) },
-                        modifier = Modifier.menuAnchor().fillMaxWidth(),
+                        modifier = Modifier.menuAnchor(MenuAnchorType.PrimaryNotEditable).fillMaxWidth(),
                         enabled = !isYeastManual,
                     )
                     ExposedDropdownMenu(
@@ -390,10 +422,13 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
                     }
                 }
 
-                val calculatedYeastPercent = (when (selectedProofingTime) {
-                    ProofingTime.SameDay -> selectedYeastType.sameDayPercentage
-                    ProofingTime.NextDay -> selectedYeastType.nextDayPercentage
-                }) * 100.0
+                val calculatedYeastPercent =
+                    (
+                        when (selectedProofingTime) {
+                            ProofingTime.SameDay -> selectedYeastType.sameDayPercentage
+                            ProofingTime.NextDay -> selectedYeastType.nextDayPercentage
+                        }
+                    ) * 100.0
 
                 DecimalStepper(
                     "Yeast",

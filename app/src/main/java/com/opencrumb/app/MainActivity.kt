@@ -1,7 +1,6 @@
 package com.opencrumb.app
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -10,19 +9,19 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.Calculate
-import androidx.compose.material.icons.filled.MenuBook
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
+import androidx.core.net.toUri
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -72,7 +71,7 @@ fun MainScreen() {
             NavigationBar {
                 NavigationBarItem(
                     icon = { Icon(Icons.AutoMirrored.Filled.MenuBook, contentDescription = null) },
-                    label = { Text(context.getString(R.string.nav_recipes)) },
+                    label = { Text(stringResource(R.string.nav_recipes)) },
                     selected = currentRoute == "recipes",
                     onClick = {
                         navController.navigate("recipes") {
@@ -86,7 +85,7 @@ fun MainScreen() {
                 )
                 NavigationBarItem(
                     icon = { Icon(Icons.Default.Calculate, contentDescription = null) },
-                    label = { Text(context.getString(R.string.nav_calculator)) },
+                    label = { Text(stringResource(R.string.nav_calculator)) },
                     selected = currentRoute == "calculator",
                     onClick = {
                         navController.navigate("calculator") {
@@ -99,8 +98,8 @@ fun MainScreen() {
                     },
                 )
                 NavigationBarItem(
-                    icon = { Icon(Icons.Default.MenuBook, contentDescription = null) },
-                    label = { Text(context.getString(R.string.nav_guides)) },
+                    icon = { Icon(Icons.AutoMirrored.Filled.MenuBook, contentDescription = null) },
+                    label = { Text(stringResource(R.string.nav_guides)) },
                     selected = currentRoute == "guides",
                     onClick = {
                         navController.navigate("guides") {
@@ -121,7 +120,7 @@ fun MainScreen() {
             modifier = Modifier.padding(paddingValues),
         ) {
             composable("recipes") {
-                val uiState by recipeViewModel.uiState.collectAsState()
+                val uiState by recipeViewModel.uiState.collectAsStateWithLifecycle()
                 RecipeListScreen(
                     uiState = uiState,
                     onRecipeClick = { recipeId ->
@@ -149,14 +148,14 @@ fun MainScreen() {
             }
 
             composable("guides") {
-                val uiState by guideViewModel.uiState.collectAsState()
+                val uiState by guideViewModel.uiState.collectAsStateWithLifecycle()
                 GuideListScreen(
                     uiState = uiState,
                     onGuideClick = { guideId ->
                         navController.navigate("guide/$guideId")
                     },
                     onExternalUrlClick = { url ->
-                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                        val intent = Intent(Intent.ACTION_VIEW, url.toUri())
                         context.startActivity(intent)
                     },
                 )

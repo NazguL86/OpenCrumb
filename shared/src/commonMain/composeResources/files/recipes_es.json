@@ -1,20 +1,237 @@
 [
   {
-    "id": 27,
+    "id": 1,
+    "name": "Pizza del Mismo Día - 8 Horas",
+    "description": "Pizza del mismo día con 8 horas de fermentación. 70% de hidratación para una masa agradable y extensible.",
+    "imageRes": "pizza_8_hours",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Harina de Pan y Harina Común",
+        "amount": 495.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua (18-20°C)",
+        "amount": 345.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina",
+        "amount": 12.8,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (o 0.7g Levadura Fresca)",
+        "amount": 0.3,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Disolver la sal en agua (18-20°C).",
+      "Agregar una pequeña porción de harina, luego la levadura. Mezclar bien.",
+      "Añadir la harina restante y mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Hacer 3 amasados rápidos con 2 reposos de 10 minutos entre cada uno.",
+      "Dejar reposar la masa 75-90 minutos a temperatura ambiente (20-23°C).",
+      "Cortar en bolas de pizza (280-320g cada una) y formar.",
+      "Dejar reposar las bolas unas 6 horas a temperatura ambiente.",
+      "Formar la pizza y hornear a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 2,
+    "name": "Pizza Rápida del Mismo Día",
+    "description": "Pizza rápida del mismo día con 6-7 horas de fermentación. 70% de hidratación con agua tibia para fermentación más rápida.",
+    "imageRes": "pizza_same_day",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Harina de Pan y Harina Común",
+        "amount": 495.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua Tibia (38°C)",
+        "amount": 345.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina",
+        "amount": 12.8,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (o 1.2g Levadura Fresca)",
+        "amount": 0.49,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Disolver la sal en agua tibia (38°C).",
+      "Agregar una pequeña porción de harina, luego la levadura. Mezclar bien.",
+      "Añadir la harina restante y mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Hacer 3 amasados rápidos con 2 reposos de 10 minutos entre cada uno.",
+      "Dejar reposar la masa unos 90 minutos a temperatura ambiente (20-23°C).",
+      "Cortar en bolas de pizza (280g cada una) y formar.",
+      "Dejar reposar las bolas unas 5 horas a temperatura ambiente.",
+      "Formar la pizza y hornear a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 3,
+    "name": "Pizza de Fermentación Extendida",
+    "description": "Pizza de fermentación extendida (24-48 horas). 70% de hidratación con fermentación en frío para máximo sabor y digestibilidad.",
+    "imageRes": "pizza_extended_fermentation",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Harina de Pan y Harina Común",
+        "amount": 495.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua (18-20°C)",
+        "amount": 345.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina",
+        "amount": 12.8,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (o 4.5g Levadura Fresca)",
+        "amount": 1.8,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Disolver la sal en agua (18-20°C).",
+      "Agregar una pequeña porción de harina, luego la levadura. Mezclar bien.",
+      "Añadir la harina restante y mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Hacer 4 amasados rápidos con 3 reposos de 10 minutos entre cada uno.",
+      "Dejar reposar la masa unos 60 minutos a temperatura ambiente (20-23°C).",
+      "Cortar en bolas de pizza (280g cada una) y formar.",
+      "Colocar las bolas en el refrigerador (5°C) por al menos 20-24 horas, hasta 48 horas.",
+      "Sacar del refrigerador 1 hora antes de hornear.",
+      "Formar la pizza y hornear a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 4,
+    "name": "Pizza con Poolish",
+    "description": "Pizza con pre-fermento poolish (12-14 horas). 75% de hidratación con levadura mínima para sabor excepcional y miga abierta.",
+    "imageRes": "pizza_with_poolish",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Harina de Pan (para poolish)",
+        "amount": 247.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua Tibia 27°C (para poolish)",
+        "amount": 247.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (para poolish, o 0.49g Levadura Fresca)",
+        "amount": 0.20,
+        "unit": "g"
+      },
+      {
+        "name": "Harina de Pan (masa final)",
+        "amount": 247.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua Tibia 41°C (masa final)",
+        "amount": 99.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina (masa final)",
+        "amount": 9.9,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "POOLISH (noche anterior): Mezclar agua tibia (27°C) con levadura, agregar harina. Cubrir y reposar 12-14 horas a temperatura ambiente (18-21°C).",
+      "MASA FINAL (día siguiente): Verificar que el poolish esté bien fermentado y triplicado en volumen.",
+      "Mezclar sal con harina. Agregar agua tibia (41°C) al poolish y mezclar para disolver parcialmente el gluten.",
+      "Añadir la mezcla de harina/sal al poolish y mezclar hasta hidratar toda la harina.",
+      "Cubrir y reposar 10 minutos.",
+      "Hacer 3 amasados rápidos con 2 reposos de 10 minutos. Usar aceite como lubricante (la masa es muy suave y pegajosa).",
+      "Después del último amasado, reposar 20 minutos, luego hacer 2 estiramientos y pliegues con 20 minutos de reposo entre cada uno.",
+      "Dejar reposar la masa a temperatura ambiente unas 6 horas (debe expandirse 2-2.5 veces).",
+      "Cortar en bolas de pizza (280g cada una) y formar.",
+      "Reposar las bolas 30 minutos, luego refrigerar 30 minutos antes de hornear.",
+      "Formar la pizza y hornear a 240-250°C."
+    ],
+    "category": "PIZZA",
+    "type": "DOUGH"
+  },
+  {
+    "id": 5,
     "name": "Focaccia Genovesa",
     "description": "Focaccia tradicional ligur con superficie característica con hoyuelos, aceite de oliva generoso y sal gruesa. Interior suave y aireado con corteza dorada y crujiente.",
     "imageRes": "focaccia_genovese",
     "servings": 2,
     "ingredients": [
-      {"name": "Harina de Pan y Harina Común", "amount": 550.0, "unit": "g"},
-      {"name": "Malta", "amount": 15.0, "unit": "g"},
-      {"name": "Agua (temperatura ambiente)", "amount": 330.0, "unit": "g"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 25.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (o 15g Levadura Fresca)", "amount": 6.0, "unit": "g"},
-      {"name": "Sal Marina", "amount": 12.0, "unit": "g"},
-      {"name": "Agua (para salamoia)", "amount": 120.0, "unit": "g"},
-      {"name": "Aceite de Oliva Virgen Extra (para salamoia)", "amount": 60.0, "unit": "g"},
-      {"name": "Sal Marina (para salamoia)", "amount": 6.0, "unit": "g"}
+      {
+        "name": "Harina de Pan y Harina Común",
+        "amount": 550.0,
+        "unit": "g"
+      },
+      {
+        "name": "Malta",
+        "amount": 15.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua (temperatura ambiente)",
+        "amount": 330.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 25.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (o 15g Levadura Fresca)",
+        "amount": 6.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina",
+        "amount": 12.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua (para salamoia)",
+        "amount": 120.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra (para salamoia)",
+        "amount": 60.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina (para salamoia)",
+        "amount": 6.0,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "Disolver la levadura en agua (18-20°C).",
@@ -39,126 +256,37 @@
     "type": "DOUGH"
   },
   {
-    "id": 1,
-    "name": "Pizza del Mismo Día - 8 Horas",
-    "description": "Pizza del mismo día con 8 horas de fermentación. 70% de hidratación para una masa agradable y extensible.",
-    "imageRes": "pizza_8_hours",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Harina de Pan y Harina Común", "amount": 495.0, "unit": "g"},
-      {"name": "Agua (18-20°C)", "amount": 345.0, "unit": "g"},
-      {"name": "Sal Marina", "amount": 12.8, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (o 0.7g Levadura Fresca)", "amount": 0.3, "unit": "g"}
-    ],
-    "instructions": [
-      "Disolver la sal en agua (18-20°C).",
-      "Agregar una pequeña porción de harina, luego la levadura. Mezclar bien.",
-      "Añadir la harina restante y mezclar hasta hidratar toda la harina.",
-      "Cubrir y reposar 10 minutos.",
-      "Hacer 3 amasados rápidos con 2 reposos de 10 minutos entre cada uno.",
-      "Dejar reposar la masa 75-90 minutos a temperatura ambiente (20-23°C).",
-      "Cortar en bolas de pizza (280-320g cada una) y formar.",
-      "Dejar reposar las bolas unas 6 horas a temperatura ambiente.",
-      "Formar la pizza y hornear a 240-250°C."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 2,
-    "name": "Pizza Rápida del Mismo Día",
-    "description": "Pizza rápida del mismo día con 6-7 horas de fermentación. 70% de hidratación con agua tibia para fermentación más rápida.",
-    "imageRes": "pizza_same_day",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Harina de Pan y Harina Común", "amount": 495.0, "unit": "g"},
-      {"name": "Agua Tibia (38°C)", "amount": 345.0, "unit": "g"},
-      {"name": "Sal Marina", "amount": 12.8, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (o 1.2g Levadura Fresca)", "amount": 0.49, "unit": "g"}
-    ],
-    "instructions": [
-      "Disolver la sal en agua tibia (38°C).",
-      "Agregar una pequeña porción de harina, luego la levadura. Mezclar bien.",
-      "Añadir la harina restante y mezclar hasta hidratar toda la harina.",
-      "Cubrir y reposar 10 minutos.",
-      "Hacer 3 amasados rápidos con 2 reposos de 10 minutos entre cada uno.",
-      "Dejar reposar la masa unos 90 minutos a temperatura ambiente (20-23°C).",
-      "Cortar en bolas de pizza (280g cada una) y formar.",
-      "Dejar reposar las bolas unas 5 horas a temperatura ambiente.",
-      "Formar la pizza y hornear a 240-250°C."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 3,
-    "name": "Pizza de Fermentación Extendida",
-    "description": "Pizza de fermentación extendida (24-48 horas). 70% de hidratación con fermentación en frío para máximo sabor y digestibilidad.",
-    "imageRes": "pizza_extended_fermentation",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Harina de Pan y Harina Común", "amount": 495.0, "unit": "g"},
-      {"name": "Agua (18-20°C)", "amount": 345.0, "unit": "g"},
-      {"name": "Sal Marina", "amount": 12.8, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (o 4.5g Levadura Fresca)", "amount": 1.8, "unit": "g"}
-    ],
-    "instructions": [
-      "Disolver la sal en agua (18-20°C).",
-      "Agregar una pequeña porción de harina, luego la levadura. Mezclar bien.",
-      "Añadir la harina restante y mezclar hasta hidratar toda la harina.",
-      "Cubrir y reposar 10 minutos.",
-      "Hacer 4 amasados rápidos con 3 reposos de 10 minutos entre cada uno.",
-      "Dejar reposar la masa unos 60 minutos a temperatura ambiente (20-23°C).",
-      "Cortar en bolas de pizza (280g cada una) y formar.",
-      "Colocar las bolas en el refrigerador (5°C) por al menos 20-24 horas, hasta 48 horas.",
-      "Sacar del refrigerador 1 hora antes de hornear.",
-      "Formar la pizza y hornear a 240-250°C."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 4,
-    "name": "Pizza con Poolish",
-    "description": "Pizza con pre-fermento poolish (12-14 horas). 75% de hidratación con levadura mínima para sabor excepcional y miga abierta.",
-    "imageRes": "pizza_with_poolish",
-    "servings": 3,
-    "ingredients": [
-      {"name": "Harina de Pan (para poolish)", "amount": 247.0, "unit": "g"},
-      {"name": "Agua Tibia 27°C (para poolish)", "amount": 247.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (para poolish, o 0.49g Levadura Fresca)", "amount": 0.20, "unit": "g"},
-      {"name": "Harina de Pan (masa final)", "amount": 247.0, "unit": "g"},
-      {"name": "Agua Tibia 41°C (masa final)", "amount": 99.0, "unit": "g"},
-      {"name": "Sal Marina (masa final)", "amount": 9.9, "unit": "g"}
-    ],
-    "instructions": [
-      "POOLISH (noche anterior): Mezclar agua tibia (27°C) con levadura, agregar harina. Cubrir y reposar 12-14 horas a temperatura ambiente (18-21°C).",
-      "MASA FINAL (día siguiente): Verificar que el poolish esté bien fermentado y triplicado en volumen.",
-      "Mezclar sal con harina. Agregar agua tibia (41°C) al poolish y mezclar para disolver parcialmente el gluten.",
-      "Añadir la mezcla de harina/sal al poolish y mezclar hasta hidratar toda la harina.",
-      "Cubrir y reposar 10 minutos.",
-      "Hacer 3 amasados rápidos con 2 reposos de 10 minutos. Usar aceite como lubricante (la masa es muy suave y pegajosa).",
-      "Después del último amasado, reposar 20 minutos, luego hacer 2 estiramientos y pliegues con 20 minutos de reposo entre cada uno.",
-      "Dejar reposar la masa a temperatura ambiente unas 6 horas (debe expandirse 2-2.5 veces).",
-      "Cortar en bolas de pizza (280g cada una) y formar.",
-      "Reposar las bolas 30 minutos, luego refrigerar 30 minutos antes de hornear.",
-      "Formar la pizza y hornear a 240-250°C."
-    ],
-    "category": "PIZZA",
-    "type": "DOUGH"
-  },
-  {
-    "id": 5,
+    "id": 6,
     "name": "Focaccia - Método Directo",
     "description": "Focaccia clásica con fermentación en frío. 78% de hidratación para una textura suave y aireada con aceite de oliva.",
     "imageRes": "focaccia_direct",
     "servings": 2,
     "ingredients": [
-      {"name": "Harina de Pan y Harina Común", "amount": 450.0, "unit": "g"},
-      {"name": "Agua Fría (13°C)", "amount": 350.0, "unit": "g"},
-      {"name": "Sal Marina", "amount": 9.0, "unit": "g"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 11.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (o 4.0g Levadura Fresca)", "amount": 1.6, "unit": "g"}
+      {
+        "name": "Harina de Pan y Harina Común",
+        "amount": 450.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua Fría (13°C)",
+        "amount": 350.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina",
+        "amount": 9.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 11.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (o 4.0g Levadura Fresca)",
+        "amount": 1.6,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "Mezclar agua fría (13°C) con levadura hasta disolver.",
@@ -176,18 +304,42 @@
     "type": "DOUGH"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Focaccia con Poolish - 1er Método",
     "description": "Focaccia con pre-fermento poolish (12-14 horas). 70% de hidratación con levadura mínima para sabor mejorado.",
     "imageRes": "focaccia_poolish1",
     "servings": 2,
     "ingredients": [
-      {"name": "Harina de Pan y Harina Común (para poolish)", "amount": 235.0, "unit": "g"},
-      {"name": "Agua Tibia 27°C (para poolish)", "amount": 235.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (para poolish, o 0.5g Levadura Fresca)", "amount": 0.19, "unit": "g"},
-      {"name": "Harina de Pan y Harina Común (masa final)", "amount": 235.0, "unit": "g"},
-      {"name": "Agua Tibia 39-41°C (masa final)", "amount": 95.0, "unit": "g"},
-      {"name": "Sal Marina (masa final)", "amount": 9.4, "unit": "g"}
+      {
+        "name": "Harina de Pan y Harina Común (para poolish)",
+        "amount": 235.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua Tibia 27°C (para poolish)",
+        "amount": 235.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (para poolish, o 0.5g Levadura Fresca)",
+        "amount": 0.19,
+        "unit": "g"
+      },
+      {
+        "name": "Harina de Pan y Harina Común (masa final)",
+        "amount": 235.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua Tibia 39-41°C (masa final)",
+        "amount": 95.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina (masa final)",
+        "amount": 9.4,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (noche anterior): Mezclar agua tibia (27°C) con levadura, agregar harina. Cubrir y reposar 12-14 horas a temperatura ambiente (18-21°C).",
@@ -206,20 +358,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Focaccia con Poolish - 2do Método",
     "description": "Focaccia con poolish fermentado en frío. 74% de hidratación con aceite de oliva en la masa final para sabor rico.",
     "imageRes": "focaccia_poolish2",
     "servings": 2,
     "ingredients": [
-      {"name": "Harina de Pan y Harina Común (para poolish)", "amount": 222.0, "unit": "g"},
-      {"name": "Agua 18-20°C (para poolish)", "amount": 222.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (para poolish, o 3.2g Levadura Fresca)", "amount": 1.3, "unit": "g"},
-      {"name": "Harina de Pan y Harina Común (masa final)", "amount": 222.0, "unit": "g"},
-      {"name": "Agua Tibia 27-30°C (masa final)", "amount": 133.0, "unit": "g"},
-      {"name": "Sal Marina (masa final)", "amount": 7.0, "unit": "g"},
-      {"name": "Aceite de Oliva Virgen Extra (masa final)", "amount": 17.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (masa final, o 3.3g Levadura Fresca)", "amount": 1.3, "unit": "g"}
+      {
+        "name": "Harina de Pan y Harina Común (para poolish)",
+        "amount": 222.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua 18-20°C (para poolish)",
+        "amount": 222.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (para poolish, o 3.2g Levadura Fresca)",
+        "amount": 1.3,
+        "unit": "g"
+      },
+      {
+        "name": "Harina de Pan y Harina Común (masa final)",
+        "amount": 222.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua Tibia 27-30°C (masa final)",
+        "amount": 133.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina (masa final)",
+        "amount": 7.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra (masa final)",
+        "amount": 17.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (masa final, o 3.3g Levadura Fresca)",
+        "amount": 1.3,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (día anterior): Mezclar agua (18-20°C) con levadura, agregar harina. Cubrir y refrigerar 12-24 horas.",
@@ -237,18 +421,42 @@
     "type": "DOUGH"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Salsa de Tomate Básica",
     "description": "Salsa de tomate simple para pizza. Licuar brevemente - la salsa debe quedar rugosa, no muy líquida.",
     "imageRes": "tomato_sauce",
     "servings": 1,
     "ingredients": [
-      {"name": "Tomates Pelados Enteros", "amount": 400.0, "unit": "g"},
-      {"name": "Hojas de Orégano Seco", "amount": 1.0, "unit": "pizca"},
-      {"name": "Albahaca Fresca", "amount": 3.0, "unit": "hojas"},
-      {"name": "Sal Marina", "amount": 1.0, "unit": "pizca"},
-      {"name": "Chile en Polvo (opcional)", "amount": 1.0, "unit": "pizca pequeña"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Tomates Pelados Enteros",
+        "amount": 400.0,
+        "unit": "g"
+      },
+      {
+        "name": "Hojas de Orégano Seco",
+        "amount": 1.0,
+        "unit": "pizca"
+      },
+      {
+        "name": "Albahaca Fresca",
+        "amount": 3.0,
+        "unit": "hojas"
+      },
+      {
+        "name": "Sal Marina",
+        "amount": 1.0,
+        "unit": "pizca"
+      },
+      {
+        "name": "Chile en Polvo (opcional)",
+        "amount": 1.0,
+        "unit": "pizca pequeña"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Poner los tomates pelados enlatados en el recipiente de la licuadora.",
@@ -262,18 +470,42 @@
     "type": "TOPPING"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Pizza Margarita",
     "description": "Pizza napolitana clásica con salsa de tomate, mozzarella fiordilatte y albahaca fresca.",
     "imageRes": "pizza_margherita",
     "servings": 1,
     "ingredients": [
-      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Salsa de Tomate Básica", "amount": 70.0, "unit": "g"},
-      {"name": "Mozzarella Fiordilatte", "amount": 90.0, "unit": "g"},
-      {"name": "Albahaca Fresca", "amount": 3.0, "unit": "hojas"},
-      {"name": "Parmesano Rallado", "amount": 5.0, "unit": "g"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Bola de Masa de Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Salsa de Tomate Básica",
+        "amount": 70.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella Fiordilatte",
+        "amount": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "Albahaca Fresca",
+        "amount": 3.0,
+        "unit": "hojas"
+      },
+      {
+        "name": "Parmesano Rallado",
+        "amount": 5.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Preparar Salsa de Tomate Básica (ver receta).",
@@ -291,17 +523,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Pizza Margarita con Mozzarella de Búfala",
     "description": "Margarita clásica con mozzarella de búfala agregada después del horneado para realzar el sabor.",
     "imageRes": "pizza_margherita_buffalo",
     "servings": 1,
     "ingredients": [
-      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Salsa de Tomate Básica", "amount": 70.0, "unit": "g"},
-      {"name": "Mozzarella di Bufala", "amount": 90.0, "unit": "g"},
-      {"name": "Albahaca Fresca", "amount": 3.0, "unit": "hojas"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Bola de Masa de Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Salsa de Tomate Básica",
+        "amount": 70.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella di Bufala",
+        "amount": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "Albahaca Fresca",
+        "amount": 3.0,
+        "unit": "hojas"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Preparar Salsa de Tomate Básica (ver receta).",
@@ -316,19 +568,47 @@
     "type": "TOPPING"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Pizza Marinera",
     "description": "Pizza tradicional sin queso - salsa de tomate, anchoas, aceitunas y alcaparras opcionales.",
     "imageRes": "pizza_marinara",
     "servings": 1,
     "ingredients": [
-      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Salsa de Tomate Básica", "amount": 90.0, "unit": "g"},
-      {"name": "Anchoas en Lata", "amount": 5.5, "unit": "filetes"},
-      {"name": "Aceitunas Negras Pequeñas", "amount": 9.0, "unit": "aceitunas"},
-      {"name": "Alcaparras Pequeñas (opcional)", "amount": 7.0, "unit": "alcaparras"},
-      {"name": "Orégano Seco", "amount": 1.0, "unit": "pizca"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Bola de Masa de Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Salsa de Tomate Básica",
+        "amount": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "Anchoas en Lata",
+        "amount": 5.5,
+        "unit": "filetes"
+      },
+      {
+        "name": "Aceitunas Negras Pequeñas",
+        "amount": 9.0,
+        "unit": "aceitunas"
+      },
+      {
+        "name": "Alcaparras Pequeñas (opcional)",
+        "amount": 7.0,
+        "unit": "alcaparras"
+      },
+      {
+        "name": "Orégano Seco",
+        "amount": 1.0,
+        "unit": "pizca"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Preparar Salsa de Tomate Básica (ver receta).",
@@ -345,16 +625,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Pizza con Jamón Crudo",
     "description": "Pizza con base de queso y jamón crudo agregado después del horneado para preservar su sabor delicado.",
     "imageRes": "pizza_prosciutto_crudo",
     "servings": 1,
     "ingredients": [
-      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Stracchino o Mozzarella", "amount": 140.0, "unit": "g"},
-      {"name": "Jamón Crudo", "amount": 4.0, "unit": "lonchas"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Bola de Masa de Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Stracchino o Mozzarella",
+        "amount": 140.0,
+        "unit": "g"
+      },
+      {
+        "name": "Jamón Crudo",
+        "amount": 4.0,
+        "unit": "lonchas"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Usar queso Stracchino italiano (también llamado Crescenza) si es posible, de lo contrario usar mozzarella fiordilatte.",
@@ -369,20 +665,52 @@
     "type": "TOPPING"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Pizza con Jamón Crudo y Champiñones",
     "description": "Pizza con queso, champiñones salteados y jamón crudo agregado después del horneado.",
     "imageRes": "pizza_prosciutto_crudo_mushrooms",
     "servings": 1,
     "ingredients": [
-      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Stracchino o Mozzarella", "amount": 140.0, "unit": "g"},
-      {"name": "Jamón Crudo", "amount": 4.0, "unit": "lonchas"},
-      {"name": "Champiñones", "amount": 110.0, "unit": "g"},
-      {"name": "Ajo", "amount": 1.0, "unit": "diente"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 15.0, "unit": "ml"},
-      {"name": "Hojuelas de Chile (opcional)", "amount": 1.0, "unit": "pizca"},
-      {"name": "Sal", "amount": 1.0, "unit": "pizca"}
+      {
+        "name": "Bola de Masa de Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Stracchino o Mozzarella",
+        "amount": 140.0,
+        "unit": "g"
+      },
+      {
+        "name": "Jamón Crudo",
+        "amount": 4.0,
+        "unit": "lonchas"
+      },
+      {
+        "name": "Champiñones",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Ajo",
+        "amount": 1.0,
+        "unit": "diente"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Hojuelas de Chile (opcional)",
+        "amount": 1.0,
+        "unit": "pizca"
+      },
+      {
+        "name": "Sal",
+        "amount": 1.0,
+        "unit": "pizca"
+      }
     ],
     "instructions": [
       "Limpiar y saltear 100-120g de champiñones en sartén con aceite de oliva, diente de ajo, sal y hojuelas de chile opcionales.",
@@ -398,18 +726,42 @@
     "type": "TOPPING"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Pizza con Jamón Cocido y Mozzarella",
     "description": "Pizza con jamón cocido, mozzarella y aceitunas negras.",
     "imageRes": "pizza_prosciutto_cotto",
     "servings": 1,
     "ingredients": [
-      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Jamón Cocido", "amount": 4.0, "unit": "lonchas"},
-      {"name": "Mozzarella Fiordilatte", "amount": 110.0, "unit": "g"},
-      {"name": "Aceitunas Negras Pequeñas", "amount": 11.0, "unit": "aceitunas"},
-      {"name": "Orégano Seco", "amount": 1.0, "unit": "pizca"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Bola de Masa de Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Jamón Cocido",
+        "amount": 4.0,
+        "unit": "lonchas"
+      },
+      {
+        "name": "Mozzarella Fiordilatte",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aceitunas Negras Pequeñas",
+        "amount": 11.0,
+        "unit": "aceitunas"
+      },
+      {
+        "name": "Orégano Seco",
+        "amount": 1.0,
+        "unit": "pizca"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
@@ -424,19 +776,47 @@
     "type": "TOPPING"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Pizza con Calabacín y Speck",
     "description": "Pizza con calabacín salteado, tiras de speck y queso parmesano.",
     "imageRes": "pizza_zucchini_speck",
     "servings": 1,
     "ingredients": [
-      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Calabacín Tierno (cocido)", "amount": 4.0, "unit": "piezas"},
-      {"name": "Speck (tiras pequeñas)", "amount": 70.0, "unit": "g"},
-      {"name": "Queso Parmesano (rallado)", "amount": 35.0, "unit": "g"},
-      {"name": "Ajo", "amount": 1.0, "unit": "diente"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 15.0, "unit": "ml"},
-      {"name": "Hojuelas de Chile (opcional)", "amount": 1.0, "unit": "pizca"}
+      {
+        "name": "Bola de Masa de Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Calabacín Tierno (cocido)",
+        "amount": 4.0,
+        "unit": "piezas"
+      },
+      {
+        "name": "Speck (tiras pequeñas)",
+        "amount": 70.0,
+        "unit": "g"
+      },
+      {
+        "name": "Queso Parmesano (rallado)",
+        "amount": 35.0,
+        "unit": "g"
+      },
+      {
+        "name": "Ajo",
+        "amount": 1.0,
+        "unit": "diente"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Hojuelas de Chile (opcional)",
+        "amount": 1.0,
+        "unit": "pizca"
+      }
     ],
     "instructions": [
       "Cortar 3-5 calabacines verdes tiernos (15-20cm de largo) en rodajas pequeñas (3-4mm de grosor) o tiras pequeñas.",
@@ -453,20 +833,52 @@
     "type": "TOPPING"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "Pizza con Brócoli y Champiñones",
     "description": "Pizza con brócoli salteado, champiñones y queso mozzarella o stracchino.",
     "imageRes": "pizza_broccoli_mushrooms",
     "servings": 1,
     "ingredients": [
-      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Brócoli (salteado)", "amount": 225.0, "unit": "g"},
-      {"name": "Mozzarella o Stracchino", "amount": 110.0, "unit": "g"},
-      {"name": "Champiñones", "amount": 110.0, "unit": "g"},
-      {"name": "Ajo", "amount": 1.0, "unit": "diente"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 15.0, "unit": "ml"},
-      {"name": "Sal", "amount": 1.0, "unit": "pizca"},
-      {"name": "Hojuelas de Chile (opcional)", "amount": 1.0, "unit": "pizca"}
+      {
+        "name": "Bola de Masa de Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Brócoli (salteado)",
+        "amount": 225.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella o Stracchino",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Champiñones",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Ajo",
+        "amount": 1.0,
+        "unit": "diente"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Sal",
+        "amount": 1.0,
+        "unit": "pizca"
+      },
+      {
+        "name": "Hojuelas de Chile (opcional)",
+        "amount": 1.0,
+        "unit": "pizca"
+      }
     ],
     "instructions": [
       "Limpiar el brócoli y saltear en sartén honda con aceite de oliva, cubriendo con tapa cuando no se esté revolviendo.",
@@ -481,17 +893,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Pizza con Mortadela y Pistachos",
     "description": "Pizza con mozzarella o stracchino, lonchas de mortadela y pistachos triturados agregados después del horneado.",
     "imageRes": "pizza_mortadella_pistacchio",
     "servings": 1,
     "ingredients": [
-      {"name": "Bola de Masa de Pizza", "amount": 280.0, "unit": "g"},
-      {"name": "Mortadela", "amount": 110.0, "unit": "g"},
-      {"name": "Mozzarella o Stracchino", "amount": 110.0, "unit": "g"},
-      {"name": "Pistachos (triturados)", "amount": 17.5, "unit": "g"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 10.0, "unit": "ml"}
+      {
+        "name": "Bola de Masa de Pizza",
+        "amount": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mortadela",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella o Stracchino",
+        "amount": 110.0,
+        "unit": "g"
+      },
+      {
+        "name": "Pistachos (triturados)",
+        "amount": 17.5,
+        "unit": "g"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 10.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Colocar la masa de pizza estirada sobre superficie bien enharinada.",
@@ -505,16 +937,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Focaccia con Aceitunas Verdes",
     "description": "Focaccia simple cubierta con aceitunas verdes, sal marina gruesa y aceite de oliva.",
     "imageRes": "focaccia_green_olives",
     "servings": 2,
     "ingredients": [
-      {"name": "Masa de Focaccia", "amount": 800.0, "unit": "g"},
-      {"name": "Aceitunas Verdes", "amount": 15.0, "unit": "aceitunas"},
-      {"name": "Sal Marina Gruesa", "amount": 2.0, "unit": "pizca"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Masa de Focaccia",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aceitunas Verdes",
+        "amount": 15.0,
+        "unit": "aceitunas"
+      },
+      {
+        "name": "Sal Marina Gruesa",
+        "amount": 2.0,
+        "unit": "pizca"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Cuando esté casi lista para hornear, colocar varias aceitunas verdes en la masa a intervalos aproximadamente regulares.",
@@ -527,17 +975,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Focaccia con Tomates Cherry y Aceitunas Negras",
     "description": "Focaccia cubierta con tomates cherry, aceitunas negras, orégano y aceite de oliva.",
     "imageRes": "focaccia_cherry_tomatoes",
     "servings": 2,
     "ingredients": [
-      {"name": "Masa de Focaccia", "amount": 800.0, "unit": "g"},
-      {"name": "Tomates Cherry", "amount": 7.0, "unit": "tomates"},
-      {"name": "Aceitunas Negras Pequeñas", "amount": 12.0, "unit": "aceitunas"},
-      {"name": "Orégano Seco", "amount": 1.0, "unit": "pizca"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Masa de Focaccia",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Tomates Cherry",
+        "amount": 7.0,
+        "unit": "tomates"
+      },
+      {
+        "name": "Aceitunas Negras Pequeñas",
+        "amount": 12.0,
+        "unit": "aceitunas"
+      },
+      {
+        "name": "Orégano Seco",
+        "amount": 1.0,
+        "unit": "pizca"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Cortar 6-8 tomates cherry por la mitad.",
@@ -551,16 +1019,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Focaccia con Romero y Aceitunas Negras",
     "description": "Focaccia clásica con romero fresco, aceitunas negras y aceite de oliva.",
     "imageRes": "focaccia_rosemary_olives",
     "servings": 2,
     "ingredients": [
-      {"name": "Masa de Focaccia", "amount": 800.0, "unit": "g"},
-      {"name": "Romero Fresco", "amount": 1.0, "unit": "ramita"},
-      {"name": "Aceitunas Negras Pequeñas", "amount": 12.0, "unit": "aceitunas"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Masa de Focaccia",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Romero Fresco",
+        "amount": 1.0,
+        "unit": "ramita"
+      },
+      {
+        "name": "Aceitunas Negras Pequeñas",
+        "amount": 12.0,
+        "unit": "aceitunas"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Tomar una ramita de romero fresco y arrancar las hojas pequeñas.",
@@ -573,17 +1057,37 @@
     "type": "TOPPING"
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Focaccia Pizza",
     "description": "Focaccia con cobertura estilo pizza - salsa de tomate, mozzarella y albahaca (como Pizza Margarita).",
     "imageRes": "focaccia_pizza",
     "servings": 2,
     "ingredients": [
-      {"name": "Masa de Focaccia", "amount": 800.0, "unit": "g"},
-      {"name": "Salsa de Tomate Básica", "amount": 100.0, "unit": "g"},
-      {"name": "Mozzarella Fiordilatte", "amount": 120.0, "unit": "g"},
-      {"name": "Albahaca Fresca", "amount": 5.0, "unit": "hojas"},
-      {"name": "Aceite de Oliva Virgen Extra", "amount": 20.0, "unit": "ml"}
+      {
+        "name": "Masa de Focaccia",
+        "amount": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "Salsa de Tomate Básica",
+        "amount": 100.0,
+        "unit": "g"
+      },
+      {
+        "name": "Mozzarella Fiordilatte",
+        "amount": 120.0,
+        "unit": "g"
+      },
+      {
+        "name": "Albahaca Fresca",
+        "amount": 5.0,
+        "unit": "hojas"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra",
+        "amount": 20.0,
+        "unit": "ml"
+      }
     ],
     "instructions": [
       "Extender salsa de tomate sobre la masa de focaccia.",
@@ -596,16 +1100,32 @@
     "type": "TOPPING"
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Baguette - Método Directo",
     "description": "Baguette francesa clásica con método directo y fermentación fría extendida. 75% de hidratación para corteza crujiente y miga abierta.",
     "imageRes": "baguette_direct",
     "servings": 4,
     "ingredients": [
-      {"name": "Harina de Pan (o Harina de Pan y Común)", "amount": 1000.0, "unit": "g"},
-      {"name": "Agua (18-20°C)", "amount": 750.0, "unit": "g"},
-      {"name": "Sal Marina", "amount": 20.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (o 6.0g Levadura Fresca)", "amount": 2.4, "unit": "g"}
+      {
+        "name": "Harina de Pan (o Harina de Pan y Común)",
+        "amount": 1000.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua (18-20°C)",
+        "amount": 750.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (o 6.0g Levadura Fresca)",
+        "amount": 2.4,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "DÍA ANTERIOR: Disolver levadura en agua, agregar la mitad de la harina y mezclar.",
@@ -626,20 +1146,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Baguette con Poolish",
     "description": "Baguette ligera y atractiva usando pre-fermento poolish. 70% de hidratación con fermentación fría nocturna para sabor excepcional.",
     "imageRes": "baguette_poolish",
     "servings": 4,
     "ingredients": [
-      {"name": "Harina de Pan y Común (para poolish)", "amount": 180.0, "unit": "g"},
-      {"name": "Harina de Centeno (para poolish)", "amount": 30.0, "unit": "g"},
-      {"name": "Agua 18-20°C (para poolish)", "amount": 210.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (para poolish, o 3.0g Levadura Fresca)", "amount": 1.2, "unit": "g"},
-      {"name": "Harina de Pan y Común (masa final)", "amount": 790.0, "unit": "g"},
-      {"name": "Agua 18-20°C (masa final)", "amount": 490.0, "unit": "g"},
-      {"name": "Sal Marina (masa final)", "amount": 20.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (masa final, o 13.0g Levadura Fresca)", "amount": 5.1, "unit": "g"}
+      {
+        "name": "Harina de Pan y Común (para poolish)",
+        "amount": 180.0,
+        "unit": "g"
+      },
+      {
+        "name": "Harina de Centeno (para poolish)",
+        "amount": 30.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua 18-20°C (para poolish)",
+        "amount": 210.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (para poolish, o 3.0g Levadura Fresca)",
+        "amount": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Harina de Pan y Común (masa final)",
+        "amount": 790.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua 18-20°C (masa final)",
+        "amount": 490.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina (masa final)",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (masa final, o 13.0g Levadura Fresca)",
+        "amount": 5.1,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (noche anterior): Mezclar agua con levadura, agregar harinas. Cubrir y refrigerar 12-18 horas.",
@@ -662,21 +1214,57 @@
     "type": "DOUGH"
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Pan Blanco con Poolish",
     "description": "Pan blanco versátil con pre-fermento poolish. 75% de hidratación para textura suave y sabor interesante.",
     "imageRes": "white_bread",
     "servings": 4,
     "ingredients": [
-      {"name": "Harina de Pan y Común (para poolish)", "amount": 500.0, "unit": "g"},
-      {"name": "Agua Tibia 27°C (para poolish)", "amount": 500.0, "unit": "g"},
-      {"name": "Levadura Fresca (para poolish)", "amount": 1.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (para poolish, alternativa)", "amount": 0.4, "unit": "g"},
-      {"name": "Harina de Pan y Común (masa final)", "amount": 500.0, "unit": "g"},
-      {"name": "Agua Tibia 41°C (masa final)", "amount": 250.0, "unit": "g"},
-      {"name": "Sal Marina (masa final)", "amount": 21.0, "unit": "g"},
-      {"name": "Levadura Fresca (masa final)", "amount": 8.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (masa final, alternativa)", "amount": 3.0, "unit": "g"}
+      {
+        "name": "Harina de Pan y Común (para poolish)",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua Tibia 27°C (para poolish)",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Fresca (para poolish)",
+        "amount": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (para poolish, alternativa)",
+        "amount": 0.4,
+        "unit": "g"
+      },
+      {
+        "name": "Harina de Pan y Común (masa final)",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua Tibia 41°C (masa final)",
+        "amount": 250.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina (masa final)",
+        "amount": 21.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Fresca (masa final)",
+        "amount": 8.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (masa final, alternativa)",
+        "amount": 3.0,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (12-16h antes): Mezclar agua tibia con levadura, agregar harina. Cubrir y reposar a temperatura ambiente 12-16 horas.",
@@ -700,20 +1288,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "Ciabatta con Biga",
     "description": "Ciabatta italiana clásica con pre-fermento biga. 67% de hidratación con aceite de oliva para miga abierta característica y corteza crujiente.",
     "imageRes": "ciabatta_biga",
     "servings": 3,
     "ingredients": [
-      {"name": "Harina de Pan y Común (para biga)", "amount": 440.0, "unit": "g"},
-      {"name": "Agua 18-20°C (para biga)", "amount": 225.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (para biga, o 2.5g Levadura Fresca)", "amount": 1.0, "unit": "g"},
-      {"name": "Harina de Pan y Común (masa final)", "amount": 560.0, "unit": "g"},
-      {"name": "Agua 18-20°C (masa final)", "amount": 450.0, "unit": "g"},
-      {"name": "Aceite de Oliva Virgen Extra (masa final)", "amount": 64.0, "unit": "g"},
-      {"name": "Sal Marina (masa final)", "amount": 20.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (masa final, o 12.0g Levadura Fresca)", "amount": 5.0, "unit": "g"}
+      {
+        "name": "Harina de Pan y Común (para biga)",
+        "amount": 440.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua 18-20°C (para biga)",
+        "amount": 225.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (para biga, o 2.5g Levadura Fresca)",
+        "amount": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "Harina de Pan y Común (masa final)",
+        "amount": 560.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua 18-20°C (masa final)",
+        "amount": 450.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra (masa final)",
+        "amount": 64.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina (masa final)",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (masa final, o 12.0g Levadura Fresca)",
+        "amount": 5.0,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "BIGA (día anterior): Mezclar agua con levadura, agregar harina. Cubrir y refrigerar 12-18 horas.",
@@ -734,20 +1354,52 @@
     "type": "DOUGH"
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "Ciabatta con Poolish",
     "description": "Ciabatta italiana con pre-fermento poolish. 74% de hidratación con aceite de oliva para textura ligera y aireada con agujeros característicos.",
     "imageRes": "ciabatta_poolish",
     "servings": 6,
     "ingredients": [
-      {"name": "Harina de Pan y Común (para poolish)", "amount": 350.0, "unit": "g"},
-      {"name": "Agua 18-20°C (para poolish)", "amount": 350.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (para poolish, o 5.0g Levadura Fresca)", "amount": 2.0, "unit": "g"},
-      {"name": "Harina de Pan y Común (masa final)", "amount": 650.0, "unit": "g"},
-      {"name": "Agua Tibia 27-30°C (masa final)", "amount": 390.0, "unit": "g"},
-      {"name": "Sal Marina (masa final)", "amount": 20.0, "unit": "g"},
-      {"name": "Aceite de Oliva Virgen Extra (masa final)", "amount": 50.0, "unit": "g"},
-      {"name": "Levadura Seca Instantánea (masa final, o 10.0g Levadura Fresca)", "amount": 3.9, "unit": "g"}
+      {
+        "name": "Harina de Pan y Común (para poolish)",
+        "amount": 350.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua 18-20°C (para poolish)",
+        "amount": 350.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (para poolish, o 5.0g Levadura Fresca)",
+        "amount": 2.0,
+        "unit": "g"
+      },
+      {
+        "name": "Harina de Pan y Común (masa final)",
+        "amount": 650.0,
+        "unit": "g"
+      },
+      {
+        "name": "Agua Tibia 27-30°C (masa final)",
+        "amount": 390.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sal Marina (masa final)",
+        "amount": 20.0,
+        "unit": "g"
+      },
+      {
+        "name": "Aceite de Oliva Virgen Extra (masa final)",
+        "amount": 50.0,
+        "unit": "g"
+      },
+      {
+        "name": "Levadura Seca Instantánea (masa final, o 10.0g Levadura Fresca)",
+        "amount": 3.9,
+        "unit": "g"
+      }
     ],
     "instructions": [
       "POOLISH (día anterior): Mezclar agua con levadura, agregar harina. Cubrir y refrigerar 17-24 horas.",
