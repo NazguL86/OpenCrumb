@@ -125,9 +125,9 @@ private val neapolitanDefaults = DoughDefaults(
 )
 
 private val focacciaDefaults = DoughDefaults(
-    doughBalls = 1,
-    ballWeight = 800,
-    hydration = 80.0,
+    doughBalls = 2,
+    ballWeight = 476,
+    hydration = 70.0,
     saltPercent = 2.5,
     yeastType = YeastType.InstantDry,
     proofingTime = ProofingTime.SameDay,

@@ -114,7 +114,7 @@ fun RecipeDetailScreen(
                         }
                     }
                     Text(
-                        text = "• $formattedAmount ${ingredient.unit} ${ingredient.name}",
+                        text = "• $formattedAmount${ingredient.unit} ${ingredient.name}",
                         style = MaterialTheme.typography.bodyMedium
                     )
                 }

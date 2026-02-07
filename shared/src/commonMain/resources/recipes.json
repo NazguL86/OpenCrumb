@@ -1,5 +1,44 @@
 [
   {
+    "id": 27,
+    "name": "Focaccia Genovese",
+    "description": "Traditional Ligurian focaccia with characteristic dimpled surface, generous olive oil, and coarse salt. Soft, airy interior with golden, crispy crust.",
+    "imageRes": "focaccia_genovese",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Bread and All-purpose Flour", "amount": 550.0, "unit": "g"},
+      {"name": "Malt", "amount": 15.0, "unit": "g"},
+      {"name": "Water (room temperature)", "amount": 330.0, "unit": "g"},
+      {"name": "Extra Virgin Olive Oil", "amount": 25.0, "unit": "g"},
+      {"name": "Instant Dry Yeast (or 15g Fresh Yeast)", "amount": 6.0, "unit": "g"},
+      {"name": "Sea Salt", "amount": 12.0, "unit": "g"},
+      {"name": "Water (for salamoia)", "amount": 120.0, "unit": "g"},
+      {"name": "Extra Virgin Olive Oil (for salamoia)", "amount": 60.0, "unit": "g"},
+      {"name": "Sea Salt (for salamoia)", "amount": 6.0, "unit": "g"}
+    ],
+    "instructions": [
+      "Dissolve yeast in water (18-20°C).",
+      "Add small portion of flour and mix well.",
+      "Add malt and remaining flour, mix until all flour is hydrated.",
+      "Add salt and oil, mix well.",
+      "Cover and rest for 10 minutes.",
+      "Fold the dough to give more structure and shape into a ball.",
+      "Cover and let rest for 30 minutes.",
+      "Divide dough into 2 portions.",
+      "Make some folds on each portion to strengthen.",
+      "Cover and let rest another 30 minutes.",
+      "Use a rolling pin to flatten both portions, using flour to prevent sticking.",
+      "Oil two baking pans and place flattened dough on the trays.",
+      "Let rest for 1 hour 30 minutes. During this time, adjust dough to fit the pans.",
+      "Prepare salamoia: mix 120g water with 60g olive oil and 6g salt.",
+      "Dimple the surface deeply with fingertips.",
+      "Spray salamoia evenly over both trays, ensuring oil and water go into all the holes.",
+      "Bake at 260°C (500°F) for 20-25 minutes until golden brown."
+    ],
+    "category": "FOCACCIA",
+    "type": "DOUGH"
+  },
+  {
     "id": 1,
     "name": "Same Day Pizza - 8 Hours",
     "description": "Same day pizza with 8 hours fermentation. 70% hydration for a nice, extensible dough.",
@@ -9,8 +48,7 @@
       {"name": "Bread and All-purpose Flour", "amount": 495.0, "unit": "g"},
       {"name": "Water (18-20°C)", "amount": 345.0, "unit": "g"},
       {"name": "Sea Salt", "amount": 12.8, "unit": "g"},
-      {"name": "Fresh Yeast", "amount": 0.7, "unit": "g"},
-      {"name": "Instant Dry Yeast (alternative)", "amount": 0.3, "unit": "g"}
+      {"name": "Instant Dry Yeast (or 0.7g Fresh Yeast)", "amount": 0.3, "unit": "g"}
     ],
     "instructions": [
       "Dissolve salt in water (18-20°C).",
@@ -36,8 +74,7 @@
       {"name": "Bread and All-purpose Flour", "amount": 495.0, "unit": "g"},
       {"name": "Warm Water (38°C)", "amount": 345.0, "unit": "g"},
       {"name": "Sea Salt", "amount": 12.8, "unit": "g"},
-      {"name": "Fresh Yeast", "amount": 1.2, "unit": "g"},
-      {"name": "Instant Dry Yeast (alternative)", "amount": 0.49, "unit": "g"}
+      {"name": "Instant Dry Yeast (or 1.2g Fresh Yeast)", "amount": 0.49, "unit": "g"}
     ],
     "instructions": [
       "Dissolve salt in warm water (38°C / 100°F).",
@@ -63,8 +100,7 @@
       {"name": "Bread and All-purpose Flour", "amount": 495.0, "unit": "g"},
       {"name": "Water (18-20°C)", "amount": 345.0, "unit": "g"},
       {"name": "Sea Salt", "amount": 12.8, "unit": "g"},
-      {"name": "Fresh Yeast", "amount": 4.5, "unit": "g"},
-      {"name": "Instant Dry Yeast (alternative)", "amount": 1.8, "unit": "g"}
+      {"name": "Instant Dry Yeast (or 4.5g Fresh Yeast)", "amount": 1.8, "unit": "g"}
     ],
     "instructions": [
       "Dissolve salt in water (18-20°C).",
@@ -90,8 +126,7 @@
     "ingredients": [
       {"name": "Bread Flour (for poolish)", "amount": 247.0, "unit": "g"},
       {"name": "Tepid Water 27°C (for poolish)", "amount": 247.0, "unit": "g"},
-      {"name": "Fresh Yeast (for poolish)", "amount": 0.49, "unit": "g"},
-      {"name": "Instant Dry Yeast (for poolish, alternative)", "amount": 0.20, "unit": "g"},
+      {"name": "Instant Dry Yeast (for poolish, or 0.49g Fresh Yeast)", "amount": 0.20, "unit": "g"},
       {"name": "Bread Flour (final dough)", "amount": 247.0, "unit": "g"},
       {"name": "Warm Water 41°C (final dough)", "amount": 99.0, "unit": "g"},
       {"name": "Sea Salt (final dough)", "amount": 9.9, "unit": "g"}
@@ -117,14 +152,13 @@
     "name": "Focaccia - Direct Method",
     "description": "Classic focaccia with cold fermentation. 78% hydration for a soft, airy texture with olive oil.",
     "imageRes": "focaccia_direct",
-    "servings": 1,
+    "servings": 2,
     "ingredients": [
       {"name": "Bread and All-purpose Flour", "amount": 450.0, "unit": "g"},
       {"name": "Cold Water (13°C)", "amount": 350.0, "unit": "g"},
       {"name": "Sea Salt", "amount": 9.0, "unit": "g"},
       {"name": "Extra Virgin Olive Oil", "amount": 11.0, "unit": "g"},
-      {"name": "Fresh Yeast", "amount": 4.0, "unit": "g"},
-      {"name": "Instant Dry Yeast (alternative)", "amount": 1.6, "unit": "g"}
+      {"name": "Instant Dry Yeast (or 4.0g Fresh Yeast)", "amount": 1.6, "unit": "g"}
     ],
     "instructions": [
       "Mix cold water (13°C) with yeast until dissolved.",
@@ -146,12 +180,11 @@
     "name": "Focaccia with Poolish - 1st Method",
     "description": "Focaccia with poolish pre-ferment (12-14 hours). 70% hydration with minimal yeast for enhanced flavor.",
     "imageRes": "focaccia_poolish1",
-    "servings": 1,
+    "servings": 2,
     "ingredients": [
       {"name": "Bread and All-purpose Flour (for poolish)", "amount": 235.0, "unit": "g"},
       {"name": "Tepid Water 27°C (for poolish)", "amount": 235.0, "unit": "g"},
-      {"name": "Fresh Yeast (for poolish)", "amount": 0.5, "unit": "g"},
-      {"name": "Instant Dry Yeast (for poolish, alternative)", "amount": 0.19, "unit": "g"},
+      {"name": "Instant Dry Yeast (for poolish, or 0.5g Fresh Yeast)", "amount": 0.19, "unit": "g"},
       {"name": "Bread and All-purpose Flour (final dough)", "amount": 235.0, "unit": "g"},
       {"name": "Warm Water 39-41°C (final dough)", "amount": 95.0, "unit": "g"},
       {"name": "Sea Salt (final dough)", "amount": 9.4, "unit": "g"}
@@ -177,18 +210,16 @@
     "name": "Focaccia with Poolish - 2nd Method",
     "description": "Focaccia with cold-fermented poolish. 74% hydration with olive oil in final dough for rich flavor.",
     "imageRes": "focaccia_poolish2",
-    "servings": 1,
+    "servings": 2,
     "ingredients": [
       {"name": "Bread and All-purpose Flour (for poolish)", "amount": 222.0, "unit": "g"},
       {"name": "Water 18-20°C (for poolish)", "amount": 222.0, "unit": "g"},
-      {"name": "Fresh Yeast (for poolish)", "amount": 3.2, "unit": "g"},
-      {"name": "Instant Dry Yeast (for poolish, alternative)", "amount": 1.3, "unit": "g"},
+      {"name": "Instant Dry Yeast (for poolish, or 3.2g Fresh Yeast)", "amount": 1.3, "unit": "g"},
       {"name": "Bread and All-purpose Flour (final dough)", "amount": 222.0, "unit": "g"},
       {"name": "Tepid Water 27-30°C (final dough)", "amount": 133.0, "unit": "g"},
       {"name": "Sea Salt (final dough)", "amount": 7.0, "unit": "g"},
       {"name": "Extra Virgin Olive Oil (final dough)", "amount": 17.0, "unit": "g"},
-      {"name": "Fresh Yeast (final dough)", "amount": 3.3, "unit": "g"},
-      {"name": "Instant Dry Yeast (final dough, alternative)", "amount": 1.3, "unit": "g"}
+      {"name": "Instant Dry Yeast (final dough, or 3.3g Fresh Yeast)", "amount": 1.3, "unit": "g"}
     ],
     "instructions": [
       "POOLISH (day before): Mix water (18-20°C) with yeast, add flour. Cover and refrigerate for 12-24 hours.",
@@ -478,7 +509,7 @@
     "name": "Focaccia with Green Olives",
     "description": "Simple focaccia topped with green olives, coarse sea salt, and olive oil.",
     "imageRes": "focaccia_green_olives",
-    "servings": 1,
+    "servings": 2,
     "ingredients": [
       {"name": "Focaccia Dough", "amount": 800.0, "unit": "g"},
       {"name": "Green Olives", "amount": 15.0, "unit": "olives"},
@@ -500,7 +531,7 @@
     "name": "Focaccia with Cherry Tomatoes and Black Olives",
     "description": "Focaccia topped with cherry tomatoes, black olives, oregano, and olive oil.",
     "imageRes": "focaccia_cherry_tomatoes",
-    "servings": 1,
+    "servings": 2,
     "ingredients": [
       {"name": "Focaccia Dough", "amount": 800.0, "unit": "g"},
       {"name": "Cherry Tomatoes", "amount": 7.0, "unit": "tomatoes"},
@@ -524,7 +555,7 @@
     "name": "Focaccia with Rosemary and Black Olives",
     "description": "Classic focaccia with fresh rosemary, black olives, and olive oil.",
     "imageRes": "focaccia_rosemary_olives",
-    "servings": 1,
+    "servings": 2,
     "ingredients": [
       {"name": "Focaccia Dough", "amount": 800.0, "unit": "g"},
       {"name": "Fresh Rosemary", "amount": 1.0, "unit": "twig"},
@@ -546,7 +577,7 @@
     "name": "Pizza Focaccia",
     "description": "Focaccia with pizza-style topping - tomato sauce, mozzarella, and basil (like Pizza Margherita).",
     "imageRes": "focaccia_pizza",
-    "servings": 1,
+    "servings": 2,
     "ingredients": [
       {"name": "Focaccia Dough", "amount": 800.0, "unit": "g"},
       {"name": "Basic Tomato Sauce", "amount": 100.0, "unit": "g"},
@@ -574,8 +605,7 @@
       {"name": "Bread Flour (or Bread and All-purpose)", "amount": 1000.0, "unit": "g"},
       {"name": "Water (18-20°C)", "amount": 750.0, "unit": "g"},
       {"name": "Sea Salt", "amount": 20.0, "unit": "g"},
-      {"name": "Fresh Yeast", "amount": 6.0, "unit": "g"},
-      {"name": "Instant Dry Yeast (alternative)", "amount": 2.4, "unit": "g"}
+      {"name": "Instant Dry Yeast (or 6.0g Fresh Yeast)", "amount": 2.4, "unit": "g"}
     ],
     "instructions": [
       "DAY BEFORE: Dissolve yeast in water, add half the flour and mix.",
@@ -605,13 +635,11 @@
       {"name": "Bread and All-purpose Flour (for poolish)", "amount": 180.0, "unit": "g"},
       {"name": "Rye Flour (for poolish)", "amount": 30.0, "unit": "g"},
       {"name": "Water 18-20°C (for poolish)", "amount": 210.0, "unit": "g"},
-      {"name": "Fresh Yeast (for poolish)", "amount": 3.0, "unit": "g"},
-      {"name": "Instant Dry Yeast (for poolish, alternative)", "amount": 1.2, "unit": "g"},
+      {"name": "Instant Dry Yeast (for poolish, or 3.0g Fresh Yeast)", "amount": 1.2, "unit": "g"},
       {"name": "Bread and All-purpose Flour (final dough)", "amount": 790.0, "unit": "g"},
       {"name": "Water 18-20°C (final dough)", "amount": 490.0, "unit": "g"},
       {"name": "Sea Salt (final dough)", "amount": 20.0, "unit": "g"},
-      {"name": "Fresh Yeast (final dough)", "amount": 13.0, "unit": "g"},
-      {"name": "Instant Dry Yeast (final dough, alternative)", "amount": 5.1, "unit": "g"}
+      {"name": "Instant Dry Yeast (final dough, or 13.0g Fresh Yeast)", "amount": 5.1, "unit": "g"}
     ],
     "instructions": [
       "POOLISH (evening before): Mix water with yeast, add flours. Cover and refrigerate 12-18 hours.",
@@ -680,14 +708,12 @@
     "ingredients": [
       {"name": "Bread and All-purpose Flour (for biga)", "amount": 440.0, "unit": "g"},
       {"name": "Water 18-20°C (for biga)", "amount": 225.0, "unit": "g"},
-      {"name": "Fresh Yeast (for biga)", "amount": 2.5, "unit": "g"},
-      {"name": "Instant Dry Yeast (for biga, alternative)", "amount": 1.0, "unit": "g"},
+      {"name": "Instant Dry Yeast (for biga, or 2.5g Fresh Yeast)", "amount": 1.0, "unit": "g"},
       {"name": "Bread and All-purpose Flour (final dough)", "amount": 560.0, "unit": "g"},
       {"name": "Water 18-20°C (final dough)", "amount": 450.0, "unit": "g"},
       {"name": "Extra Virgin Olive Oil (final dough)", "amount": 64.0, "unit": "g"},
       {"name": "Sea Salt (final dough)", "amount": 20.0, "unit": "g"},
-      {"name": "Fresh Yeast (final dough)", "amount": 12.0, "unit": "g"},
-      {"name": "Instant Dry Yeast (final dough, alternative)", "amount": 5.0, "unit": "g"}
+      {"name": "Instant Dry Yeast (final dough, or 12.0g Fresh Yeast)", "amount": 5.0, "unit": "g"}
     ],
     "instructions": [
       "BIGA (day before): Mix water with yeast, add flour. Cover and refrigerate 12-18 hours.",
@@ -716,14 +742,12 @@
     "ingredients": [
       {"name": "Bread and All-purpose Flour (for poolish)", "amount": 350.0, "unit": "g"},
       {"name": "Water 18-20°C (for poolish)", "amount": 350.0, "unit": "g"},
-      {"name": "Fresh Yeast (for poolish)", "amount": 5.0, "unit": "g"},
-      {"name": "Instant Dry Yeast (for poolish, alternative)", "amount": 2.0, "unit": "g"},
+      {"name": "Instant Dry Yeast (for poolish, or 5.0g Fresh Yeast)", "amount": 2.0, "unit": "g"},
       {"name": "Bread and All-purpose Flour (final dough)", "amount": 650.0, "unit": "g"},
       {"name": "Lukewarm Water 27-30°C (final dough)", "amount": 390.0, "unit": "g"},
       {"name": "Sea Salt (final dough)", "amount": 20.0, "unit": "g"},
       {"name": "Extra Virgin Olive Oil (final dough)", "amount": 50.0, "unit": "g"},
-      {"name": "Fresh Yeast (final dough)", "amount": 10.0, "unit": "g"},
-      {"name": "Instant Dry Yeast (final dough, alternative)", "amount": 3.9, "unit": "g"}
+      {"name": "Instant Dry Yeast (final dough, or 10.0g Fresh Yeast)", "amount": 3.9, "unit": "g"}
     ],
     "instructions": [
       "POOLISH (day before): Mix water with yeast, add flour. Cover and refrigerate 17-24 hours.",
