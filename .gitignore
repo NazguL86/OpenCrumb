@@ -25,3 +25,6 @@ app/src/main/assets/composeResources/
  .vscode/iosApp/Resources/
 iosApp/OpenCrumb/compose-resources/
 *.xcuserstate
+
+# Keystore files
+keystore.properties
