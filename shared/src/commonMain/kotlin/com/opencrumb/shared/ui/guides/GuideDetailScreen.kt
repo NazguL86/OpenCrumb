@@ -8,6 +8,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
@@ -70,23 +71,39 @@ fun ParsedMarkdownContent(content: String) {
                 }
                 val rows = (images.size + columns - 1) / columns
                 
-                Column(modifier = Modifier.padding(vertical = 8.dp)) {
-                    for (row in 0 until rows) {
-                        Row(
-                            modifier = Modifier.fillMaxWidth(),
-                            horizontalArrangement = Arrangement.spacedBy(4.dp)
-                        ) {
-                            for (col in 0 until columns) {
-                                val index = row * columns + col
-                                if (index < images.size) {
-                                    Image(
-                                        painter = painterResource(getDrawableResourceByName(images[index])),
-                                        contentDescription = null,
-                                        modifier = Modifier.weight(1f).aspectRatio(1f),
-                                        contentScale = ContentScale.Crop
-                                    )
+                BoxWithConstraints {
+                    val isTablet = maxWidth > 600.dp
+                    
+                    Column(modifier = Modifier.padding(vertical = 8.dp)) {
+                        for (row in 0 until rows) {
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = if (isTablet) {
+                                    Arrangement.spacedBy(4.dp, Alignment.CenterHorizontally)
                                 } else {
-                                    Spacer(modifier = Modifier.weight(1f))
+                                    Arrangement.spacedBy(4.dp)
+                                }
+                            ) {
+                                for (col in 0 until columns) {
+                                    val index = row * columns + col
+                                    if (index < images.size) {
+                                        Image(
+                                            painter = painterResource(getDrawableResourceByName(images[index])),
+                                            contentDescription = null,
+                                            modifier = if (isTablet) {
+                                                Modifier.width(200.dp).aspectRatio(1f)
+                                            } else {
+                                                Modifier.weight(1f).aspectRatio(1f)
+                                            },
+                                            contentScale = ContentScale.Fit
+                                        )
+                                    } else {
+                                        if (isTablet) {
+                                            Spacer(modifier = Modifier.width(200.dp))
+                                        } else {
+                                            Spacer(modifier = Modifier.weight(1f))
+                                        }
+                                    }
                                 }
                             }
                         }

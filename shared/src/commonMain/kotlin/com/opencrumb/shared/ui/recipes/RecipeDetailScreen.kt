@@ -50,15 +50,18 @@ fun RecipeDetailScreen(
             }
         }
             item {
-                Image(
-                    painter = painterResource(com.opencrumb.shared.ui.getDrawableResourceByName(recipe.imageRes)),
-                    contentDescription = null,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(200.dp)
-                        .clip(RoundedCornerShape(8.dp)),
-                    contentScale = ContentScale.Crop
-                )
+                BoxWithConstraints(modifier = Modifier.fillMaxWidth()) {
+                    val imageHeight = if (maxWidth > 600.dp) 300.dp else 200.dp
+                    Image(
+                        painter = painterResource(com.opencrumb.shared.ui.getDrawableResourceByName(recipe.imageRes)),
+                        contentDescription = null,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(imageHeight)
+                            .clip(RoundedCornerShape(8.dp)),
+                        contentScale = ContentScale.Crop
+                    )
+                }
             }
             
             item {

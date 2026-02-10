@@ -5,6 +5,9 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -33,7 +36,10 @@ fun RecipeListScreen(
         mutableStateOf(categories.firstOrNull()) 
     }
 
-    Column(modifier = modifier.fillMaxSize()) {
+    BoxWithConstraints(modifier = modifier.fillMaxSize()) {
+        val useGrid = maxWidth > 600.dp
+
+        Column(modifier = Modifier.fillMaxSize()) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -111,25 +117,52 @@ fun RecipeListScreen(
                 }
                 
                 val recipes = recipesForCategory[selectedType] ?: emptyList()
-                LazyColumn(
-                    contentPadding = PaddingValues(16.dp),
-                    verticalArrangement = Arrangement.spacedBy(12.dp)
-                ) {
-                    items(recipes) { recipe ->
-                        RecipeCard(recipe = recipe, onClick = { onRecipeClick(recipe.id) })
+                if (useGrid) {
+                    LazyVerticalGrid(
+                        columns = GridCells.Adaptive(300.dp),
+                        contentPadding = PaddingValues(16.dp),
+                        horizontalArrangement = Arrangement.spacedBy(12.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        items(recipes) { recipe ->
+                            RecipeCard(recipe = recipe, onClick = { onRecipeClick(recipe.id) })
+                        }
+                    }
+                } else {
+                    LazyColumn(
+                        contentPadding = PaddingValues(16.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        items(recipes) { recipe ->
+                            RecipeCard(recipe = recipe, onClick = { onRecipeClick(recipe.id) })
+                        }
                     }
                 }
             } else {
                 val allRecipes = recipesForCategory.values.flatten()
-                LazyColumn(
-                    contentPadding = PaddingValues(16.dp),
-                    verticalArrangement = Arrangement.spacedBy(12.dp)
-                ) {
-                    items(allRecipes) { recipe ->
-                        RecipeCard(recipe = recipe, onClick = { onRecipeClick(recipe.id) })
+                if (useGrid) {
+                    LazyVerticalGrid(
+                        columns = GridCells.Adaptive(300.dp),
+                        contentPadding = PaddingValues(16.dp),
+                        horizontalArrangement = Arrangement.spacedBy(12.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        items(allRecipes) { recipe ->
+                            RecipeCard(recipe = recipe, onClick = { onRecipeClick(recipe.id) })
+                        }
+                    }
+                } else {
+                    LazyColumn(
+                        contentPadding = PaddingValues(16.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        items(allRecipes) { recipe ->
+                            RecipeCard(recipe = recipe, onClick = { onRecipeClick(recipe.id) })
+                        }
                     }
                 }
             }
+        }
         }
     }
 }
